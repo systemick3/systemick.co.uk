@@ -1,0 +1,4 @@
+services:
+  tweets.get_tweets:
+    class: Drupal\tweets\TweetsClient
+    arguments: ["@config.factory"]

@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * This module handles the display and alterations to the sitewide contact form.
+ */
+
+function contactblock_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'contact_message_feedback_form') {
+    //kint($form_id);
+    //kint($form);
+  }
+}
+
+function contactblock_form_contact_message_feedback_form_alter(&$form, &$form_state, $form_id) {
+  $form['name']['#prefix'] = '<div class="left">';
+  $form['name']['#suffix'] = '</div>';
+  $form['name']['#title'] = t('Name');
+  $form['mail']['#suffix'] = '<div class="clearfix"></div>';
+  $form['mail']['#title'] = t('Email');
+  $form['actions']['preview']['#access'] = 0;
+  $form['actions']['preview']['#attributes']['class'][] = 'hidden';
+  $form['actions']['submit']['#value'] = t('Send message');
+}

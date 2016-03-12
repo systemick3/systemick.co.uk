@@ -1,0 +1,7 @@
+name: Contact Block
+description: 'Displays the contact form in a block'
+package: Systemick
+type: module
+core: 8.x
+dependencies:
+  - block

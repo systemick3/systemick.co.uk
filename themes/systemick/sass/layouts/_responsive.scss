@@ -1,0 +1,402 @@
+/**
+ * @file
+ * Positioning for a responsive layout.
+ *
+ * Define CSS classes to create a fluid grid layout with optional sidebars
+ * depending on whether blocks are placed in the left or right sidebars.
+ *
+ * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
+ */
+
+body {
+  width:100%;
+}
+
+.contextual-region {
+  position: static;
+}
+
+header {
+  color: white;
+  float: left;
+  margin: -1em 0 0 4em;
+  padding-left: 1em;
+  position:relative;
+  top:2em;
+  z-index: 10;
+}
+
+.region-primary-menu {
+  float:right;
+  margin: -3em 4em 0 0;
+  padding: 3em 0 0 0;
+  position: relative;
+  width: 40%;
+  z-index: 10;
+
+  ul {
+    float: right;
+
+    li {
+      color: white;
+      float: left;
+      padding-right: 2em;
+
+      a {
+        color: white;
+        text-transform: uppercase;
+
+        &.is-active {
+          color: white;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    li:before {
+      content: ' \25CF';
+      font-size: 20px;
+      padding-right: 1em;
+    }
+
+    li:first-child:before {
+      visibility: hidden;
+    }
+
+    li:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.node--type-front .field--name-field-banner-image {
+  position:absolute;
+  top: -3em;
+  z-index: 5;
+}
+
+.node--type-front .field--name-field-site-name {
+  color: white;
+  font-weight: bold;
+  position:absolute;
+  text-align: center;
+  top: 18em;
+  width:100%;
+  z-index: 10;
+
+  .inner {
+    @include border-gradient($light-green, $dark-green);
+
+    display: inline-block;
+    padding: 0.5em 1em;
+
+    h1 {
+      margin: 0;
+    }
+  }
+}
+
+.node--type-front .field--name-field-strapline {
+  color: white;
+  font-size: $h4-font-size;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 27em;
+  width: 100%;
+  z-index: 10;
+
+  .inner {
+    display: inline-block;
+    padding: 0 1em;
+  }
+}
+
+.field--name-field-subheading {
+  @include bg-gradient($light-green, $dark-green);
+
+  font-size: $h2-font-size;
+  margin-top: -2em;
+  position:relative;
+  text-align: center;
+  top: 18em;
+  width: 100%;
+  z-index: 30;
+
+  .inner {
+    display:inline-block;
+
+    h3 {
+      margin: 0 0 0.5em 0;
+    }
+  }
+}
+
+.node--type-front .node--view-mode-full .field--name-body {
+  @include bg-gradient($light-green, $dark-green);
+
+  color: white;
+  margin-top: -2em;
+  padding: 1em 0 4em 0;
+  position:relative;
+  text-align: center;
+  top: 37em;
+  width: 100%;
+
+  .inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+}
+
+.polygon {
+  @include bg-gradient($light-green, $dark-green);
+  @include div-rot($rot-amount);
+
+  left: -1em;
+  min-height: 10em;
+  position: relative;
+  top: 38em;
+  width: 101%;
+  z-index: 20;
+}
+
+.block-views-blockservices-block-1 {
+  padding-top: 1em;
+  position:relative;
+  text-align: center;
+  top: 36em;
+  width: 100%;
+
+  h2 {
+    @include text-gradient($light-green, $dark-green);
+  }
+
+  .view-services {
+    margin-left: auto;
+    width: 90%;
+
+    .views-row {
+      float: left;
+      width: 30%;
+
+      .field--name-field-image {
+        margin: 2em 0;
+      }
+
+      .field--name-body {
+        padding: 0 2em;
+      }
+
+      .more {
+        background: $medium-green;
+        margin: 2em auto 0 auto;
+        padding: 1em 0;
+        text-transform: uppercase;
+        width: 40%;
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+
+  h3 {
+    font-size: $h4-font-size;
+    text-transform: uppercase;
+
+    a {
+      color: $medium-green;
+    }
+  }
+}
+
+.block-views-blocktechnologies-block-1 {
+  background: url("/themes/systemick/images/coding-whiteOverlay.jpeg") no-repeat 30% 25%;
+  clear: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em 0 2em 0;
+  position:relative;
+  text-align: center;
+  top: 39em;
+  width: 100%;
+
+  .inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .views-row {
+    float: left;
+    width: 20%;
+  }
+
+  h2 {
+    @include text-gradient($light-green, $dark-green);
+  }
+}
+
+.block-contactblock {
+  float: left;
+  padding-left: 2em;
+  position: relative;
+  top: 40em;
+  width: 45%;
+
+  h2 {
+    @include text-gradient($light-green, $dark-green);
+
+    margin-bottom: 0.5em;
+  }
+
+  div {
+    &.hello {
+      margin-bottom: 2em;
+      padding: 0 0 0.5em 0;
+    }
+
+    &.email {
+      background: url("/themes/systemick/images/email.svg") no-repeat 0 0;
+      float: left;
+      font-weight: bold;
+      padding-left: 2.5em;
+      padding-right: 1em;
+    }
+
+    &.phone {
+      background: url("/themes/systemick/images/phone.svg") no-repeat 0 0;
+      float: left;
+      font-weight: bold;
+      padding-left: 1.5em;
+    }
+  }
+
+  .contact-message-form {
+    margin-top: 2em;
+
+    label {
+      color: $dark-grey;
+      text-transform: uppercase;
+    }
+
+    input,
+    textarea {
+      border-bottom: 4px solid $medium-green;
+    }
+
+    textarea {
+      height: 6em;
+    }
+
+    .form-item-name {
+      float: left;
+      width: 48%;
+    }
+
+    .form-item-mail {
+      float: right;
+      width: 50%;
+    }
+
+    .form-item-subject-0-value {
+      width: 100%;
+
+      input {
+        width: 100%;
+      }
+    }
+
+    .form-item-message-0-value {
+      margin-top: 2em;
+    }
+
+    #edit-submit {
+      @include border-gradient($light-green, $dark-green);
+
+      background-color: white;
+      float: right;
+      margin-top: 2em;
+      padding: 0.5em;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.block-tweets {
+  float: right;
+  position: relative;
+  top: 40em;
+  width: 45%;
+
+  h2 {
+    background: url("/themes/systemick/images/twitter.svg") no-repeat 0 0;
+    color: white;
+    padding-left: 2em;
+
+    margin-bottom: 0.5em;
+  }
+
+  .username {
+    margin-bottom: 2em;
+  }
+
+  ul {
+    list-style: none outside;
+    padding: 0;
+
+    li {
+      padding-bottom: 4em;
+
+      .tweet-date {
+        font-style: italic;
+      }
+    }
+  }
+}
+
+footer {
+  @include bg-gradient($light-green, $dark-green);
+
+  clear: left;
+  color: white;
+  min-height: 6em;
+  position:relative;
+  top: 43em;
+  width: 100%;
+
+  .block {
+    a {
+      color: white;
+      font-weight: bold;
+    }
+  }
+
+  .block-block-content {
+    float: left;
+    padding-left: 2em;
+  }
+
+  .block-system {
+    float: right;
+    padding-right: 2em;
+    padding-top: 2.5em;
+  }
+}
+
+/* Everything wider than mobile */
+@media all and (min-width: 480px) {
+
+}
+
+@media all and (min-width: 480px) and (max-width: 959px) {
+
+}
+
+@media all and (min-width: 960px) {
+
+}

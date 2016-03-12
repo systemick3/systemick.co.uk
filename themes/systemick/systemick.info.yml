@@ -1,0 +1,9 @@
+name: Systemick
+type: theme
+description: 'A Subtheme of Classy'
+version: 1.0
+core: 8.x
+base theme: classy
+
+libraries:
+  - systemick/global-styling
