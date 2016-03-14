@@ -59,6 +59,21 @@ $h4-font-size: 4    * $base-font-size;
 $h5-font-size: 0.83 * $base-font-size;
 $h6-font-size: 0.67 * $base-font-size;
 
+// em units for top property on various elements
+$top-header: 0em;
+$top-region-primary-menu: 3em;
+$top-field-banner-image: 3.5em;
+$top-field-site-name: 6em;
+$top-field-strapline: 9em;
+$top-field-subheading: 10em;
+$top-body: 9em;
+$top-polygon: 13em;
+$top-blockservices: 8em;
+$top-blocktechnologies: 6em;
+$top-blockcontact: 5.5em;
+$top-blocktweets: 3.5em;
+$top-footer: 1em;
+
 // The following font family declarations are based on the Microsoft core web
 // fonts which are common fonts available on most computer systems. The DejaVu
 // and Nimbus Sans fonts are commonly available on Linux systems where the MS

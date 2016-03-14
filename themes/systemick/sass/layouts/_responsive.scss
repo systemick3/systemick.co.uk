@@ -22,7 +22,7 @@ header {
 
 .region-primary-menu {
   position: relative;
-  top: 3em;
+  top: $top-region-primary-menu;
   width: 100%;
 
   ul {
@@ -60,14 +60,14 @@ header {
 
 .node--type-front .field--name-field-banner-image {
   position: absolute;
-  top: 3.5em;
+  top: $top-field-banner-image;
   z-index: 5;
 }
 
 .node--type-front .field--name-field-site-name {
   position:absolute;
   text-align: center;
-  top: 6em;
+  top: $top-field-site-name;
   width:100%;
   z-index: 10;
 
@@ -89,7 +89,7 @@ header {
   position: absolute;
   text-align: center;
   text-transform: uppercase;
-  top: 9em;
+  top: $top-field-strapline;
   width: 100%;
   z-index: 10;
 
@@ -107,7 +107,7 @@ header {
 
   position:relative;
   text-align: center;
-  top: 10em;
+  top: $top-field-subheading;
   width: 100%;
   z-index: 30;
 
@@ -126,7 +126,7 @@ header {
 
   color: white;
   position:relative;
-  top: 9em;
+  top: $top-body;
   width: 100%;
   z-index: 20;
 
@@ -144,7 +144,7 @@ header {
 
   min-height: 3em;
   position: relative;
-  top: 13em;
+  top: $top-polygon;
   width: 101%;
   z-index: 20;
 }
@@ -152,7 +152,7 @@ header {
 .block-views-blockservices-block-1 {
   position:relative;
   text-align: center;
-  top: 8em;
+  top: $top-blockservices;
   width: 100%;
 
   h2 {
@@ -184,7 +184,7 @@ header {
   background: url("/themes/systemick/images/coding-whiteOverlay.jpeg") no-repeat 30% 30%;
   position:relative;
   text-align: center;
-  top: 6em;
+  top: $top-blocktechnologies;
   width: 100%;
 
   .views-row {
@@ -208,7 +208,7 @@ header {
 .block-contactblock {
   padding: 0.5em;
   position: relative;
-  top: 5.5em;
+  top: $top-blockcontact;
 
   h2 {
     @include text-gradient($light-green, $dark-green);
@@ -271,7 +271,7 @@ header {
 .block-tweets {
   padding: 0 0.5em;
   position: relative;
-  top: 3.5em;
+  top: $top-blocktweets;
 
   h2 {
     background: url("/themes/systemick/images/twitter.svg") no-repeat 0 0;
@@ -311,7 +311,7 @@ footer {
   padding: 0 0.5em 1em 0.5em;
   position:relative;
   text-align: center;
-  top: 1em;
+  top: $top-footer;
   width: 100%;
 
   .block {
@@ -329,6 +329,88 @@ footer {
 /* Everything wider than mobile */
 @media all and (min-width: 480px) {
 
+  .node--type-front .field--name-field-site-name {
+    top: $top-field-site-name + 6;
+  }
+
+  .node--type-front .field--name-field-strapline {
+    top: $top-field-strapline + 6;
+  }
+
+  .field--name-field-subheading {
+    top: $top-field-subheading + 6;
+  }
+
+  .node--type-front .node--view-mode-full .field--name-body {
+    top: $top-body + 6;
+  }
+
+  .polygon {
+    top: $top-polygon + 6;
+  }
+
+  .block-views-blockservices-block-1 {
+    top: $top-blockservices + 6;
+  }
+
+  .block-views-blocktechnologies-block-1 {
+    top: $top-blocktechnologies + 6;
+  }
+
+  .block-contactblock {
+    top: $top-blockcontact + 6;
+  }
+
+  .block-tweets {
+    top: $top-blocktweets + 6;
+  }
+
+  footer {
+    top: $top-footer + 6;
+  }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 959px) {
+  .node--type-front .field--name-field-site-name {
+    top: $top-field-site-name + 10;
+  }
+
+  .node--type-front .field--name-field-strapline {
+    top: $top-field-strapline + 10;
+  }
+
+  .field--name-field-subheading {
+    top: $top-field-subheading + 9.5;
+  }
+
+  .node--type-front .node--view-mode-full .field--name-body {
+    top: $top-body + 10;
+  }
+
+  .polygon {
+    top: $top-polygon + 10;
+  }
+
+  .block-views-blockservices-block-1 {
+    top: $top-blockservices + 10;
+  }
+
+  .block-views-blocktechnologies-block-1 {
+    top: $top-blocktechnologies + 10;
+  }
+
+  .block-contactblock {
+    top: $top-blockcontact + 10;
+  }
+
+  .block-tweets {
+    top: $top-blocktweets + 10;
+  }
+
+  footer {
+    top: $top-footer + 10;
+  }
 }
 
 @media all and (min-width: 480px) and (max-width: 959px) {
@@ -344,7 +426,7 @@ footer {
     color: white;
     display: block;
     float: left;
-    margin: -1em 0 0 5em;
+    margin: -1em 0 0 2em;
     padding-left: 1em;
     position:relative;
     top:2em;
@@ -354,10 +436,10 @@ footer {
   .region-primary-menu {
     float:right;
     margin-left: 0;
-    margin-right: -2em;
+    margin-right: 1em;
     position: relative;
     top: 5em;
-    width: 40%;
+    width: 60%;
     z-index: 10;
 
     ul {
@@ -404,7 +486,8 @@ footer {
   .node--type-front .field--name-field-site-name {
     color: white;
     font-weight: bold;
-    top: 18em;
+    //top: 18em;
+    top: $top-field-site-name + 3;
 
     .inner {
       @include border-gradient($light-green, $dark-green, 7px);
@@ -424,7 +507,8 @@ footer {
     font-size: $h4-font-size;
     font-weight: bold;
     padding-top: 1em;
-    top: 6em;
+    //top: 6em;
+    top: $top-field-strapline - 5.5;
 
     .inner {
       display: inline-block;
@@ -441,7 +525,8 @@ footer {
 
     font-size: $h2-font-size;
     margin-top: -2em;
-    top: 18em;
+    //top: 18em;
+    top: $top-field-subheading - 0.5;
 
     .inner {
       display:inline-block;
@@ -457,7 +542,8 @@ footer {
     color: white;
     margin-top: -2em;
     padding: 1em 0 4em 0;
-    top: 37em;
+    //top: 37em;
+    top: $top-body + 10;
 
     .inner {
       margin-left: auto;
@@ -473,13 +559,16 @@ footer {
     left: -1em;
     min-height: 10em;
     top: 38em;
+    top: $top-polygon + 10;
+    width: 105%;
   }
 
   .block-views-blockservices-block-1 {
     padding-top: 1em;
     position:relative;
     text-align: center;
-    top: 36em;
+    //top: 36em;
+    top: $top-blockservices + 10;
     width: 100%;
 
     h2 {
@@ -533,7 +622,8 @@ footer {
     margin-right: auto;
     padding: 0.5em 0 2em 0;
     position:relative;
-    top: 39em;
+    //top: 39em;
+    top: $top-blocktechnologies + 14;
 
     .inner {
       margin-left: auto;
@@ -562,7 +652,8 @@ footer {
     float: left;
     padding: 0 0 0 2em;
     position: relative;
-    top: 40em;
+    //top: 40em;
+    top: $top-blockcontact + 14;
     width: 45%;
 
     h2 {
@@ -635,7 +726,8 @@ footer {
     float: right;
     padding: 0;
     position: relative;
-    top: 40em;
+    //top: 40em;
+    top: $top-blocktweets + 16;
     width: 45%;
 
     h2 {
@@ -677,7 +769,8 @@ footer {
     padding: 0;
     position:relative;
     text-align: left;
-    top: 43em;
+    //top: 43em;
+    top: $top-footer + 21;
     width: 100%;
 
     .block {
@@ -697,5 +790,155 @@ footer {
       padding-right: 2em;
       padding-top: 2.5em;
     }
+  }
+}
+
+@media all and (min-width: 1024px) {
+  header {
+    margin: -1em 0 0 1em;
+  }
+
+  .region-primary-menu {
+    margin-right: -1em;
+  }
+
+  .node--type-front .field--name-field-site-name {
+    top: $top-field-site-name + 4;
+  }
+
+  .node--type-front .field--name-field-strapline {
+    top: $top-field-strapline - 5;
+  }
+
+  .field--name-field-subheading {
+    top: $top-field-subheading + 1.5;
+  }
+
+  .node--type-front .node--view-mode-full .field--name-body {
+    top: $top-body + 15;
+  }
+
+  .polygon {
+    top: $top-polygon + 12;
+  }
+
+  .block-views-blockservices-block-1 {
+    top: $top-blockservices + 15;
+  }
+
+  .block-views-blocktechnologies-block-1 {
+    top: $top-blocktechnologies + 19;
+  }
+
+  .block-contactblock {
+    top: $top-blockcontact + 19;
+  }
+
+  .block-tweets {
+    top: $top-blocktweets + 21;
+  }
+
+  footer {
+    top: $top-footer + 25;
+  }
+}
+
+@media all and (min-width: 1224px) {
+  header {
+    margin: -1em 0 0 3em;
+  }
+
+  .region-primary-menu {
+    margin-right: -18em;
+  }
+
+  .node--type-front .field--name-field-site-name {
+    top: $top-field-site-name + 8;
+  }
+
+  .node--type-front .field--name-field-strapline {
+    top: $top-field-strapline - 4;
+  }
+
+  .field--name-field-subheading {
+    top: $top-field-subheading + 5.5;
+  }
+
+  .node--type-front .node--view-mode-full .field--name-body {
+    top: $top-body + 22;
+  }
+
+  .polygon {
+    top: $top-polygon + 18;
+  }
+
+  .block-views-blockservices-block-1 {
+    top: $top-blockservices + 22;
+  }
+
+  .block-views-blocktechnologies-block-1 {
+    top: $top-blocktechnologies + 26;
+  }
+
+  .block-contactblock {
+    top: $top-blockcontact + 26;
+  }
+
+  .block-tweets {
+    top: $top-blocktweets + 28;
+  }
+
+  footer {
+    top: $top-footer + 32;
+  }
+}
+
+@media all and (min-width: 1824px) {
+  header {
+    margin: -1em 0 0 5em;
+  }
+
+  .region-primary-menu {
+    margin-right: -25em;
+  }
+
+  .node--type-front .field--name-field-site-name {
+    top: $top-field-site-name + 10;
+  }
+
+  .node--type-front .field--name-field-strapline {
+    top: $top-field-strapline - 3.5;
+  }
+
+  .field--name-field-subheading {
+    top: $top-field-subheading + 9.5;
+  }
+
+  .node--type-front .node--view-mode-full .field--name-body {
+    top: $top-body + 30;
+  }
+
+  .polygon {
+    top: $top-polygon + 28;
+  }
+
+  .block-views-blockservices-block-1 {
+    top: $top-blockservices + 30;
+  }
+
+  .block-views-blocktechnologies-block-1 {
+    top: $top-blocktechnologies + 34;
+  }
+
+  .block-contactblock {
+    top: $top-blockcontact + 34;
+  }
+
+  .block-tweets {
+    top: $top-blocktweets + 36;
+  }
+
+  footer {
+    top: $top-footer + 40;
   }
 }
