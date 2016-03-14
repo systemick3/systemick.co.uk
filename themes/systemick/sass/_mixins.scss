@@ -37,8 +37,8 @@
 }
 
 // Border gradient
-@mixin border-gradient($right, $left) {
-  border: 7px solid transparent;
+@mixin border-gradient($right, $left, $border-width) {
+  border: $border-width solid transparent;
   -moz-border-image: -moz-linear-gradient(right, $right 0%, $left 100%);
   -webkit-border-image: -webkit-linear-gradient(right, $right 0%, $left 100%);
   border-image: linear-gradient(to left, $right 0%, $left 100%);

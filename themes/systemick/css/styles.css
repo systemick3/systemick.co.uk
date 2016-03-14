@@ -210,7 +210,7 @@ h3 {
 
 /* line 215, ../sass/_normalize.scss */
 h4 {
-  font-size: 16px;
+  font-size: 64px;
 }
 
 /* line 222, ../sass/_normalize.scss */
@@ -602,79 +602,66 @@ body {
 
 /* line 19, ../sass/layouts/_responsive.scss */
 header {
-  color: white;
-  float: left;
-  margin: -1em 0 0 4em;
-  padding-left: 1em;
-  position: relative;
-  top: 2em;
-  z-index: 10;
+  display: none;
 }
 
-/* line 29, ../sass/layouts/_responsive.scss */
+/* line 23, ../sass/layouts/_responsive.scss */
 .region-primary-menu {
-  float: right;
-  margin: -3em 4em 0 0;
-  padding: 3em 0 0 0;
   position: relative;
-  width: 40%;
-  z-index: 10;
+  top: 3em;
+  width: 100%;
 }
-/* line 37, ../sass/layouts/_responsive.scss */
+/* line 28, ../sass/layouts/_responsive.scss */
 .region-primary-menu ul {
-  float: right;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -3.5em;
+  width: 92%;
 }
-/* line 40, ../sass/layouts/_responsive.scss */
+/* line 34, ../sass/layouts/_responsive.scss */
 .region-primary-menu ul li {
-  color: white;
   float: left;
-  padding-right: 2em;
+  padding-right: 0.3em;
 }
-/* line 45, ../sass/layouts/_responsive.scss */
+/* line 38, ../sass/layouts/_responsive.scss */
 .region-primary-menu ul li a {
-  color: white;
+  color: #40826F;
   text-transform: uppercase;
 }
-/* line 49, ../sass/layouts/_responsive.scss */
+/* line 42, ../sass/layouts/_responsive.scss */
 .region-primary-menu ul li a.is-active {
-  color: white;
+  color: #40826F;
   text-decoration: underline;
 }
-/* line 56, ../sass/layouts/_responsive.scss */
+/* line 49, ../sass/layouts/_responsive.scss */
 .region-primary-menu ul li:before {
+  color: #40826F;
   content: ' \25CF';
-  font-size: 20px;
-  padding-right: 1em;
+  font-size: 10px;
 }
-/* line 62, ../sass/layouts/_responsive.scss */
+/* line 55, ../sass/layouts/_responsive.scss */
 .region-primary-menu ul li:first-child:before {
   visibility: hidden;
 }
-/* line 66, ../sass/layouts/_responsive.scss */
-.region-primary-menu ul li:last-child {
-  padding-right: 0;
-}
 
-/* line 72, ../sass/layouts/_responsive.scss */
+/* line 61, ../sass/layouts/_responsive.scss */
 .node--type-front .field--name-field-banner-image {
   position: absolute;
-  top: -3em;
+  top: 3.5em;
   z-index: 5;
 }
 
-/* line 78, ../sass/layouts/_responsive.scss */
+/* line 67, ../sass/layouts/_responsive.scss */
 .node--type-front .field--name-field-site-name {
-  color: white;
-  font-weight: bold;
   position: absolute;
   text-align: center;
-  top: 18em;
+  top: 6em;
   width: 100%;
   z-index: 10;
 }
-/* line 87, ../sass/layouts/_responsive.scss */
+/* line 74, ../sass/layouts/_responsive.scss */
 .node--type-front .field--name-field-site-name .inner {
-  border: 7px solid transparent;
+  border: 4px solid transparent;
   -moz-border-image: -moz-linear-gradient(right, #68AD7D 0%, #145460 100%);
   -webkit-border-image: -webkit-linear-gradient(right, #68AD7D 0%, #145460 100%);
   border-image: linear-gradient(to left, #68ad7d 0%, #145460 100%);
@@ -682,70 +669,67 @@ header {
   display: inline-block;
   padding: 0.5em 1em;
 }
-/* line 93, ../sass/layouts/_responsive.scss */
+/* line 80, ../sass/layouts/_responsive.scss */
 .node--type-front .field--name-field-site-name .inner h1 {
+  font-size: 32px;
   margin: 0;
 }
 
-/* line 99, ../sass/layouts/_responsive.scss */
+/* line 87, ../sass/layouts/_responsive.scss */
 .node--type-front .field--name-field-strapline {
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
+  padding-top: 0.5em;
   position: absolute;
   text-align: center;
   text-transform: uppercase;
-  top: 27em;
+  top: 9em;
   width: 100%;
   z-index: 10;
 }
-/* line 110, ../sass/layouts/_responsive.scss */
+/* line 96, ../sass/layouts/_responsive.scss */
 .node--type-front .field--name-field-strapline .inner {
   display: inline-block;
-  padding: 0 1em;
+}
+/* line 99, ../sass/layouts/_responsive.scss */
+.node--type-front .field--name-field-strapline .inner h2 {
+  font-size: 16px;
 }
 
-/* line 116, ../sass/layouts/_responsive.scss */
+/* line 105, ../sass/layouts/_responsive.scss */
 .field--name-field-subheading {
   background: #40826F;
   background: linear-gradient(to right, #145460, #68ad7d);
-  font-size: 32px;
-  margin-top: -2em;
   position: relative;
   text-align: center;
-  top: 18em;
+  top: 10em;
   width: 100%;
   z-index: 30;
 }
-/* line 127, ../sass/layouts/_responsive.scss */
-.field--name-field-subheading .inner {
-  display: inline-block;
-}
-/* line 130, ../sass/layouts/_responsive.scss */
+/* line 116, ../sass/layouts/_responsive.scss */
 .field--name-field-subheading .inner h3 {
-  margin: 0 0 0.5em 0;
+  font-size: 32px;
+  margin-bottom: 0;
+  padding: 0;
 }
 
-/* line 136, ../sass/layouts/_responsive.scss */
+/* line 124, ../sass/layouts/_responsive.scss */
 .node--type-front .node--view-mode-full .field--name-body {
   background: #40826F;
   background: linear-gradient(to right, #145460, #68ad7d);
   color: white;
-  margin-top: -2em;
-  padding: 1em 0 4em 0;
   position: relative;
-  text-align: center;
-  top: 37em;
+  top: 9em;
   width: 100%;
+  z-index: 20;
 }
-/* line 147, ../sass/layouts/_responsive.scss */
+/* line 133, ../sass/layouts/_responsive.scss */
 .node--type-front .node--view-mode-full .field--name-body .inner {
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  padding: 1em;
+  width: 90%;
 }
 
-/* line 154, ../sass/layouts/_responsive.scss */
+/* line 141, ../sass/layouts/_responsive.scss */
 .polygon {
   background: #40826F;
   background: linear-gradient(to right, #145460, #68ad7d);
@@ -754,251 +738,578 @@ header {
   -webkit-transform: rotate(3deg);
   /* Safari */
   transform: rotate(3deg);
-  left: -1em;
-  min-height: 10em;
+  min-height: 3em;
   position: relative;
-  top: 38em;
+  top: 13em;
   width: 101%;
   z-index: 20;
 }
 
-/* line 166, ../sass/layouts/_responsive.scss */
+/* line 152, ../sass/layouts/_responsive.scss */
 .block-views-blockservices-block-1 {
-  padding-top: 1em;
   position: relative;
   text-align: center;
-  top: 36em;
+  top: 8em;
   width: 100%;
 }
-/* line 173, ../sass/layouts/_responsive.scss */
+/* line 158, ../sass/layouts/_responsive.scss */
 .block-views-blockservices-block-1 h2 {
   background: -webkit-linear-gradient(right, #68AD7D, #145460);
   background: linear-gradient(to left, #68ad7d, #145460);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* line 177, ../sass/layouts/_responsive.scss */
-.block-views-blockservices-block-1 .view-services {
-  margin-left: auto;
-  width: 90%;
-}
-/* line 181, ../sass/layouts/_responsive.scss */
-.block-views-blockservices-block-1 .view-services .views-row {
-  float: left;
-  width: 30%;
-}
-/* line 185, ../sass/layouts/_responsive.scss */
-.block-views-blockservices-block-1 .view-services .views-row .field--name-field-image {
-  margin: 2em 0;
-}
-/* line 189, ../sass/layouts/_responsive.scss */
-.block-views-blockservices-block-1 .view-services .views-row .field--name-body {
-  padding: 0 2em;
-}
-/* line 193, ../sass/layouts/_responsive.scss */
-.block-views-blockservices-block-1 .view-services .views-row .more {
+/* line 164, ../sass/layouts/_responsive.scss */
+.block-views-blockservices-block-1 .view-services .more {
   background: #40826F;
-  margin: 2em auto 0 auto;
-  padding: 1em 0;
+  margin: 1em auto 2em auto;
+  padding: 0.5em;
   text-transform: uppercase;
   width: 40%;
 }
-/* line 200, ../sass/layouts/_responsive.scss */
-.block-views-blockservices-block-1 .view-services .views-row .more a {
+/* line 171, ../sass/layouts/_responsive.scss */
+.block-views-blockservices-block-1 .view-services .more a {
   color: white;
 }
-/* line 207, ../sass/layouts/_responsive.scss */
+/* line 177, ../sass/layouts/_responsive.scss */
 .block-views-blockservices-block-1 h3 {
   font-size: 16px;
   text-transform: uppercase;
 }
-/* line 211, ../sass/layouts/_responsive.scss */
-.block-views-blockservices-block-1 h3 a {
-  color: #40826F;
-}
 
-/* line 217, ../sass/layouts/_responsive.scss */
+/* line 183, ../sass/layouts/_responsive.scss */
 .block-views-blocktechnologies-block-1 {
-  background: url("/themes/systemick/images/coding-whiteOverlay.jpeg") no-repeat 30% 25%;
-  clear: left;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0.5em 0 2em 0;
+  background: url("/themes/systemick/images/coding-whiteOverlay.jpeg") no-repeat 30% 30%;
   position: relative;
   text-align: center;
-  top: 39em;
+  top: 6em;
   width: 100%;
 }
-/* line 228, ../sass/layouts/_responsive.scss */
-.block-views-blocktechnologies-block-1 .inner {
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-}
-/* line 234, ../sass/layouts/_responsive.scss */
+/* line 190, ../sass/layouts/_responsive.scss */
 .block-views-blocktechnologies-block-1 .views-row {
   float: left;
-  width: 20%;
+  padding-bottom: 1em;
+  width: 50%;
 }
-/* line 239, ../sass/layouts/_responsive.scss */
+/* line 196, ../sass/layouts/_responsive.scss */
+.block-views-blocktechnologies-block-1 .views-row:last-child {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 202, ../sass/layouts/_responsive.scss */
 .block-views-blocktechnologies-block-1 h2 {
   background: -webkit-linear-gradient(right, #68AD7D, #145460);
   background: linear-gradient(to left, #68ad7d, #145460);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-top: 0.5em;
 }
 
-/* line 244, ../sass/layouts/_responsive.scss */
+/* line 208, ../sass/layouts/_responsive.scss */
 .block-contactblock {
-  float: left;
-  padding-left: 2em;
+  padding: 0.5em;
   position: relative;
-  top: 40em;
-  width: 45%;
+  top: 5.5em;
 }
-/* line 251, ../sass/layouts/_responsive.scss */
+/* line 213, ../sass/layouts/_responsive.scss */
 .block-contactblock h2 {
   background: -webkit-linear-gradient(right, #68AD7D, #145460);
   background: linear-gradient(to left, #68ad7d, #145460);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.1em;
 }
-/* line 258, ../sass/layouts/_responsive.scss */
+/* line 220, ../sass/layouts/_responsive.scss */
 .block-contactblock div.hello {
-  margin-bottom: 2em;
-  padding: 0 0 0.5em 0;
+  margin-bottom: 1em;
 }
-/* line 263, ../sass/layouts/_responsive.scss */
+/* line 224, ../sass/layouts/_responsive.scss */
 .block-contactblock div.email {
   background: url("/themes/systemick/images/email.svg") no-repeat 0 0;
-  float: left;
   font-weight: bold;
-  padding-left: 2.5em;
-  padding-right: 1em;
+  margin-bottom: 0.5em;
+  padding-left: 3em;
 }
-/* line 271, ../sass/layouts/_responsive.scss */
+/* line 231, ../sass/layouts/_responsive.scss */
 .block-contactblock div.phone {
   background: url("/themes/systemick/images/phone.svg") no-repeat 0 0;
-  float: left;
   font-weight: bold;
-  padding-left: 1.5em;
+  padding-bottom: 0.5em;
+  padding-left: 3em;
 }
-/* line 279, ../sass/layouts/_responsive.scss */
-.block-contactblock .contact-message-form {
-  margin-top: 2em;
-}
-/* line 282, ../sass/layouts/_responsive.scss */
+/* line 241, ../sass/layouts/_responsive.scss */
 .block-contactblock .contact-message-form label {
   color: #666;
   text-transform: uppercase;
 }
-/* line 287, ../sass/layouts/_responsive.scss */
+/* line 246, ../sass/layouts/_responsive.scss */
 .block-contactblock .contact-message-form input,
 .block-contactblock .contact-message-form textarea {
   border-bottom: 4px solid #40826F;
 }
-/* line 292, ../sass/layouts/_responsive.scss */
+/* line 251, ../sass/layouts/_responsive.scss */
 .block-contactblock .contact-message-form textarea {
-  height: 6em;
+  height: 3em;
 }
-/* line 296, ../sass/layouts/_responsive.scss */
-.block-contactblock .contact-message-form .form-item-name {
-  float: left;
-  width: 48%;
-}
-/* line 301, ../sass/layouts/_responsive.scss */
-.block-contactblock .contact-message-form .form-item-mail {
-  float: right;
+/* line 255, ../sass/layouts/_responsive.scss */
+.block-contactblock .contact-message-form .form-actions {
+  margin-left: auto;
+  margin-right: auto;
   width: 50%;
 }
-/* line 306, ../sass/layouts/_responsive.scss */
-.block-contactblock .contact-message-form .form-item-subject-0-value {
-  width: 100%;
-}
-/* line 309, ../sass/layouts/_responsive.scss */
-.block-contactblock .contact-message-form .form-item-subject-0-value input {
-  width: 100%;
-}
-/* line 314, ../sass/layouts/_responsive.scss */
-.block-contactblock .contact-message-form .form-item-message-0-value {
-  margin-top: 2em;
-}
-/* line 318, ../sass/layouts/_responsive.scss */
+/* line 261, ../sass/layouts/_responsive.scss */
 .block-contactblock .contact-message-form #edit-submit {
-  border: 7px solid transparent;
+  border: 4px solid transparent;
   -moz-border-image: -moz-linear-gradient(right, #68AD7D 0%, #145460 100%);
   -webkit-border-image: -webkit-linear-gradient(right, #68AD7D 0%, #145460 100%);
   border-image: linear-gradient(to left, #68ad7d 0%, #145460 100%);
   border-image-slice: 1;
   background-color: white;
-  float: right;
-  margin-top: 2em;
-  padding: 0.5em;
+  padding: 0.25em;
   text-transform: uppercase;
 }
 
-/* line 330, ../sass/layouts/_responsive.scss */
+/* line 271, ../sass/layouts/_responsive.scss */
 .block-tweets {
-  float: right;
+  padding: 0 0.5em;
   position: relative;
-  top: 40em;
-  width: 45%;
+  top: 3.5em;
 }
-/* line 336, ../sass/layouts/_responsive.scss */
+/* line 276, ../sass/layouts/_responsive.scss */
 .block-tweets h2 {
   background: url("/themes/systemick/images/twitter.svg") no-repeat 0 0;
   color: white;
   padding-left: 2em;
   margin-bottom: 0.5em;
 }
-/* line 344, ../sass/layouts/_responsive.scss */
-.block-tweets .username {
-  margin-bottom: 2em;
-}
-/* line 348, ../sass/layouts/_responsive.scss */
+/* line 284, ../sass/layouts/_responsive.scss */
 .block-tweets ul {
   list-style: none outside;
   padding: 0;
 }
-/* line 352, ../sass/layouts/_responsive.scss */
+/* line 288, ../sass/layouts/_responsive.scss */
 .block-tweets ul li {
-  padding-bottom: 4em;
+  border-bottom: 1px dotted #58585a;
+  padding: 1em 0;
 }
-/* line 355, ../sass/layouts/_responsive.scss */
+/* line 292, ../sass/layouts/_responsive.scss */
 .block-tweets ul li .tweet-date {
   font-style: italic;
 }
+/* line 296, ../sass/layouts/_responsive.scss */
+.block-tweets ul li:first-child {
+  padding: 0 0 1em 0;
+}
+/* line 300, ../sass/layouts/_responsive.scss */
+.block-tweets ul li:last-child {
+  border-bottom: none;
+}
 
-/* line 362, ../sass/layouts/_responsive.scss */
+/* line 307, ../sass/layouts/_responsive.scss */
 footer {
   background: #40826F;
   background: linear-gradient(to right, #145460, #68ad7d);
-  clear: left;
   color: white;
-  min-height: 6em;
+  padding: 0 0.5em 1em 0.5em;
   position: relative;
-  top: 43em;
+  text-align: center;
+  top: 1em;
   width: 100%;
 }
-/* line 373, ../sass/layouts/_responsive.scss */
+/* line 318, ../sass/layouts/_responsive.scss */
 footer .block a {
   color: white;
   font-weight: bold;
 }
-/* line 379, ../sass/layouts/_responsive.scss */
-footer .block-block-content {
-  float: left;
-  padding-left: 2em;
-}
-/* line 384, ../sass/layouts/_responsive.scss */
+/* line 324, ../sass/layouts/_responsive.scss */
 footer .block-system {
-  float: right;
-  padding-right: 2em;
-  padding-top: 2.5em;
+  padding-bottom: 0.5em;
 }
 
 /* Everything wider than mobile */
+@media all and (min-width: 960px) {
+  /* line 339, ../sass/layouts/_responsive.scss */
+  .contextual-region {
+    position: static;
+  }
+
+  /* line 343, ../sass/layouts/_responsive.scss */
+  header {
+    color: white;
+    display: block;
+    float: left;
+    margin: -1em 0 0 5em;
+    padding-left: 1em;
+    position: relative;
+    top: 2em;
+    z-index: 10;
+  }
+
+  /* line 354, ../sass/layouts/_responsive.scss */
+  .region-primary-menu {
+    float: right;
+    margin-left: 0;
+    margin-right: -2em;
+    position: relative;
+    top: 5em;
+    width: 40%;
+    z-index: 10;
+  }
+  /* line 363, ../sass/layouts/_responsive.scss */
+  .region-primary-menu ul {
+    float: right;
+  }
+  /* line 366, ../sass/layouts/_responsive.scss */
+  .region-primary-menu ul li {
+    color: white;
+    float: left;
+    padding-right: 2em;
+  }
+  /* line 371, ../sass/layouts/_responsive.scss */
+  .region-primary-menu ul li a {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  /* line 376, ../sass/layouts/_responsive.scss */
+  .region-primary-menu ul li a.is-active {
+    color: white;
+    text-decoration: underline;
+  }
+  /* line 383, ../sass/layouts/_responsive.scss */
+  .region-primary-menu ul li:before {
+    color: white;
+    content: ' \25CF';
+    padding-right: 1em;
+  }
+  /* line 389, ../sass/layouts/_responsive.scss */
+  .region-primary-menu ul li:first-child:before {
+    visibility: hidden;
+  }
+  /* line 393, ../sass/layouts/_responsive.scss */
+  .region-primary-menu ul li:last-child {
+    padding-right: 0;
+  }
+
+  /* line 399, ../sass/layouts/_responsive.scss */
+  .node--type-front .field--name-field-banner-image {
+    top: -3em;
+    z-index: 5;
+  }
+
+  /* line 404, ../sass/layouts/_responsive.scss */
+  .node--type-front .field--name-field-site-name {
+    color: white;
+    font-weight: bold;
+    top: 18em;
+  }
+  /* line 409, ../sass/layouts/_responsive.scss */
+  .node--type-front .field--name-field-site-name .inner {
+    border: 7px solid transparent;
+    -moz-border-image: -moz-linear-gradient(right, #68AD7D 0%, #145460 100%);
+    -webkit-border-image: -webkit-linear-gradient(right, #68AD7D 0%, #145460 100%);
+    border-image: linear-gradient(to left, #68ad7d 0%, #145460 100%);
+    border-image-slice: 1;
+    display: inline-block;
+    padding: 0.5em 1em;
+  }
+  /* line 415, ../sass/layouts/_responsive.scss */
+  .node--type-front .field--name-field-site-name .inner h1 {
+    font-size: 112px;
+    margin: 0;
+  }
+
+  /* line 422, ../sass/layouts/_responsive.scss */
+  .node--type-front .field--name-field-strapline {
+    color: white;
+    font-size: 64px;
+    font-weight: bold;
+    padding-top: 1em;
+    top: 6em;
+  }
+  /* line 429, ../sass/layouts/_responsive.scss */
+  .node--type-front .field--name-field-strapline .inner {
+    display: inline-block;
+    padding: 0 1em;
+  }
+  /* line 433, ../sass/layouts/_responsive.scss */
+  .node--type-front .field--name-field-strapline .inner h2 {
+    font-size: 32px;
+  }
+
+  /* line 439, ../sass/layouts/_responsive.scss */
+  .field--name-field-subheading {
+    background: #40826F;
+    background: linear-gradient(to right, #145460, #68ad7d);
+    font-size: 32px;
+    margin-top: -2em;
+    top: 18em;
+  }
+  /* line 446, ../sass/layouts/_responsive.scss */
+  .field--name-field-subheading .inner {
+    display: inline-block;
+  }
+  /* line 449, ../sass/layouts/_responsive.scss */
+  .field--name-field-subheading .inner h3 {
+    font-size: 80px;
+    margin: 0 0 0.5em 0;
+  }
+
+  /* line 456, ../sass/layouts/_responsive.scss */
+  .node--type-front .node--view-mode-full .field--name-body {
+    color: white;
+    margin-top: -2em;
+    padding: 1em 0 4em 0;
+    top: 37em;
+  }
+  /* line 462, ../sass/layouts/_responsive.scss */
+  .node--type-front .node--view-mode-full .field--name-body .inner {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 50%;
+  }
+
+  /* line 470, ../sass/layouts/_responsive.scss */
+  .polygon {
+    -ms-transform: rotate(3deg);
+    /* IE 9 */
+    -webkit-transform: rotate(3deg);
+    /* Safari */
+    transform: rotate(3deg);
+    left: -1em;
+    min-height: 10em;
+    top: 38em;
+  }
+
+  /* line 478, ../sass/layouts/_responsive.scss */
+  .block-views-blockservices-block-1 {
+    padding-top: 1em;
+    position: relative;
+    text-align: center;
+    top: 36em;
+    width: 100%;
+  }
+  /* line 485, ../sass/layouts/_responsive.scss */
+  .block-views-blockservices-block-1 h2 {
+    background: -webkit-linear-gradient(right, #68AD7D, #145460);
+    background: linear-gradient(to left, #68ad7d, #145460);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  /* line 489, ../sass/layouts/_responsive.scss */
+  .block-views-blockservices-block-1 .view-services {
+    margin-left: auto;
+    width: 90%;
+  }
+  /* line 493, ../sass/layouts/_responsive.scss */
+  .block-views-blockservices-block-1 .view-services .views-row {
+    float: left;
+    width: 30%;
+  }
+  /* line 497, ../sass/layouts/_responsive.scss */
+  .block-views-blockservices-block-1 .view-services .views-row .field--name-field-image {
+    margin: 2em 0;
+  }
+  /* line 501, ../sass/layouts/_responsive.scss */
+  .block-views-blockservices-block-1 .view-services .views-row .field--name-body {
+    padding: 0 2em;
+  }
+  /* line 505, ../sass/layouts/_responsive.scss */
+  .block-views-blockservices-block-1 .view-services .views-row .more {
+    background: #40826F;
+    margin: 2em auto 0 auto;
+    padding: 1em 0;
+    text-transform: uppercase;
+    width: 40%;
+  }
+  /* line 512, ../sass/layouts/_responsive.scss */
+  .block-views-blockservices-block-1 .view-services .views-row .more a {
+    color: white;
+  }
+  /* line 519, ../sass/layouts/_responsive.scss */
+  .block-views-blockservices-block-1 h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  /* line 523, ../sass/layouts/_responsive.scss */
+  .block-views-blockservices-block-1 h3 a {
+    color: #40826F;
+  }
+
+  /* line 529, ../sass/layouts/_responsive.scss */
+  .block-views-blocktechnologies-block-1 {
+    background: url("/themes/systemick/images/coding-whiteOverlay.jpeg") no-repeat 30% 25%;
+    clear: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em 0 2em 0;
+    position: relative;
+    top: 39em;
+  }
+  /* line 538, ../sass/layouts/_responsive.scss */
+  .block-views-blocktechnologies-block-1 .inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  /* line 544, ../sass/layouts/_responsive.scss */
+  .block-views-blocktechnologies-block-1 .views-row {
+    float: left;
+    padding-bottom: 0;
+    width: 20%;
+  }
+  /* line 550, ../sass/layouts/_responsive.scss */
+  .block-views-blocktechnologies-block-1 .views-row:last-child {
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 556, ../sass/layouts/_responsive.scss */
+  .block-views-blocktechnologies-block-1 h2 {
+    padding-top: 0;
+  }
+
+  /* line 561, ../sass/layouts/_responsive.scss */
+  .block-contactblock {
+    float: left;
+    padding: 0 0 0 2em;
+    position: relative;
+    top: 40em;
+    width: 45%;
+  }
+  /* line 568, ../sass/layouts/_responsive.scss */
+  .block-contactblock h2 {
+    margin-bottom: 0.5em;
+  }
+  /* line 573, ../sass/layouts/_responsive.scss */
+  .block-contactblock div.hello {
+    margin-bottom: 2em;
+    padding: 0 0 0.5em 0;
+  }
+  /* line 578, ../sass/layouts/_responsive.scss */
+  .block-contactblock div.email {
+    float: left;
+    margin-bottom: 0;
+    padding-left: 2.5em;
+    padding-right: 1em;
+  }
+  /* line 585, ../sass/layouts/_responsive.scss */
+  .block-contactblock div.phone {
+    float: left;
+    padding-bottom: 0.5em;
+    padding-left: 1.5em;
+  }
+  /* line 592, ../sass/layouts/_responsive.scss */
+  .block-contactblock .contact-message-form {
+    margin-top: 2em;
+  }
+  /* line 595, ../sass/layouts/_responsive.scss */
+  .block-contactblock .contact-message-form textarea {
+    height: 6em;
+  }
+  /* line 599, ../sass/layouts/_responsive.scss */
+  .block-contactblock .contact-message-form .form-item-name {
+    float: left;
+    width: 48%;
+  }
+  /* line 604, ../sass/layouts/_responsive.scss */
+  .block-contactblock .contact-message-form .form-item-mail {
+    float: right;
+    width: 50%;
+  }
+  /* line 609, ../sass/layouts/_responsive.scss */
+  .block-contactblock .contact-message-form .form-item-subject-0-value {
+    width: 100%;
+  }
+  /* line 612, ../sass/layouts/_responsive.scss */
+  .block-contactblock .contact-message-form .form-item-subject-0-value input {
+    width: 100%;
+  }
+  /* line 617, ../sass/layouts/_responsive.scss */
+  .block-contactblock .contact-message-form .form-item-message-0-value {
+    margin-top: 2em;
+  }
+  /* line 621, ../sass/layouts/_responsive.scss */
+  .block-contactblock .contact-message-form .form-actions {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  /* line 627, ../sass/layouts/_responsive.scss */
+  .block-contactblock .contact-message-form #edit-submit {
+    float: right;
+    margin-top: 2em;
+  }
+
+  /* line 634, ../sass/layouts/_responsive.scss */
+  .block-tweets {
+    float: right;
+    padding: 0;
+    position: relative;
+    top: 40em;
+    width: 45%;
+  }
+  /* line 641, ../sass/layouts/_responsive.scss */
+  .block-tweets h2 {
+    background: url("/themes/systemick/images/twitter.svg") no-repeat 0 0;
+    color: white;
+    padding-left: 2em;
+    margin-bottom: 0.5em;
+  }
+  /* line 649, ../sass/layouts/_responsive.scss */
+  .block-tweets .username {
+    margin-bottom: 2em;
+  }
+  /* line 653, ../sass/layouts/_responsive.scss */
+  .block-tweets ul {
+    list-style: none outside;
+    padding: 0;
+  }
+  /* line 657, ../sass/layouts/_responsive.scss */
+  .block-tweets ul li {
+    padding: 2em 0;
+  }
+  /* line 660, ../sass/layouts/_responsive.scss */
+  .block-tweets ul li .tweet-date {
+    font-style: italic;
+  }
+  /* line 664, ../sass/layouts/_responsive.scss */
+  .block-tweets ul li:first-child {
+    padding: 0 0 2em 0;
+  }
+
+  /* line 671, ../sass/layouts/_responsive.scss */
+  footer {
+    background: #40826F;
+    background: linear-gradient(to right, #145460, #68ad7d);
+    clear: left;
+    color: white;
+    min-height: 6em;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    top: 43em;
+    width: 100%;
+  }
+  /* line 684, ../sass/layouts/_responsive.scss */
+  footer .block a {
+    color: white;
+    font-weight: bold;
+  }
+  /* line 690, ../sass/layouts/_responsive.scss */
+  footer .block-block-content {
+    float: left;
+    padding-left: 2em;
+  }
+  /* line 695, ../sass/layouts/_responsive.scss */
+  footer .block-system {
+    float: right;
+    padding-right: 2em;
+    padding-top: 2.5em;
+  }
+}
 /* Component (SMACSS module) rules */
 /* SMACSS theme rules */
 /* @import "theme-A"; */
