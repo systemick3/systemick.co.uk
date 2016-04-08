@@ -50,7 +50,7 @@
 // @see http://compass-style.org/reference/compass/typography/vertical_rhythm/
 
 $base-font-size:   16px; // The font size set on the root html element.
-$base-line-height: 24px; // This line-height determines the basic unit of vertical rhythm.
+$base-line-height: 28px; // This line-height determines the basic unit of vertical rhythm.
 
 $h1-font-size: 7    * $base-font-size;
 $h2-font-size: 2    * $base-font-size;
@@ -61,18 +61,20 @@ $h6-font-size: 0.67 * $base-font-size;
 
 // em units for top property on various elements
 $top-header: 0em;
-$top-region-primary-menu: 3em;
+$top-region-primary-menu: 3.5em;
 $top-field-banner-image: 3.5em;
 $top-field-site-name: 6em;
-$top-field-strapline: 9em;
-$top-field-subheading: 10em;
-$top-body: 9em;
-$top-polygon: 13em;
+$top-field-strapline: 8.5em;
+$top-field-subheading: 9em;
+$top-body: 8em;
+$top-polygon: 12em;
 $top-blockservices: 8em;
 $top-blocktechnologies: 6em;
 $top-blockcontact: 5.5em;
 $top-blocktweets: 3.5em;
 $top-footer: 1em;
+$top-block-system-main: 10em;
+//$top-field-site-name: 15em;
 
 // The following font family declarations are based on the Microsoft core web
 // fonts which are common fonts available on most computer systems. The DejaVu

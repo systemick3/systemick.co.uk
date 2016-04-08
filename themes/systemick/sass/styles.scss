@@ -15,6 +15,12 @@
 
 /* Layout rules */
 @import "layouts/responsive";
+@import "layouts/responsive_480";
+@import "layouts/responsive_768";
+@import "layouts/responsive_960";
+@import "layouts/responsive_1024";
+@import "layouts/responsive_1224";
+@import "layouts/responsive_1824";
 
 /* Component (SMACSS module) rules */
 //@import "components/misc";

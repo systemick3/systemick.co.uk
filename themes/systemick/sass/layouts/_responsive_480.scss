@@ -1,0 +1,244 @@
+/* Everything wider than mobile */
+@media all and (min-width: 480px) {
+
+  body {
+    background-position: 0 0;
+  }
+
+  header {
+    color: white;
+    display: block;
+    float: left;
+    margin: -1em 0 0 0.5em;
+    padding-left: 0.5em;
+    position:relative;
+    top:2em;
+    z-index: 10;
+  }
+
+  .region-primary-menu {
+    float:right;
+    margin-left: 0;
+    margin-right: 1em;
+    position: relative;
+    top: 5em;
+    width: 60%;
+    z-index: 10;
+
+    ul {
+      float: right;
+      //list-style-type: none;
+
+      li {
+        color: white;
+        float: left;
+        padding-right: 1em;
+
+        a {
+          color: white;
+          //font-size: 20px;
+          text-transform: uppercase;
+
+          &.is-active {
+            color: white;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      li:before {
+//        color: white;
+//        content: ' \25CF';
+//        padding-right: 1em;
+        visibility: hidden;
+      }
+
+      li:first-child:before {
+        visibility: hidden;
+      }
+
+      li:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .node--type-front .field--name-field-site-name {
+    top: $top-field-site-name;
+  }
+
+  .node--type-front .field--name-field-strapline {
+    top: $top-field-strapline;
+  }
+
+  .field--name-field-subheading {
+    top: $top-field-subheading + 1;
+  }
+
+  .node--type-front .node--view-mode-full .field--name-body {
+    top: $top-body + 1;
+  }
+
+  .polygon {
+    top: $top-polygon + 1;
+  }
+
+  .block-views-blockservices-block-1 {
+    top: $top-blockservices + 1;
+  }
+
+  .block-views-blocktechnologies-block-1 {
+    top: $top-blocktechnologies + 1;
+  }
+
+  .block-contactblock {
+    top: $top-blockcontact + 1;
+  }
+
+  .block-tweets {
+    top: $top-blocktweets + 1;
+  }
+
+  footer {
+    top: $top-footer + 1;
+  }
+
+  ///////////////////////// END OF FRONT /////////////////////////
+
+  .path-node,
+  .path-services,
+  .path-contact {
+
+    main {
+
+      .block-page-title-block {
+        top: $top-field-site-name;
+
+        h1 {
+          margin-right: 12%;
+          span {
+
+          }
+        }
+      }
+
+      .field--name-field-subheading {
+        top: $top-field-subheading - 33;
+      }
+
+      .field--name-body {
+        top: -26em;
+
+        .inner {
+          margin-left: auto;
+        }
+      }
+
+      .polygon-not-front {
+        top: -28em;
+      }
+    }
+
+
+    .block-contactblock {
+      top: $top-blockcontact + 10;
+    }
+
+    .block-tweets {
+      top: $top-blocktweets + 10;
+    }
+
+    footer {
+      top: $top-footer + 10;
+    }
+  }
+
+  .path-services,
+  .path-contact {
+
+    .block-system-main-block {
+      top: $top-block-system-main + 4;
+
+      .view {
+
+        .views-row {
+
+          .more {
+            margin-left: 1.7em;
+          }
+        }
+      }
+    }
+
+    main {
+
+      .block-page-title-block {
+        top: $top-field-site-name +2;
+      }
+
+      .field--name-body {
+
+        .inner {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+
+    .block-contactblock {
+      top: $top-blockcontact + 10;
+    }
+
+    .block-tweets {
+      top: $top-blocktweets + 12;
+    }
+
+    footer {
+      top: $top-footer + 12;
+    }
+  }
+
+  .path-contact {
+
+    footer {
+      top: $top-footer + 14;
+    }
+  }
+
+  .node--type-page {
+
+    main {
+
+      .block-contactblock {
+        top: $top-blockcontact;
+      }
+
+      .block-tweets {
+        top: $top-blocktweets;
+      }
+    }
+
+    footer {
+      top: $top-footer + 4;
+    }
+  }
+
+  .node--type-service {
+
+    main {
+
+      .field--name-body {
+        top: $top-body - 27;
+      }
+
+      .block-contactblock {
+        top: $top-blockcontact + 7;
+      }
+
+      .block-tweets {
+        top: $top-blocktweets + 7;
+      }
+    }
+  }
+
+}

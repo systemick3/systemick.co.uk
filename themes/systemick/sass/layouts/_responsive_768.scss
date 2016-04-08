@@ -1,0 +1,148 @@
+@media all and (min-width: 768px) {
+
+  header {
+    padding-left: 2em;
+  }
+
+  .region-primary-menu {
+    font-size: $base-font-size * 1.1;
+    width: 60%;
+  }
+
+  .node--type-front .field--name-field-site-name {
+    top: $top-field-site-name + 2;
+
+    .inner {
+
+      h1 {
+        font-size: $h2-font-size * 1.7;
+      }
+    }
+  }
+
+  .node--type-front .field--name-field-strapline {
+    top: $top-field-strapline + 4;
+  }
+
+  .field--name-field-subheading {
+    margin-top: 2em;
+    top: $top-field-subheading + 3.5;
+
+    .inner {
+
+      h3 {
+        font-size: $h4-font-size / 1.5;
+        //margin-bottom: 0;
+        //padding: 0;
+      }
+    }
+  }
+
+  .node--type-front .node--view-mode-full .field--name-body {
+    top: $top-body + 4;
+
+    .inner {
+      width: 80%;
+    }
+  }
+
+  .polygon {
+    min-height: 4em;
+    top: $top-polygon + 4;
+  }
+
+  .block-views-blockservices-block-1 {
+    top: $top-blockservices + 4;
+
+    .views-row {
+
+      .field--name-body {
+        margin-left:auto;
+        margin-right:auto;
+        width: 80%;
+      }
+    }
+  }
+
+  .block-views-blocktechnologies-block-1 {
+    top: $top-blocktechnologies + 4;
+  }
+
+  .block-contactblock {
+    padding: 0.5em 2em;
+    top: $top-blockcontact + 4;
+  }
+
+  .block-tweets {
+    padding: 0.5em 2em;
+    top: $top-blocktweets + 4;
+  }
+
+  footer {
+    top: $top-footer + 4;
+  }
+
+  ///////////////////////// END OF FRONT ///////////////////////////
+
+  .path-node,
+  .path-services,
+  .path-contact {
+
+    main {
+
+      .block-page-title-block {
+        top: $top-field-site-name + 2;
+
+        h1 {
+          font-size: $h2-font-size * 1.5;
+        }
+      }
+    }
+
+  }
+
+  .path-services,
+  .path-contact {
+
+    .block-system-main-block {
+      top: $top-block-system-main + 7;
+    }
+
+    .block-contactblock {
+      top: $top-blockcontact + 12;
+    }
+
+    .block-tweets {
+      top: $top-blocktweets + 12;
+    }
+
+    footer {
+      top: $top-footer + 12;
+    }
+  }
+
+  .path-contact {
+
+    footer {
+      top: $top-footer + 17;
+    }
+
+//    .field--name-body {
+//
+//      .inner {
+//        margin-left: auto;
+//        margin-right: auto;
+//      }
+//    }
+  }
+
+  .node--type-service {
+
+    main {
+
+      .block-page-title-block {
+        top: $top-field-site-name;
+      }
+    }
+  }
+}
