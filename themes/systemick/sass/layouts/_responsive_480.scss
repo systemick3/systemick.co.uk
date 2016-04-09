@@ -11,8 +11,8 @@
     float: left;
     margin: -1em 0 0 0.5em;
     padding-left: 0.5em;
-    position:relative;
-    top:2em;
+    //position:relative;
+    //top:2em;
     z-index: 10;
   }
 
@@ -20,8 +20,8 @@
     float:right;
     margin-left: 0;
     margin-right: 1em;
-    position: relative;
-    top: 5em;
+    //position: relative;
+    //top: 5em;
     width: 60%;
     z-index: 10;
 
@@ -64,43 +64,43 @@
   }
 
   .node--type-front .field--name-field-site-name {
-    top: $top-field-site-name;
+    //top: $top-field-site-name;
   }
 
   .node--type-front .field--name-field-strapline {
-    top: $top-field-strapline;
+    //top: $top-field-strapline;
   }
 
   .field--name-field-subheading {
-    top: $top-field-subheading + 1;
+    //top: $top-field-subheading + 1;
   }
 
   .node--type-front .node--view-mode-full .field--name-body {
-    top: $top-body + 1;
+    //top: $top-body + 1;
   }
 
   .polygon {
-    top: $top-polygon + 1;
+    //top: $top-polygon + 1;
   }
 
   .block-views-blockservices-block-1 {
-    top: $top-blockservices + 1;
+    //top: $top-blockservices + 1;
   }
 
   .block-views-blocktechnologies-block-1 {
-    top: $top-blocktechnologies + 1;
+    //top: $top-blocktechnologies + 1;
   }
 
   .block-contactblock {
-    top: $top-blockcontact + 1;
+    //top: $top-blockcontact + 1;
   }
 
   .block-tweets {
-    top: $top-blocktweets + 1;
+    //top: $top-blocktweets + 1;
   }
 
   footer {
-    top: $top-footer + 1;
+    //top: $top-footer + 1;
   }
 
   ///////////////////////// END OF FRONT /////////////////////////
@@ -112,7 +112,7 @@
     main {
 
       .block-page-title-block {
-        top: $top-field-site-name;
+        //top: $top-field-site-name;
 
         h1 {
           margin-right: 12%;
@@ -123,11 +123,11 @@
       }
 
       .field--name-field-subheading {
-        top: $top-field-subheading - 33;
+        //top: $top-field-subheading - 33;
       }
 
       .field--name-body {
-        top: -26em;
+        //top: -26em;
 
         .inner {
           margin-left: auto;
@@ -135,21 +135,21 @@
       }
 
       .polygon-not-front {
-        top: -28em;
+        //top: -28em;
       }
     }
 
 
     .block-contactblock {
-      top: $top-blockcontact + 10;
+      //top: $top-blockcontact + 10;
     }
 
     .block-tweets {
-      top: $top-blocktweets + 10;
+      //top: $top-blocktweets + 10;
     }
 
     footer {
-      top: $top-footer + 10;
+      //top: $top-footer + 10;
     }
   }
 
@@ -157,7 +157,7 @@
   .path-contact {
 
     .block-system-main-block {
-      top: $top-block-system-main + 4;
+      //top: $top-block-system-main + 4;
 
       .view {
 
@@ -173,7 +173,7 @@
     main {
 
       .block-page-title-block {
-        top: $top-field-site-name +2;
+        //top: $top-field-site-name +2;
       }
 
       .field--name-body {
@@ -186,22 +186,22 @@
     }
 
     .block-contactblock {
-      top: $top-blockcontact + 10;
+      //top: $top-blockcontact + 10;
     }
 
     .block-tweets {
-      top: $top-blocktweets + 12;
+      //top: $top-blocktweets + 12;
     }
 
     footer {
-      top: $top-footer + 12;
+      //top: $top-footer + 12;
     }
   }
 
   .path-contact {
 
     footer {
-      top: $top-footer + 14;
+      //top: $top-footer + 14;
     }
   }
 
@@ -210,16 +210,16 @@
     main {
 
       .block-contactblock {
-        top: $top-blockcontact;
+        //top: $top-blockcontact;
       }
 
       .block-tweets {
-        top: $top-blocktweets;
+        //top: $top-blocktweets;
       }
     }
 
     footer {
-      top: $top-footer + 4;
+      //top: $top-footer + 4;
     }
   }
 
@@ -228,15 +228,15 @@
     main {
 
       .field--name-body {
-        top: $top-body - 27;
+        //top: $top-body - 27;
       }
 
       .block-contactblock {
-        top: $top-blockcontact + 7;
+        //top: $top-blockcontact + 7;
       }
 
       .block-tweets {
-        top: $top-blocktweets + 7;
+        //top: $top-blocktweets + 7;
       }
     }
   }

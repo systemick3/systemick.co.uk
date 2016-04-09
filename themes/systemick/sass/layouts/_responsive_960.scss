@@ -1,14 +1,4 @@
 @media all and (min-width: 960px) {
-//  body {
-//    &.path-node,
-//    &.path-services,
-//    &.path-contact {
-//      background-image: url("/themes/systemick/images/office-room-bw_1.jpeg");
-//      background-position: 0 0;
-//      background-repeat: no-repeat;
-//      background-size: contain;
-//    }
-//  }
 
   .contextual-region {
     position: static;
@@ -21,7 +11,7 @@
     margin: -1em 0 0 2em;
     padding-left: 1em;
     position:relative;
-    top:2em;
+    //top:2em;
     z-index: 10;
   }
 
@@ -30,7 +20,7 @@
     margin-left: 0;
     margin-right: 1em;
     position: relative;
-    top: 5em;
+    //top: 5em;
     width: 60%;
     z-index: 10;
 
@@ -72,14 +62,14 @@
   }
 
   .node--type-front .field--name-field-banner-image {
-    top: -3em;
+    //top: -3em;
     z-index: 5;
   }
 
   .node--type-front .field--name-field-site-name {
     color: white;
     font-weight: bold;
-    top: $top-field-site-name + 3;
+    //top: $top-field-site-name + 3;
 
     .inner {
       @include border-gradient($light-green, $dark-green, 7px);
@@ -99,7 +89,7 @@
     font-size: $h4-font-size;
     font-weight: bold;
     padding-top: 1em;
-    top: $top-field-strapline - 5.5;
+    //top: $top-field-strapline - 5.5;
 
     .inner {
       display: inline-block;
@@ -115,8 +105,8 @@
     @include bg-gradient($light-green, $dark-green);
 
     font-size: $h2-font-size;
-    margin-top: -2em;
-    top: $top-field-subheading - 0.5;
+    //margin-top: -2em;
+    //top: $top-field-subheading - 0.5;
 
     .inner {
       display:inline-block;
@@ -130,9 +120,9 @@
 
   .node--type-front .node--view-mode-full .field--name-body {
     color: white;
-    margin-top: -2em;
+    //margin-top: -2em;
     padding: 1em 0 4em 0;
-    top: $top-body + 10;
+    //top: $top-body + 10;
 
     .inner {
       margin-left: auto;
@@ -147,8 +137,7 @@
 
     left: -1em;
     min-height: 10em;
-    top: 38em;
-    top: $top-polygon + 13;
+    //top: $top-polygon + 13;
     width: 105%;
   }
 
@@ -156,7 +145,7 @@
     padding-top: 1em;
     position:relative;
     text-align: center;
-    top: $top-blockservices + 10;
+    //top: $top-blockservices + 10;
     width: 100%;
 
     h2 {
@@ -210,7 +199,7 @@
     margin-right: auto;
     padding: 0.5em 0 2em 0;
     position:relative;
-    top: $top-blocktechnologies + 14;
+    //top: $top-blocktechnologies + 14;
 
     .inner {
       margin-left: auto;
@@ -239,7 +228,7 @@
     float: left;
     padding: 0 0 0 2em;
     position: relative;
-    top: $top-blockcontact + 14;
+    //top: $top-blockcontact + 14;
     width: 45%;
 
     h2 {
@@ -312,7 +301,7 @@
     float: right;
     padding: 0 2em 0 0;
     position: relative;
-    top: $top-blocktweets + 16;
+    //top: $top-blocktweets + 16;
     width: 45%;
 
     h2 {
@@ -354,7 +343,7 @@
     padding: 0;
     position:relative;
     text-align: left;
-    top: $top-footer + 21;
+    //top: $top-footer + 21;
     width: 100%;
 
     .block {
@@ -385,7 +374,7 @@
   .path-contact {
     main {
       .block-page-title-block {
-        top: $top-field-site-name + 2;
+        //top: $top-field-site-name + 2;
         width: 60%;
 
         h1 {
@@ -394,21 +383,7 @@
       }
 
       .field--name-field-subheading {
-        //@include bg-gradient($light-green, $dark-green);
-
-        //font-size: $h2-font-size;
-        //margin-top: -2em;
-        //min-height: 8em;
-        top: $top-field-subheading - 12.5;
-
-//        .inner {
-//          display:inline-block;
-//
-//          h3 {
-//            font-size: $h3-font-size;
-//            margin: 0 0 0.5em 0;
-//          }
-//        }
+        //top: $top-field-subheading - 12.5;
       }
 
       .field--name-body {
@@ -429,7 +404,7 @@
 
       .polygon-not-front {
         min-height: 10em;
-        top: $top-polygon - 32.5;
+        //top: $top-polygon - 32.5;
       }
     }
 
@@ -494,14 +469,14 @@
     }
 
     footer {
-      margin-top: 2em;
+      //margin-top: 2em;
     }
   }
 
   .path-contact {
     .block-system-main-block {
       padding: 0 5em;
-      top: $top-block-system-main + 5;
+      //top: $top-block-system-main + 5;
     }
   }
 
@@ -510,16 +485,16 @@
     main {
 
       .block-contactblock {
-        top: $top-blockcontact + 14;
+        //top: $top-blockcontact + 14;
       }
 
       .block-tweets {
-        top: $top-blockcontact + 14;
+        //top: $top-blockcontact + 14;
       }
     }
 
     footer {
-      top: $top-footer + 21;
+      //top: $top-footer + 21;
     }
   }
 
@@ -528,24 +503,24 @@
     main {
 
       .block-page-title-block {
-        top: $top-field-site-name;
+        //top: $top-field-site-name;
       }
 
       .field--name-body {
-        top: $top-body - 27;
+        //top: $top-body - 27;
       }
 
       .block-contactblock {
-        top: $top-blockcontact + 8;
+        //top: $top-blockcontact + 8;
       }
 
       .block-tweets {
-        top: $top-blocktweets + 10;
+        //top: $top-blocktweets + 10;
       }
     }
 
     footer {
-      top: $top-footer + 15;
+      //top: $top-footer + 15;
     }
   }
 }

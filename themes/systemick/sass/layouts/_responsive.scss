@@ -16,15 +16,6 @@ body {
 
   font-size: $base-font-size + 4;
   width:100%;
-
-//  &.path-node,
-//  &.path-services,
-//  &.path-contact {
-//    //background-image: url("/themes/systemick/images/office-room-bw_1.jpeg");
-//    background-position: 0 3.5em;
-//    //background-repeat: no-repeat;
-//    //background-size: contain;
-//  }
 }
 
 .contextual-region {
@@ -67,8 +58,8 @@ header {
 
 .region-primary-menu {
   font-size: $base-font-size;
-  position: relative;
-  top: $top-region-primary-menu;
+  //position: relative;
+  //top: $top-region-primary-menu;
   width: 100%;
 
   ul {
@@ -105,15 +96,15 @@ header {
 }
 
 .node--type-front .field--name-field-banner-image {
-  position: absolute;
-  top: $top-field-banner-image;
+  //position: absolute;
+  //top: $top-field-banner-image;
   z-index: 5;
 }
 
 .node--type-front .field--name-field-site-name {
-  position:absolute;
+  //position:absolute;
   text-align: center;
-  top: $top-field-site-name;
+  //top: $top-field-site-name;
   width:100%;
   z-index: 10;
 
@@ -132,10 +123,10 @@ header {
 
 .node--type-front .field--name-field-strapline {
   padding-top: 0.5em;
-  position: absolute;
+  //position: absolute;
   text-align: center;
   text-transform: uppercase;
-  top: $top-field-strapline;
+  //top: $top-field-strapline;
   width: 100%;
   z-index: 10;
 
@@ -151,9 +142,9 @@ header {
 .field--name-field-subheading {
   @include bg-gradient($light-green, $dark-green);
 
-  position:relative;
+  //position:relative;
   text-align: center;
-  top: $top-field-subheading;
+  //top: $top-field-subheading;
   width: 100%;
   z-index: 30;
 
@@ -171,8 +162,8 @@ header {
   @include bg-gradient($light-green, $dark-green);
 
   color: white;
-  position:relative;
-  top: $top-body;
+  //position:relative;
+  //top: $top-body;
   width: 100%;
   z-index: 20;
 
@@ -195,8 +186,8 @@ header {
   @include div-rot($rot-amount);
 
   min-height: 3em;
-  position: relative;
-  top: $top-polygon;
+  //position: relative;
+  //top: $top-polygon;
   width: 101%;
   z-index: 20;
 }
@@ -206,9 +197,9 @@ header {
 }
 
 .block-views-blockservices-block-1 {
-  position:relative;
+  //position:relative;
   text-align: center;
-  top: $top-blockservices;
+  //top: $top-blockservices;
   width: 100%;
 
   h2 {
@@ -238,9 +229,9 @@ header {
 
 .block-views-blocktechnologies-block-1 {
   background: url("/themes/systemick/images/coding-whiteOverlay.jpeg") no-repeat 30% 30%;
-  position:relative;
+  //position:relative;
   text-align: center;
-  top: $top-blocktechnologies;
+  //top: $top-blocktechnologies;
   width: 100%;
 
   .views-row {
@@ -263,8 +254,8 @@ header {
 
 .block-contactblock {
   padding: 0.5em;
-  position: relative;
-  top: $top-blockcontact;
+  //position: relative;
+  //top: $top-blockcontact;
 
   h2 {
     @include text-gradient($light-green, $dark-green);
@@ -326,8 +317,8 @@ header {
 
 .block-tweets {
   padding: 0 0.5em;
-  position: relative;
-  top: $top-blocktweets;
+  //position: relative;
+  //top: $top-blocktweets;
 
   h2 {
     background: url("/themes/systemick/images/twitter.svg") no-repeat 0 0;
@@ -365,9 +356,9 @@ footer {
 
   color: white;
   padding: 0 0.5em 1em 0.5em;
-  position:relative;
+  //position:relative;
   text-align: center;
-  top: $top-footer;
+  //top: $top-footer;
   width: 100%;
 
   .block {
@@ -393,8 +384,8 @@ footer {
 
       margin-left: auto;
       margin-right: auto;
-      position: relative;
-      top: $top-field-site-name + 1;
+      //position: relative;
+      //top: $top-field-site-name + 1;
       width: 60%;
 
       h1 {
@@ -412,15 +403,15 @@ footer {
     }
 
     .field--name-field-subheading {
-      top: $top-polygon - 37;
+      //top: $top-polygon - 37;
     }
 
     .field--name-body {
       @include bg-gradient($light-green, $dark-green);
 
       color: white;
-      position:relative;
-      top: $top-body - 28;
+      //position:relative;
+      //top: $top-body - 28;
       width: 100%;
       z-index: 20;
 
@@ -445,24 +436,24 @@ footer {
       display: block;
       margin-left: -0.5em;
       min-height: 6em;
-      position: relative;
-      //top: -25em;
-      top: $top-polygon - 41;
+      //position: relative;
+      //top: $top-polygon - 41;
       width: 105%;
       z-index: 20;
     }
   }
 
   .block-contactblock {
-    top: $top-blockcontact + 6;
+    //top: $top-blockcontact + 6;
   }
 
   .block-tweets {
-    top: $top-blocktweets + 6;
+    //top: $top-blocktweets + 6;
   }
 
   footer {
-    top: $top-footer + 2;
+    //top: $top-footer + 2;
+
     .block-block-content {
       margin-top: $top-footer;
     }
@@ -481,20 +472,20 @@ footer {
   main {
 
     .field--name-body {
-      top: $top-body - 36;
+      //top: $top-body - 36;
     }
 
     .block-contactblock {
-      top: $top-blockcontact - 2;
+      //top: $top-blockcontact - 2;
     }
 
     .block-tweets {
-      top: $top-blocktweets - 2;
+      //top: $top-blocktweets - 2;
     }
 
     footer {
       .block-block-content {
-        margin-top: $top-footer + 4;
+        //margin-top: $top-footer + 4;
       }
     }
   }
@@ -503,8 +494,8 @@ footer {
 .path-services,
 .path-contact {
   .block-system-main-block {
-    position: relative;
-    top: $top-block-system-main;
+    //position: relative;
+    //top: $top-block-system-main;
 
     h3 {
       font-size: $h3-font-size / 3;
@@ -535,7 +526,7 @@ footer {
         .field--name-body {
           background: none;
           color: $medium-green;
-          top: 3.5em;
+          //top: 3.5em;
         }
 
         .more {
@@ -547,15 +538,15 @@ footer {
   }
 
   .block-contactblock {
-    top: 9.5em;
+    //top: 9.5em;
   }
 
   .block-tweets {
-    top: 8.5em;
+    //top: 8.5em;
   }
 
   footer {
-    top: $top-footer + 4;
+    //top: $top-footer + 4;
   }
 }
 
@@ -575,14 +566,14 @@ footer {
   }
 
   footer {
-    top: $top-footer + 10;
+    //top: $top-footer + 10;
   }
 }
 
 .path-node {
   .block-system-main-block {
-    position: relative;
-    top: 32em;
+    //position: relative;
+    //top: 32em;
 
     .field--name-field-image {
 
@@ -600,713 +591,3 @@ footer {
 
   }
 }
-
-///* Everything wider than mobile */
-//@media all and (min-width: 480px) {
-//
-//  .node--type-front .field--name-field-site-name {
-//    top: $top-field-site-name + 6;
-//  }
-//
-//  .node--type-front .field--name-field-strapline {
-//    top: $top-field-strapline + 6;
-//  }
-//
-//  .field--name-field-subheading {
-//    top: $top-field-subheading + 6;
-//  }
-//
-//  .node--type-front .node--view-mode-full .field--name-body {
-//    top: $top-body + 6;
-//  }
-//
-//  .polygon {
-//    top: $top-polygon + 6;
-//  }
-//
-//  .block-views-blockservices-block-1 {
-//    top: $top-blockservices + 6;
-//  }
-//
-//  .block-views-blocktechnologies-block-1 {
-//    top: $top-blocktechnologies + 6;
-//  }
-//
-//  .block-contactblock {
-//    top: $top-blockcontact + 6;
-//  }
-//
-//  .block-tweets {
-//    top: $top-blocktweets + 6;
-//  }
-//
-//  footer {
-//    top: $top-footer + 6;
-//  }
-//
-//}
-
-//@media all and (min-width: 768px) and (max-width: 959px) {
-//  .node--type-front .field--name-field-site-name {
-//    top: $top-field-site-name + 10;
-//  }
-//
-//  .node--type-front .field--name-field-strapline {
-//    top: $top-field-strapline + 10;
-//  }
-//
-//  .field--name-field-subheading {
-//    top: $top-field-subheading + 9.5;
-//  }
-//
-//  .node--type-front .node--view-mode-full .field--name-body {
-//    top: $top-body + 10;
-//  }
-//
-//  .polygon {
-//    top: $top-polygon + 10;
-//  }
-//
-//  .block-views-blockservices-block-1 {
-//    top: $top-blockservices + 10;
-//  }
-//
-//  .block-views-blocktechnologies-block-1 {
-//    top: $top-blocktechnologies + 10;
-//  }
-//
-//  .block-contactblock {
-//    top: $top-blockcontact + 10;
-//  }
-//
-//  .block-tweets {
-//    top: $top-blocktweets + 10;
-//  }
-//
-//  footer {
-//    top: $top-footer + 10;
-//  }
-//}
-
-@media all and (min-width: 480px) and (max-width: 959px) {
-
-}
-
-//@media all and (min-width: 960px) {
-//  body {
-//    &.path-node,
-//    &.path-services,
-//    &.path-contact {
-//      background-image: url("/themes/systemick/images/office-room-bw_1.jpeg");
-//      background-position: 0 0;
-//      background-repeat: no-repeat;
-//      background-size: contain;
-//    }
-//  }
-//
-//  .contextual-region {
-//    position: static;
-//  }
-//
-//  header {
-//    color: white;
-//    display: block;
-//    float: left;
-//    margin: -1em 0 0 2em;
-//    padding-left: 1em;
-//    position:relative;
-//    top:2em;
-//    z-index: 10;
-//  }
-//
-//  .region-primary-menu {
-//    float:right;
-//    margin-left: 0;
-//    margin-right: 1em;
-//    position: relative;
-//    top: 5em;
-//    width: 60%;
-//    z-index: 10;
-//
-//    ul {
-//      float: right;
-//
-//      li {
-//        color: white;
-//        float: left;
-//        padding-right: 2em;
-//
-//        a {
-//          color: white;
-//          font-size: 20px;
-//          text-transform: uppercase;
-//
-//          &.is-active {
-//            color: white;
-//            text-decoration: underline;
-//          }
-//        }
-//      }
-//
-//      li:before {
-//        color: white;
-//        content: ' \25CF';
-//        padding-right: 1em;
-//      }
-//
-//      li:first-child:before {
-//        visibility: hidden;
-//      }
-//
-//      li:last-child {
-//        padding-right: 0;
-//      }
-//    }
-//  }
-//
-//  .node--type-front .field--name-field-banner-image {
-//    top: -3em;
-//    z-index: 5;
-//  }
-//
-//  .node--type-front .field--name-field-site-name {
-//    color: white;
-//    font-weight: bold;
-//    top: $top-field-site-name + 3;
-//
-//    .inner {
-//      @include border-gradient($light-green, $dark-green, 7px);
-//
-//      display: inline-block;
-//      padding: 0.5em 1em;
-//
-//      h1 {
-//        font-size: $h1-font-size;
-//        margin: 0;
-//      }
-//    }
-//  }
-//
-//  .node--type-front .field--name-field-strapline {
-//    color: white;
-//    font-size: $h4-font-size;
-//    font-weight: bold;
-//    padding-top: 1em;
-//    top: $top-field-strapline - 5.5;
-//
-//    .inner {
-//      display: inline-block;
-//      padding: 0 1em;
-//
-//      h2 {
-//        font-size: $h2-font-size;
-//      }
-//    }
-//  }
-//
-//  .field--name-field-subheading {
-//    @include bg-gradient($light-green, $dark-green);
-//
-//    font-size: $h2-font-size;
-//    margin-top: -2em;
-//    top: $top-field-subheading - 0.5;
-//
-//    .inner {
-//      display:inline-block;
-//
-//      h3 {
-//        font-size: $h3-font-size;
-//        margin: 0 0 0.5em 0;
-//      }
-//    }
-//  }
-//
-//  .node--type-front .node--view-mode-full .field--name-body {
-//    color: white;
-//    margin-top: -2em;
-//    padding: 1em 0 4em 0;
-//    top: $top-body + 10;
-//
-//    .inner {
-//      margin-left: auto;
-//      margin-right: auto;
-//      padding: 0;
-//      width: 50%;
-//    }
-//  }
-//
-//  .polygon {
-//    @include div-rot($rot-amount);
-//
-//    left: -1em;
-//    min-height: 10em;
-//    top: 38em;
-//    top: $top-polygon + 10;
-//    width: 105%;
-//  }
-//
-//  .block-views-blockservices-block-1 {
-//    padding-top: 1em;
-//    position:relative;
-//    text-align: center;
-//    top: $top-blockservices + 10;
-//    width: 100%;
-//
-//    h2 {
-//      @include text-gradient($light-green, $dark-green);
-//    }
-//
-//    .view-services {
-//      margin-left: auto;
-//      width: 90%;
-//
-//      .views-row {
-//        float: left;
-//        width: 30%;
-//
-//        .field--name-field-image {
-//          margin: 2em 0;
-//        }
-//
-//        .field--name-body {
-//          padding: 0 2em;
-//        }
-//
-//        .more {
-//          background: $medium-green;
-//          margin: 2em auto 0 auto;
-//          padding: 1em 0;
-//          text-transform: uppercase;
-//          width: 40%;
-//
-//          a {
-//            color: white;
-//          }
-//        }
-//      }
-//    }
-//
-//    h3 {
-//      font-size: $h4-font-size / 4;
-//      text-transform: uppercase;
-//
-//      a {
-//        color: $medium-green;
-//      }
-//    }
-//  }
-//
-//  .block-views-blocktechnologies-block-1 {
-//    background: url("/themes/systemick/images/coding-whiteOverlay.jpeg") no-repeat 30% 25%;
-//    clear: left;
-//    margin-left: auto;
-//    margin-right: auto;
-//    padding: 0.5em 0 2em 0;
-//    position:relative;
-//    top: $top-blocktechnologies + 14;
-//
-//    .inner {
-//      margin-left: auto;
-//      margin-right: auto;
-//      width: 90%;
-//    }
-//
-//    .views-row {
-//      float: left;
-//      padding-bottom: 0;
-//      width: 20%;
-//    }
-//
-//    .views-row:last-child {
-//      float: left;
-//      margin-left: 0;
-//      margin-right: 0;
-//    }
-//
-//    h2 {
-//      padding-top: 0;
-//    }
-//  }
-//
-//  .block-contactblock {
-//    float: left;
-//    padding: 0 0 0 2em;
-//    position: relative;
-//    top: $top-blockcontact + 14;
-//    width: 45%;
-//
-//    h2 {
-//      margin-bottom: 0.5em;
-//    }
-//
-//    div {
-//      &.hello {
-//        margin-bottom: 2em;
-//        padding: 0 0 0.5em 0;
-//      }
-//
-//      &.email {
-//        float: left;
-//        margin-bottom: 0;
-//        padding-left: 2.5em;
-//        padding-right: 1em;
-//      }
-//
-//      &.phone {
-//        float: left;
-//        padding-bottom: 0.5em;
-//        padding-left: 1.5em;
-//      }
-//    }
-//
-//    .contact-message-form {
-//      margin-top: 2em;
-//
-//      textarea {
-//        height: 6em;
-//      }
-//
-//      .form-item-name {
-//        float: left;
-//        width: 48%;
-//      }
-//
-//      .form-item-mail {
-//        float: right;
-//        width: 50%;
-//      }
-//
-//      .form-item-subject-0-value {
-//        width: 100%;
-//
-//        input {
-//          width: 100%;
-//        }
-//      }
-//
-//      .form-item-message-0-value {
-//        margin-top: 2em;
-//      }
-//
-//      .form-actions {
-//        margin-left: 0;
-//        margin-right: 0;
-//        width: 100%;
-//      }
-//
-//      #edit-submit {
-//        float: right;
-//        margin-top: 2em;
-//      }
-//    }
-//  }
-//
-//  .block-tweets {
-//    float: right;
-//    padding: 0;
-//    position: relative;
-//    top: $top-blocktweets + 16;
-//    width: 45%;
-//
-//    h2 {
-//      background: url("/themes/systemick/images/twitter.svg") no-repeat 0 0;
-//      color: white;
-//      padding-left: 2em;
-//
-//      margin-bottom: 0.5em;
-//    }
-//
-//    .username {
-//      margin-bottom: 2em;
-//    }
-//
-//    ul {
-//      list-style: none outside;
-//      padding: 0;
-//
-//      li {
-//        padding: 2em 0;
-//
-//        .tweet-date {
-//          font-style: italic;
-//        }
-//
-//        &:first-child {
-//          padding: 0 0 2em 0;
-//        }
-//      }
-//    }
-//  }
-//
-//  footer {
-//    @include bg-gradient($light-green, $dark-green);
-//
-//    clear: left;
-//    color: white;
-//    min-height: 6em;
-//    padding: 0;
-//    position:relative;
-//    text-align: left;
-//    top: $top-footer + 21;
-//    width: 100%;
-//
-//    .block {
-//      a {
-//        color: white;
-//        font-weight: bold;
-//      }
-//    }
-//
-//    .block-block-content {
-//      float: left;
-//      padding-left: 2em;
-//    }
-//
-//    .block-system {
-//      float: right;
-//      padding-right: 2em;
-//      padding-top: 2.5em;
-//    }
-//  }
-//
-//  ///////////////////// END OF FRONT PAGE //////////////////////////
-//
-//  .path-node,
-//  .path-services,
-//  .path-contact {
-//    main {
-//      .block-page-title-block {
-//        top: $top-field-site-name + 9;
-//        width: 60%;
-//
-//        h1 {
-//          font-size: $h1-font-size * 0.8;
-//        }
-//      }
-//
-//      .field--name-body {
-//        margin-left: auto;
-//        margin-right: auto;
-//        top: $top-body + 19;
-//      }
-//
-//      .polygon-not-front {
-//        min-height: 6em;
-//        top: $top-polygon + 14;
-//      }
-//    }
-//  }
-//
-//  .path-services,
-//  .path-contact {
-//    .block-system-main-block {
-//      position: relative;
-//      top: 33em;
-//
-//      h3 {
-//        font-size: $h3-font-size / 2;
-//        text-align: center;
-//      }
-//
-//      a:hover {
-//        text-decoration: none;
-//      }
-//
-//      .view {
-//        margin-left: auto;
-//        margin-right: auto;
-//        width: 70%;
-//
-//        .views-row {
-//          .polygon-not-front {
-//            display: none;
-//          }
-//
-//          .field--name-field-image {
-//            float: left;
-//            width: 25%;
-//          }
-//
-//          .field--name-body {
-//            background: none;
-//            color: $medium-green;
-//            float: right;
-//            position: relative;
-//            top: -3em;
-//            width: 75%;
-//
-//            .inner {
-//              width: 100%;
-//            }
-//          }
-//
-//          .more {
-//            left: 1em;
-//            margin-top: -5em;
-//            position: relative;
-//          }
-//        }
-//      }
-//    }
-//
-//    footer {
-//      margin-top: 2em;
-//    }
-//  }
-//
-//  .path-contact {
-//    .block-system-main-block {
-//      padding: 0 5em;
-//    }
-//  }
-//}
-
-//@media all and (min-width: 1024px) {
-//  header {
-//    margin: -1em 0 0 1em;
-//  }
-//
-//  .region-primary-menu {
-//    margin-right: -1em;
-//  }
-//
-//  .node--type-front .field--name-field-site-name {
-//    top: $top-field-site-name + 4;
-//  }
-//
-//  .node--type-front .field--name-field-strapline {
-//    top: $top-field-strapline - 5;
-//  }
-//
-//  .field--name-field-subheading {
-//    top: $top-field-subheading + 1.5;
-//  }
-//
-//  .node--type-front .node--view-mode-full .field--name-body {
-//    top: $top-body + 10;
-//  }
-//
-//  .polygon {
-//    top: $top-polygon + 7;
-//  }
-//
-//  .block-views-blockservices-block-1 {
-//    top: $top-blockservices + 15;
-//  }
-//
-//  .block-views-blocktechnologies-block-1 {
-//    top: $top-blocktechnologies + 19;
-//  }
-//
-//  .block-contactblock {
-//    top: $top-blockcontact + 19;
-//  }
-//
-//  .block-tweets {
-//    top: $top-blocktweets + 21;
-//  }
-//
-//  footer {
-//    top: $top-footer + 25;
-//  }
-//}
-
-//@media all and (min-width: 1224px) {
-//  header {
-//    margin: -1em 0 0 3em;
-//  }
-//
-//  .region-primary-menu {
-//    margin-right: -18em;
-//  }
-//
-//  .node--type-front .field--name-field-site-name {
-//    top: $top-field-site-name + 8;
-//  }
-//
-//  .node--type-front .field--name-field-strapline {
-//    top: $top-field-strapline - 2.5;
-//  }
-//
-//  .field--name-field-subheading {
-//    top: $top-field-subheading + 5.5;
-//  }
-//
-//  .node--type-front .node--view-mode-full .field--name-body {
-//    top: $top-body + 17;
-//  }
-//
-//  .polygon {
-//    top: $top-polygon + 16;
-//  }
-//
-//  .block-views-blockservices-block-1 {
-//    top: $top-blockservices + 22;
-//  }
-//
-//  .block-views-blocktechnologies-block-1 {
-//    top: $top-blocktechnologies + 26;
-//  }
-//
-//  .block-contactblock {
-//    top: $top-blockcontact + 26;
-//  }
-//
-//  .block-tweets {
-//    top: $top-blocktweets + 28;
-//  }
-//
-//  footer {
-//    top: $top-footer + 32;
-//  }
-//}
-
-//@media all and (min-width: 1824px) {
-//  header {
-//    margin: -1em 0 0 5em;
-//  }
-//
-//  .region-primary-menu {
-//    margin-right: -25em;
-//  }
-//
-//  .node--type-front .field--name-field-site-name {
-//    top: $top-field-site-name + 10;
-//  }
-//
-//  .node--type-front .field--name-field-strapline {
-//    top: $top-field-strapline - 3.5;
-//  }
-//
-//  .field--name-field-subheading {
-//    top: $top-field-subheading + 9.5;
-//  }
-//
-//  .node--type-front .node--view-mode-full .field--name-body {
-//    top: $top-body + 30;
-//  }
-//
-//  .polygon {
-//    top: $top-polygon + 28;
-//  }
-//
-//  .block-views-blockservices-block-1 {
-//    top: $top-blockservices + 30;
-//  }
-//
-//  .block-views-blocktechnologies-block-1 {
-//    top: $top-blocktechnologies + 34;
-//  }
-//
-//  .block-contactblock {
-//    top: $top-blockcontact + 34;
-//  }
-//
-//  .block-tweets {
-//    top: $top-blocktweets + 36;
-//  }
-//
-//  footer {
-//    top: $top-footer + 40;
-//  }
-//}
