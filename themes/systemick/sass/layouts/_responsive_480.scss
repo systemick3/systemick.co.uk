@@ -56,6 +56,10 @@
         //visibility: hidden;
       }
 
+      li:first-child {
+        padding-left: 2em;
+      }
+
       li:first-child:before {
         visibility: hidden;
       }
