@@ -2,10 +2,6 @@
  * @file
  * Positioning for a responsive layout.
  *
- * Define CSS classes to create a fluid grid layout with optional sidebars
- * depending on whether blocks are placed in the left or right sidebars.
- *
- * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
  */
 
 body {
@@ -441,36 +437,10 @@ footer {
   }
 }
 
-.node--type-page {
-
-  main {
-
-    .field--name-body {
-      //top: $top-body - 36;
-    }
-
-    .block-contactblock {
-      //top: $top-blockcontact - 2;
-    }
-
-    .block-tweets {
-      //top: $top-blocktweets - 2;
-    }
-
-    footer {
-      .block-block-content {
-        //margin-top: $top-footer + 4;
-      }
-    }
-  }
-}
-
 .path-services,
 .path-contact {
   .block-system-main-block {
     margin-top: 6em;
-    //position: relative;
-    //top: $top-block-system-main;
 
     h3 {
       font-size: $h3-font-size / 3;
@@ -501,7 +471,6 @@ footer {
         .field--name-body {
           background: none;
           color: $medium-green;
-          //top: 3.5em;
         }
 
         .more {
@@ -510,18 +479,6 @@ footer {
         }
       }
     }
-  }
-
-  .block-contactblock {
-    //top: 9.5em;
-  }
-
-  .block-tweets {
-    //top: 8.5em;
-  }
-
-  footer {
-    //top: $top-footer + 4;
   }
 }
 
@@ -539,16 +496,10 @@ footer {
       margin-left: 0;
     }
   }
-
-  footer {
-    //top: $top-footer + 10;
-  }
 }
 
 .path-node {
   .block-system-main-block {
-    //position: relative;
-    //top: 32em;
 
     .field--name-field-image {
 
