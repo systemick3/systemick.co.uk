@@ -852,7 +852,7 @@ header {
   background: linear-gradient(to left, #68ad7d, #145460);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 0.1em;
+  margin-bottom: 0.5em;
 }
 /* line 253, ../sass/layouts/_responsive.scss */
 .block-contactblock div.hello {
@@ -1043,67 +1043,76 @@ footer .block-system {
 }
 
 /* line 435, ../sass/layouts/_responsive.scss */
+.node--type-service .block-system-main-block {
+  margin-top: 3em;
+}
+/* line 439, ../sass/layouts/_responsive.scss */
 .node--type-service .field--name-field-image {
   visibility: visible;
 }
 
 /* line 470, ../sass/layouts/_responsive.scss */
+.path-services .block-system-main-block,
+.path-contact .block-system-main-block {
+  margin-top: 6em;
+}
+/* line 475, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block h3,
 .path-contact .block-system-main-block h3 {
   font-size: 26.66667px;
   text-align: center;
 }
-/* line 475, ../sass/layouts/_responsive.scss */
+/* line 480, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block a:hover,
 .path-contact .block-system-main-block a:hover {
   text-decoration: none;
 }
-/* line 485, ../sass/layouts/_responsive.scss */
+/* line 490, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .field--name-field-image .inner,
 .path-contact .block-system-main-block .view .views-row .field--name-field-image .inner {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
 }
-/* line 490, ../sass/layouts/_responsive.scss */
+/* line 495, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .field--name-field-image .inner img,
 .path-contact .block-system-main-block .view .views-row .field--name-field-image .inner img {
   margin-left: 2em;
 }
-/* line 496, ../sass/layouts/_responsive.scss */
+/* line 501, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .field--name-body,
 .path-contact .block-system-main-block .view .views-row .field--name-body {
   background: none;
   color: #40826F;
 }
-/* line 502, ../sass/layouts/_responsive.scss */
+/* line 507, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .more,
 .path-contact .block-system-main-block .view .views-row .more {
   font-weight: bold;
   margin: 1em 0 0 1em;
 }
 
-/* line 524, ../sass/layouts/_responsive.scss */
+/* line 529, ../sass/layouts/_responsive.scss */
 .path-services footer {
   margin-top: 5em;
 }
 
-/* line 530, ../sass/layouts/_responsive.scss */
+/* line 535, ../sass/layouts/_responsive.scss */
 .path-contact .block-system-main-block {
   padding: 0 0.5em;
 }
-/* line 533, ../sass/layouts/_responsive.scss */
+/* line 538, ../sass/layouts/_responsive.scss */
 .path-contact .block-system-main-block .form-actions {
   margin-left: 0;
 }
 
-/* line 550, ../sass/layouts/_responsive.scss */
+/* line 555, ../sass/layouts/_responsive.scss */
 .path-node .block-system-main-block .field--name-field-image .inner {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
-/* line 555, ../sass/layouts/_responsive.scss */
+/* line 560, ../sass/layouts/_responsive.scss */
 .path-node .block-system-main-block .field--name-field-image .inner img {
   margin-left: auto;
   margin-right: auto;

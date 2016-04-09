@@ -246,7 +246,7 @@ header {
   h2 {
     @include text-gradient($light-green, $dark-green);
 
-    margin-bottom: 0.1em;
+    margin-bottom: 0.5em;
   }
 
   div {
@@ -432,6 +432,10 @@ footer {
 
 .node--type-service {
 
+  .block-system-main-block {
+    margin-top: 3em;
+  }
+
   .field--name-field-image {
     visibility: visible;
   }
@@ -464,6 +468,7 @@ footer {
 .path-services,
 .path-contact {
   .block-system-main-block {
+    margin-top: 6em;
     //position: relative;
     //top: $top-block-system-main;
 
