@@ -295,6 +295,7 @@ header {
       @include border-gradient($light-green, $dark-green, 4px);
 
       background-color: white;
+      font-size: $base-font-size + 3;
       padding: 0.25em;
       text-transform: uppercase;
     }
