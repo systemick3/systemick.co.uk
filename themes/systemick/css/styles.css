@@ -1027,7 +1027,7 @@ footer .block-system {
 .path-services main .polygon,
 .path-contact main .polygon {
   position: absolute;
-  top: 12em;
+  top: 11.5em;
 }
 /* line 420, ../sass/layouts/_responsive.scss */
 .path-node main .polygon-not-front,
