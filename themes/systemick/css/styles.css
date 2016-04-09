@@ -684,14 +684,14 @@ header {
 }
 
 /* line 99, ../sass/layouts/_responsive.scss */
-.node--type-front .field--name-field-site-name {
+.field--name-field-site-name {
   margin-top: 5em;
   text-align: center;
   width: 100%;
   z-index: 10;
 }
 /* line 105, ../sass/layouts/_responsive.scss */
-.node--type-front .field--name-field-site-name .inner {
+.field--name-field-site-name .inner {
   border: 4px solid transparent;
   -moz-border-image: -moz-linear-gradient(right, #68AD7D 0%, #145460 100%);
   -webkit-border-image: -webkit-linear-gradient(right, #68AD7D 0%, #145460 100%);
@@ -701,13 +701,13 @@ header {
   padding: 0.5em 1em;
 }
 /* line 111, ../sass/layouts/_responsive.scss */
-.node--type-front .field--name-field-site-name .inner h1 {
+.field--name-field-site-name .inner h1 {
   font-size: 32px;
   margin: 0;
 }
 
 /* line 118, ../sass/layouts/_responsive.scss */
-.node--type-front .field--name-field-strapline {
+.field--name-field-strapline {
   margin-bottom: 1em;
   text-align: center;
   text-transform: uppercase;
@@ -715,11 +715,11 @@ header {
   z-index: 10;
 }
 /* line 125, ../sass/layouts/_responsive.scss */
-.node--type-front .field--name-field-strapline .inner {
+.field--name-field-strapline .inner {
   display: inline-block;
 }
 /* line 128, ../sass/layouts/_responsive.scss */
-.node--type-front .field--name-field-strapline .inner h2 {
+.field--name-field-strapline .inner h2 {
   font-size: 16px;
 }
 
@@ -741,7 +741,7 @@ header {
 }
 
 /* line 153, ../sass/layouts/_responsive.scss */
-.node--type-front .node--view-mode-full .field--name-body {
+.node--view-mode-full .field--name-body {
   background: #40826F;
   background: linear-gradient(to right, #145460, #68ad7d);
   color: white;
@@ -750,14 +750,14 @@ header {
   z-index: 20;
 }
 /* line 161, ../sass/layouts/_responsive.scss */
-.node--type-front .node--view-mode-full .field--name-body .inner {
+.node--view-mode-full .field--name-body .inner {
   margin-left: auto;
   margin-right: auto;
   padding: 1em;
   width: 90%;
 }
 /* line 167, ../sass/layouts/_responsive.scss */
-.node--type-front .node--view-mode-full .field--name-body .inner a {
+.node--view-mode-full .field--name-body .inner a {
   color: white;
   font-weight: bold;
   text-decoration: underline;
@@ -964,16 +964,17 @@ footer .block-system {
 .path-node main .block-page-title-block,
 .path-services main .block-page-title-block,
 .path-contact main .block-page-title-block {
-  border: 7px solid transparent;
+  border: 4px solid transparent;
   -moz-border-image: -moz-linear-gradient(right, #68AD7D 0%, #145460 100%);
   -webkit-border-image: -webkit-linear-gradient(right, #68AD7D 0%, #145460 100%);
   border-image: linear-gradient(to left, #68ad7d 0%, #145460 100%);
   border-image-slice: 1;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 5em;
   width: 60%;
 }
-/* line 376, ../sass/layouts/_responsive.scss */
+/* line 375, ../sass/layouts/_responsive.scss */
 .path-node main .block-page-title-block h1,
 .path-services main .block-page-title-block h1,
 .path-contact main .block-page-title-block h1 {
@@ -981,23 +982,30 @@ footer .block-system {
   margin: 0.25em;
   text-align: center;
 }
-/* line 385, ../sass/layouts/_responsive.scss */
+/* line 384, ../sass/layouts/_responsive.scss */
 .path-node main .view-services .field--name-field-image,
 .path-services main .view-services .field--name-field-image,
 .path-contact main .view-services .field--name-field-image {
   visibility: visible;
 }
-/* line 394, ../sass/layouts/_responsive.scss */
+/* line 389, ../sass/layouts/_responsive.scss */
+.path-node main .field--name-field-subheading,
+.path-services main .field--name-field-subheading,
+.path-contact main .field--name-field-subheading {
+  margin-top: 5em;
+}
+/* line 393, ../sass/layouts/_responsive.scss */
 .path-node main .field--name-body,
 .path-services main .field--name-body,
 .path-contact main .field--name-body {
   background: #40826F;
   background: linear-gradient(to right, #145460, #68ad7d);
   color: white;
+  margin-top: 3em;
   width: 100%;
   z-index: 20;
 }
-/* line 403, ../sass/layouts/_responsive.scss */
+/* line 401, ../sass/layouts/_responsive.scss */
 .path-node main .field--name-body .inner,
 .path-services main .field--name-body .inner,
 .path-contact main .field--name-body .inner {
@@ -1006,7 +1014,7 @@ footer .block-system {
   padding: 1em;
   width: 90%;
 }
-/* line 409, ../sass/layouts/_responsive.scss */
+/* line 407, ../sass/layouts/_responsive.scss */
 .path-node main .field--name-body .inner a,
 .path-services main .field--name-body .inner a,
 .path-contact main .field--name-body .inner a {
@@ -1014,92 +1022,88 @@ footer .block-system {
   font-weight: bold;
   text-decoration: underline;
 }
-/* line 417, ../sass/layouts/_responsive.scss */
+/* line 415, ../sass/layouts/_responsive.scss */
+.path-node main .polygon,
+.path-services main .polygon,
+.path-contact main .polygon {
+  position: absolute;
+  top: 12em;
+}
+/* line 420, ../sass/layouts/_responsive.scss */
 .path-node main .polygon-not-front,
 .path-services main .polygon-not-front,
 .path-contact main .polygon-not-front {
-  background: #40826F;
-  background: linear-gradient(to right, #145460, #68ad7d);
-  -ms-transform: rotate(3deg);
-  /* IE 9 */
-  -webkit-transform: rotate(3deg);
-  /* Safari */
-  transform: rotate(3deg);
-  display: block;
-  margin-left: -0.5em;
-  min-height: 6em;
-  width: 105%;
-  z-index: 20;
+  display: none;
 }
-/* line 442, ../sass/layouts/_responsive.scss */
+/* line 427, ../sass/layouts/_responsive.scss */
 .path-node footer .block-block-content,
 .path-services footer .block-block-content,
 .path-contact footer .block-block-content {
   margin-top: 1em;
 }
 
-/* line 450, ../sass/layouts/_responsive.scss */
+/* line 435, ../sass/layouts/_responsive.scss */
 .node--type-service .field--name-field-image {
   visibility: visible;
 }
 
-/* line 485, ../sass/layouts/_responsive.scss */
+/* line 470, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block h3,
 .path-contact .block-system-main-block h3 {
   font-size: 26.66667px;
   text-align: center;
 }
-/* line 490, ../sass/layouts/_responsive.scss */
+/* line 475, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block a:hover,
 .path-contact .block-system-main-block a:hover {
   text-decoration: none;
 }
-/* line 500, ../sass/layouts/_responsive.scss */
+/* line 485, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .field--name-field-image .inner,
 .path-contact .block-system-main-block .view .views-row .field--name-field-image .inner {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
 }
-/* line 505, ../sass/layouts/_responsive.scss */
+/* line 490, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .field--name-field-image .inner img,
 .path-contact .block-system-main-block .view .views-row .field--name-field-image .inner img {
   margin-left: 2em;
 }
-/* line 511, ../sass/layouts/_responsive.scss */
+/* line 496, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .field--name-body,
 .path-contact .block-system-main-block .view .views-row .field--name-body {
   background: none;
   color: #40826F;
 }
-/* line 517, ../sass/layouts/_responsive.scss */
+/* line 502, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .more,
 .path-contact .block-system-main-block .view .views-row .more {
   font-weight: bold;
   margin: 1em 0 0 1em;
 }
 
-/* line 539, ../sass/layouts/_responsive.scss */
+/* line 524, ../sass/layouts/_responsive.scss */
 .path-services footer {
   margin-top: 5em;
 }
 
-/* line 545, ../sass/layouts/_responsive.scss */
+/* line 530, ../sass/layouts/_responsive.scss */
 .path-contact .block-system-main-block {
   padding: 0 0.5em;
 }
-/* line 548, ../sass/layouts/_responsive.scss */
+/* line 533, ../sass/layouts/_responsive.scss */
 .path-contact .block-system-main-block .form-actions {
   margin-left: 0;
 }
 
-/* line 565, ../sass/layouts/_responsive.scss */
+/* line 550, ../sass/layouts/_responsive.scss */
 .path-node .block-system-main-block .field--name-field-image .inner {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
-/* line 570, ../sass/layouts/_responsive.scss */
+/* line 555, ../sass/layouts/_responsive.scss */
 .path-node .block-system-main-block .field--name-field-image .inner img {
   margin-left: auto;
   margin-right: auto;

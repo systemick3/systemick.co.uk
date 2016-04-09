@@ -96,7 +96,7 @@ header {
   }
 }
 
-.node--type-front .field--name-field-site-name {
+.field--name-field-site-name {
   margin-top: 5em;
   text-align: center;
   width:100%;
@@ -115,7 +115,7 @@ header {
   }
 }
 
-.node--type-front .field--name-field-strapline {
+.field--name-field-strapline {
   margin-bottom: 1em;
   text-align: center;
   text-transform: uppercase;
@@ -150,7 +150,7 @@ header {
   }
 }
 
-.node--type-front .node--view-mode-full .field--name-body {
+.node--view-mode-full .field--name-body {
   @include bg-gradient($light-green, $dark-green);
 
   color: white;
@@ -365,12 +365,11 @@ footer {
 .path-contact {
   main {
     .block-page-title-block {
-      @include border-gradient($light-green, $dark-green, 7px);
+      @include border-gradient($light-green, $dark-green, 4px);
 
       margin-left: auto;
       margin-right: auto;
-      //position: relative;
-      //top: $top-field-site-name + 1;
+      margin-top: 5em;
       width: 60%;
 
       h1 {
@@ -388,15 +387,14 @@ footer {
     }
 
     .field--name-field-subheading {
-      //top: $top-polygon - 37;
+      margin-top: 5em;
     }
 
     .field--name-body {
       @include bg-gradient($light-green, $dark-green);
 
       color: white;
-      //position:relative;
-      //top: $top-body - 28;
+      margin-top: 3em;
       width: 100%;
       z-index: 20;
 
@@ -414,30 +412,17 @@ footer {
       }
     }
 
-    .polygon-not-front {
-      @include bg-gradient($light-green, $dark-green);
-      @include div-rot($rot-amount);
+    .polygon {
+      position: absolute;
+      top: 12em;
+    }
 
-      display: block;
-      margin-left: -0.5em;
-      min-height: 6em;
-      //position: relative;
-      //top: $top-polygon - 41;
-      width: 105%;
-      z-index: 20;
+    .polygon-not-front {
+      display: none;
     }
   }
 
-  .block-contactblock {
-    //top: $top-blockcontact + 6;
-  }
-
-  .block-tweets {
-    //top: $top-blocktweets + 6;
-  }
-
   footer {
-    //top: $top-footer + 2;
 
     .block-block-content {
       margin-top: $top-footer;
