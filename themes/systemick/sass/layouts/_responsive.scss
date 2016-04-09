@@ -62,7 +62,7 @@ header {
   width: 100%;
 
   ul {
-    //left: 14%;
+    left: 8%;
     margin-left: auto;
     margin-right: auto;
     position:absolute;
@@ -177,6 +177,7 @@ header {
   @include div-rot($rot-amount);
 
   margin-left: -0.5em;
+  margin-top: -0.5em;
   min-height: 3em;
   overflow: hidden;
   width: 105%;
