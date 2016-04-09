@@ -10,7 +10,7 @@
 
 body {
   background-image: url("/themes/systemick/images/office-room-bw_1.jpeg");
-  background-position: 0 3.5em;
+  background-position: 0 3em;
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -57,16 +57,17 @@ header {
 }
 
 .region-primary-menu {
-  font-size: $base-font-size;
-  //position: relative;
-  //top: $top-region-primary-menu;
+  display: block;
+  font-size: $base-font-size * 0.8;
   width: 100%;
 
   ul {
+    left: 14%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -3.5em;
-    width: 92%;
+    position:absolute;
+    top: 0;
+    width: 75%;
 
     li {
       float: left;
@@ -95,16 +96,9 @@ header {
   }
 }
 
-.node--type-front .field--name-field-banner-image {
-  //position: absolute;
-  //top: $top-field-banner-image;
-  z-index: 5;
-}
-
 .node--type-front .field--name-field-site-name {
-  //position:absolute;
+  margin-top: 5em;
   text-align: center;
-  //top: $top-field-site-name;
   width:100%;
   z-index: 10;
 
@@ -122,11 +116,9 @@ header {
 }
 
 .node--type-front .field--name-field-strapline {
-  padding-top: 0.5em;
-  //position: absolute;
+  margin-bottom: 1em;
   text-align: center;
   text-transform: uppercase;
-  //top: $top-field-strapline;
   width: 100%;
   z-index: 10;
 
@@ -142,9 +134,9 @@ header {
 .field--name-field-subheading {
   @include bg-gradient($light-green, $dark-green);
 
-  //position:relative;
+  margin-top: -3em;
+  position:relative;
   text-align: center;
-  //top: $top-field-subheading;
   width: 100%;
   z-index: 30;
 
@@ -162,8 +154,7 @@ header {
   @include bg-gradient($light-green, $dark-green);
 
   color: white;
-  //position:relative;
-  //top: $top-body;
+  margin-top: -1em;
   width: 100%;
   z-index: 20;
 
@@ -185,11 +176,11 @@ header {
   @include bg-gradient($light-green, $dark-green);
   @include div-rot($rot-amount);
 
+  margin-left: -0.5em;
   min-height: 3em;
-  //position: relative;
-  //top: $top-polygon;
-  width: 101%;
-  z-index: 20;
+  overflow: hidden;
+  width: 105%;
+  z-index: 0;
 }
 
 .polygon-not-front {
@@ -197,9 +188,7 @@ header {
 }
 
 .block-views-blockservices-block-1 {
-  //position:relative;
   text-align: center;
-  //top: $top-blockservices;
   width: 100%;
 
   h2 {
@@ -229,9 +218,7 @@ header {
 
 .block-views-blocktechnologies-block-1 {
   background: url("/themes/systemick/images/coding-whiteOverlay.jpeg") no-repeat 30% 30%;
-  //position:relative;
   text-align: center;
-  //top: $top-blocktechnologies;
   width: 100%;
 
   .views-row {
@@ -254,8 +241,6 @@ header {
 
 .block-contactblock {
   padding: 0.5em;
-  //position: relative;
-  //top: $top-blockcontact;
 
   h2 {
     @include text-gradient($light-green, $dark-green);
@@ -317,8 +302,6 @@ header {
 
 .block-tweets {
   padding: 0 0.5em;
-  //position: relative;
-  //top: $top-blocktweets;
 
   h2 {
     background: url("/themes/systemick/images/twitter.svg") no-repeat 0 0;
@@ -330,6 +313,7 @@ header {
 
   ul {
     list-style: none outside;
+    margin-bottom: 0;
     padding: 0;
 
     li {
@@ -354,11 +338,10 @@ header {
 footer {
   @include bg-gradient($light-green, $dark-green);
 
-  color: white;
+  color: white;margin-top: 1em;
+
   padding: 0 0.5em 1em 0.5em;
-  //position:relative;
   text-align: center;
-  //top: $top-footer;
   width: 100%;
 
   .block {
