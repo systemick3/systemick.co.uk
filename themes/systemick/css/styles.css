@@ -650,7 +650,6 @@ header {
 }
 /* line 64, ../sass/layouts/_responsive.scss */
 .region-primary-menu ul {
-  left: 14%;
   margin-left: auto;
   margin-right: auto;
   position: absolute;
