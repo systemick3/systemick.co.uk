@@ -5,7 +5,7 @@
  */
 
 html {
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100%;
 }
 
@@ -16,7 +16,7 @@ body {
   background-size: contain;
 
   font-size: $base-font-size + 2;
-  overflow: hidden;
+  overflow-x: hidden;
   width:100%;
 }
 
@@ -174,9 +174,9 @@ header {
   }
 }
 
-.node__content {
-  overflow: hidden;
-}
+//.node__content {
+//  overflow: hidden;
+//}
 
 .polygon {
   @include bg-gradient($light-green, $dark-green);
@@ -501,10 +501,36 @@ footer {
   footer {
     margin-top: 5em;
   }
+
+  .block-system-main-block {
+
+    .view {
+
+      .views-row {
+
+        .more {
+          background: $medium-green;
+          margin: 0 auto 0 auto;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 0.5em;
+          text-align:center;
+          text-transform: uppercase;
+          width: 60%;
+
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+  }
 }
 
 .path-contact {
   .block-system-main-block {
+    margin-bottom: 2em;
+    margin-top: 4em;
     padding: 0 0.5em;
 
     .form-actions {

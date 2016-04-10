@@ -588,7 +588,7 @@ label {
  */
 /* line 7, ../sass/layouts/_responsive.scss */
 html {
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100%;
 }
 
@@ -599,7 +599,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   font-size: 18px;
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100%;
 }
 
@@ -764,11 +764,6 @@ header {
   color: white;
   font-weight: bold;
   text-decoration: underline;
-}
-
-/* line 177, ../sass/layouts/_responsive.scss */
-.node__content {
-  overflow: hidden;
 }
 
 /* line 181, ../sass/layouts/_responsive.scss */
@@ -1107,23 +1102,40 @@ footer .block-system {
 .path-services footer {
   margin-top: 5em;
 }
+/* line 511, ../sass/layouts/_responsive.scss */
+.path-services .block-system-main-block .view .views-row .more {
+  background: #40826F;
+  margin: 0 auto 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+  width: 60%;
+}
+/* line 521, ../sass/layouts/_responsive.scss */
+.path-services .block-system-main-block .view .views-row .more a {
+  color: white;
+}
 
-/* line 507, ../sass/layouts/_responsive.scss */
+/* line 531, ../sass/layouts/_responsive.scss */
 .path-contact .block-system-main-block {
+  margin-bottom: 2em;
+  margin-top: 4em;
   padding: 0 0.5em;
 }
-/* line 510, ../sass/layouts/_responsive.scss */
+/* line 536, ../sass/layouts/_responsive.scss */
 .path-contact .block-system-main-block .form-actions {
   margin-left: 0;
 }
 
-/* line 521, ../sass/layouts/_responsive.scss */
+/* line 547, ../sass/layouts/_responsive.scss */
 .path-node .block-system-main-block .field--name-field-image .inner {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
-/* line 526, ../sass/layouts/_responsive.scss */
+/* line 552, ../sass/layouts/_responsive.scss */
 .path-node .block-system-main-block .field--name-field-image .inner img {
   margin-left: auto;
   margin-right: auto;
@@ -1254,11 +1266,6 @@ footer .block-system {
   .path-contact .block-system-main-block {
     margin-top: 10em;
   }
-  /* line 143, ../sass/layouts/_responsive_480.scss */
-  .path-services .block-system-main-block .view .views-row .more,
-  .path-contact .block-system-main-block .view .views-row .more {
-    margin-left: 1.7em;
-  }
   /* line 154, ../sass/layouts/_responsive_480.scss */
   .path-services main .field--name-body .inner,
   .path-contact main .field--name-body .inner {
@@ -1267,68 +1274,86 @@ footer .block-system {
   }
 }
 @media all and (min-width: 768px) {
-  /* line 3, ../sass/layouts/_responsive_768.scss */
-  header {
-    padding-left: 2em;
-  }
-
-  /* line 7, ../sass/layouts/_responsive_768.scss */
+  /* line 15, ../sass/layouts/_responsive_768.scss */
   .region-primary-menu {
     font-size: 17.6px;
-    width: 60%;
+    margin-top: -4.5em;
+    width: 70%;
   }
 
-  /* line 17, ../sass/layouts/_responsive_768.scss */
-  .node--type-front .field--name-field-site-name .inner h1 {
+  /* line 26, ../sass/layouts/_responsive_768.scss */
+  .field--name-field-site-name .inner h1 {
     font-size: 54.4px;
   }
 
-  /* line 23, ../sass/layouts/_responsive_768.scss */
-  .node--type-front .field--name-field-strapline {
-    top: 12.5em;
+  /* line 32, ../sass/layouts/_responsive_768.scss */
+  .field--name-field-subheading {
+    margin-top: -4em;
   }
-
-  /* line 33, ../sass/layouts/_responsive_768.scss */
+  /* line 38, ../sass/layouts/_responsive_768.scss */
   .field--name-field-subheading .inner h3 {
     font-size: 42.66667px;
   }
 
-  /* line 44, ../sass/layouts/_responsive_768.scss */
-  .node--type-front .node--view-mode-full .field--name-body .inner {
+  /* line 49, ../sass/layouts/_responsive_768.scss */
+  .node--view-mode-full .field--name-body .inner {
     width: 80%;
   }
 
-  /* line 49, ../sass/layouts/_responsive_768.scss */
+  /* line 54, ../sass/layouts/_responsive_768.scss */
   .polygon {
     min-height: 4em;
   }
 
-  /* line 54, ../sass/layouts/_responsive_768.scss */
+  /* line 59, ../sass/layouts/_responsive_768.scss */
   .block-views-blockservices-block-1 {
     top: 12em;
   }
-  /* line 59, ../sass/layouts/_responsive_768.scss */
+  /* line 64, ../sass/layouts/_responsive_768.scss */
   .block-views-blockservices-block-1 .views-row .field--name-body {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
   }
 
-  /* line 71, ../sass/layouts/_responsive_768.scss */
+  /* line 76, ../sass/layouts/_responsive_768.scss */
   .block-contactblock {
     padding: 0.5em 2em;
   }
 
-  /* line 76, ../sass/layouts/_responsive_768.scss */
+  /* line 81, ../sass/layouts/_responsive_768.scss */
   .block-tweets {
     padding: 0.5em 2em;
   }
 
-  /* line 96, ../sass/layouts/_responsive_768.scss */
+  /* line 101, ../sass/layouts/_responsive_768.scss */
   .path-node main .block-page-title-block h1,
   .path-services main .block-page-title-block h1,
   .path-contact main .block-page-title-block h1 {
     font-size: 48px;
+  }
+  /* line 106, ../sass/layouts/_responsive_768.scss */
+  .path-node main .field--name-field-subheading,
+  .path-services main .field--name-field-subheading,
+  .path-contact main .field--name-field-subheading {
+    margin-top: -4em;
+  }
+
+  /* line 116, ../sass/layouts/_responsive_768.scss */
+  .path-services .block-system-main-block,
+  .path-contact .block-system-main-block {
+    margin-top: 12em;
+  }
+  /* line 120, ../sass/layouts/_responsive_768.scss */
+  .path-services .block-system-main-block h3,
+  .path-contact .block-system-main-block h3 {
+    font-size: 53.33333px;
+  }
+
+  /* line 140, ../sass/layouts/_responsive_768.scss */
+  .path-contact .block-system-main-block {
+    margin-bottom: 4em;
+    margin-top: 8em;
   }
 }
 @media all and (min-width: 960px) {
