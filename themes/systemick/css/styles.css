@@ -1232,14 +1232,15 @@ footer .block-system {
   .path-services main .polygon,
   .path-contact main .polygon {
     margin-top: 4em;
+    overflow: hidden;
   }
 
-  /* line 199, ../sass/layouts/_responsive_480.scss */
+  /* line 200, ../sass/layouts/_responsive_480.scss */
   .path-services .block-system-main-block .view .views-row .more,
   .path-contact .block-system-main-block .view .views-row .more {
     margin-left: 1.7em;
   }
-  /* line 214, ../sass/layouts/_responsive_480.scss */
+  /* line 215, ../sass/layouts/_responsive_480.scss */
   .path-services main .field--name-body .inner,
   .path-contact main .field--name-body .inner {
     margin-left: auto;
