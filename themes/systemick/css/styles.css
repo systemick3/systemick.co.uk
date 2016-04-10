@@ -1242,12 +1242,17 @@ footer .block-system {
     margin-top: 4em;
   }
 
-  /* line 200, ../sass/layouts/_responsive_480.scss */
+  /* line 193, ../sass/layouts/_responsive_480.scss */
+  .path-services .block-system-main-block,
+  .path-contact .block-system-main-block {
+    margin-top: 10em;
+  }
+  /* line 201, ../sass/layouts/_responsive_480.scss */
   .path-services .block-system-main-block .view .views-row .more,
   .path-contact .block-system-main-block .view .views-row .more {
     margin-left: 1.7em;
   }
-  /* line 215, ../sass/layouts/_responsive_480.scss */
+  /* line 216, ../sass/layouts/_responsive_480.scss */
   .path-services main .field--name-body .inner,
   .path-contact main .field--name-body .inner {
     margin-left: auto;
