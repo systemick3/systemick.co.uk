@@ -1,4 +1,4 @@
-/* Everything wider than mobile */
+/* Everything wider than mobile portrait */
 @media all and (min-width: 480px) {
 
   body {
@@ -8,12 +8,7 @@
   header {
     color: white;
     display: block;
-    //float: left;
-    //margin: -4em 0 0 0.5em;
     padding: 1em 0 0 1em;
-    //padding-left: 0.5em;
-    //position:relative;
-    //top:2em;
     width: 30%;
   }
 
@@ -23,13 +18,10 @@
     margin-right: 0;
     margin-top: -5em;
     padding-right: 1em;
-    //position: relative;
-    //top: 5em;
     width: 70%;
 
     ul {
       float: right;
-      //list-style-type: none;
       position: static;
 
       li {
@@ -39,7 +31,6 @@
 
         a {
           color: white;
-          //font-size: 20px;
           text-transform: uppercase;
 
           &.is-active {
@@ -53,7 +44,6 @@
         color: white;
         content: ' \25CF';
         padding-right: 1em;
-        //visibility: hidden;
       }
 
       li:first-child {
@@ -88,29 +78,8 @@
     }
   }
 
-  .node--type-front .field--name-field-strapline {
-    //top: $top-field-strapline;
-  }
-
-  .field--name-field-subheading {
-    //top: $top-field-subheading + 1;
-  }
-
-  .node--type-front .node--view-mode-full .field--name-body {
-    //top: $top-body + 1;
-  }
-
   .polygon {
     margin-top: 2em;
-    //top: $top-polygon + 1;
-  }
-
-  .block-views-blockservices-block-1 {
-    //top: $top-blockservices + 1;
-  }
-
-  .block-views-blocktechnologies-block-1 {
-    //top: $top-blocktechnologies + 1;
   }
 
   .block-contactblock {
@@ -124,14 +93,6 @@
     }
   }
 
-  .block-tweets {
-    //top: $top-blocktweets + 1;
-  }
-
-  footer {
-    //top: $top-footer + 1;
-  }
-
   ///////////////////////// END OF FRONT /////////////////////////
 
   .path-node,
@@ -142,7 +103,6 @@
 
       .block-page-title-block {
         margin-top: 3em;
-        //top: $top-field-site-name;
         width: 50%;
 
         h1 {
@@ -154,12 +114,10 @@
       }
 
       .field--name-field-subheading {
-        margin-top: 7em;
-        //top: $top-field-subheading - 33;
+        margin-top: -3em;
       }
 
       .field--name-body {
-        //top: -26em;
 
         .inner {
           margin-left: auto;
@@ -167,23 +125,8 @@
       }
 
       .polygon {
-        margin-top: 4em;
-        //overflow: hidden;
-        //top: -28em;
+        margin-top: 6em;
       }
-    }
-
-
-    .block-contactblock {
-      //top: $top-blockcontact + 10;
-    }
-
-    .block-tweets {
-      //top: $top-blocktweets + 10;
-    }
-
-    footer {
-      //top: $top-footer + 10;
     }
   }
 
@@ -192,7 +135,6 @@
 
     .block-system-main-block {
       margin-top: 10em;
-      //top: $top-block-system-main + 4;
 
       .view {
 
@@ -207,10 +149,6 @@
 
     main {
 
-      .block-page-title-block {
-        //top: $top-field-site-name +2;
-      }
-
       .field--name-body {
 
         .inner {
@@ -219,61 +157,5 @@
         }
       }
     }
-
-    .block-contactblock {
-      //top: $top-blockcontact + 10;
-    }
-
-    .block-tweets {
-      //top: $top-blocktweets + 12;
-    }
-
-    footer {
-      //top: $top-footer + 12;
-    }
   }
-
-  .path-contact {
-
-    footer {
-      //top: $top-footer + 14;
-    }
-  }
-
-  .node--type-page {
-
-    main {
-
-      .block-contactblock {
-        //top: $top-blockcontact;
-      }
-
-      .block-tweets {
-        //top: $top-blocktweets;
-      }
-    }
-
-    footer {
-      //top: $top-footer + 4;
-    }
-  }
-
-  .node--type-service {
-
-    main {
-
-      .field--name-body {
-        //top: $top-body - 27;
-      }
-
-      .block-contactblock {
-        //top: $top-blockcontact + 7;
-      }
-
-      .block-tweets {
-        //top: $top-blocktweets + 7;
-      }
-    }
-  }
-
 }

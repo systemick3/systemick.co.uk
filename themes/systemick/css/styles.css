@@ -1122,7 +1122,7 @@ footer .block-system {
   margin-right: auto;
 }
 
-/* Everything wider than mobile */
+/* Everything wider than mobile portrait */
 @media all and (min-width: 480px) {
   /* line 4, ../sass/layouts/_responsive_480.scss */
   body {
@@ -1137,7 +1137,7 @@ footer .block-system {
     width: 30%;
   }
 
-  /* line 20, ../sass/layouts/_responsive_480.scss */
+  /* line 15, ../sass/layouts/_responsive_480.scss */
   .region-primary-menu {
     float: right;
     margin-left: 0;
@@ -1146,113 +1146,113 @@ footer .block-system {
     padding-right: 1em;
     width: 70%;
   }
-  /* line 30, ../sass/layouts/_responsive_480.scss */
+  /* line 23, ../sass/layouts/_responsive_480.scss */
   .region-primary-menu ul {
     float: right;
     position: static;
   }
-  /* line 35, ../sass/layouts/_responsive_480.scss */
+  /* line 27, ../sass/layouts/_responsive_480.scss */
   .region-primary-menu ul li {
     color: white;
     float: left;
     padding-right: 1em;
   }
-  /* line 40, ../sass/layouts/_responsive_480.scss */
+  /* line 32, ../sass/layouts/_responsive_480.scss */
   .region-primary-menu ul li a {
     color: white;
     text-transform: uppercase;
   }
-  /* line 45, ../sass/layouts/_responsive_480.scss */
+  /* line 36, ../sass/layouts/_responsive_480.scss */
   .region-primary-menu ul li a.is-active {
     color: white;
     text-decoration: underline;
   }
-  /* line 52, ../sass/layouts/_responsive_480.scss */
+  /* line 43, ../sass/layouts/_responsive_480.scss */
   .region-primary-menu ul li:before {
     color: white;
     content: ' \25CF';
     padding-right: 1em;
   }
-  /* line 59, ../sass/layouts/_responsive_480.scss */
+  /* line 49, ../sass/layouts/_responsive_480.scss */
   .region-primary-menu ul li:first-child {
     padding-left: 2.6em;
   }
-  /* line 63, ../sass/layouts/_responsive_480.scss */
+  /* line 53, ../sass/layouts/_responsive_480.scss */
   .region-primary-menu ul li:first-child:before {
     visibility: hidden;
   }
-  /* line 67, ../sass/layouts/_responsive_480.scss */
+  /* line 57, ../sass/layouts/_responsive_480.scss */
   .region-primary-menu ul li:last-child {
     padding-right: 0;
   }
 
-  /* line 75, ../sass/layouts/_responsive_480.scss */
+  /* line 65, ../sass/layouts/_responsive_480.scss */
   .block-views-blocktechnologies-block-1 .views-row:last-child {
     width: 20%;
   }
 
-  /* line 80, ../sass/layouts/_responsive_480.scss */
+  /* line 70, ../sass/layouts/_responsive_480.scss */
   .field--name-field-site-name {
     margin-top: 3em;
   }
-  /* line 85, ../sass/layouts/_responsive_480.scss */
+  /* line 75, ../sass/layouts/_responsive_480.scss */
   .field--name-field-site-name .inner h1 {
     font-size: 38.4px;
   }
 
-  /* line 103, ../sass/layouts/_responsive_480.scss */
+  /* line 81, ../sass/layouts/_responsive_480.scss */
   .polygon {
     margin-top: 2em;
   }
 
-  /* line 121, ../sass/layouts/_responsive_480.scss */
+  /* line 90, ../sass/layouts/_responsive_480.scss */
   .block-contactblock .contact-message-form .form-actions {
     width: 30%;
   }
 
-  /* line 143, ../sass/layouts/_responsive_480.scss */
+  /* line 104, ../sass/layouts/_responsive_480.scss */
   .path-node main .block-page-title-block,
   .path-services main .block-page-title-block,
   .path-contact main .block-page-title-block {
     margin-top: 3em;
     width: 50%;
   }
-  /* line 148, ../sass/layouts/_responsive_480.scss */
+  /* line 108, ../sass/layouts/_responsive_480.scss */
   .path-node main .block-page-title-block h1,
   .path-services main .block-page-title-block h1,
   .path-contact main .block-page-title-block h1 {
     margin-right: 12%;
   }
-  /* line 156, ../sass/layouts/_responsive_480.scss */
+  /* line 116, ../sass/layouts/_responsive_480.scss */
   .path-node main .field--name-field-subheading,
   .path-services main .field--name-field-subheading,
   .path-contact main .field--name-field-subheading {
-    margin-top: 7em;
+    margin-top: -3em;
   }
-  /* line 164, ../sass/layouts/_responsive_480.scss */
+  /* line 122, ../sass/layouts/_responsive_480.scss */
   .path-node main .field--name-body .inner,
   .path-services main .field--name-body .inner,
   .path-contact main .field--name-body .inner {
     margin-left: auto;
   }
-  /* line 169, ../sass/layouts/_responsive_480.scss */
+  /* line 127, ../sass/layouts/_responsive_480.scss */
   .path-node main .polygon,
   .path-services main .polygon,
   .path-contact main .polygon {
-    margin-top: 4em;
+    margin-top: 6em;
   }
 
-  /* line 193, ../sass/layouts/_responsive_480.scss */
+  /* line 136, ../sass/layouts/_responsive_480.scss */
   .path-services .block-system-main-block,
   .path-contact .block-system-main-block {
     margin-top: 10em;
   }
-  /* line 201, ../sass/layouts/_responsive_480.scss */
+  /* line 143, ../sass/layouts/_responsive_480.scss */
   .path-services .block-system-main-block .view .views-row .more,
   .path-contact .block-system-main-block .view .views-row .more {
     margin-left: 1.7em;
   }
-  /* line 216, ../sass/layouts/_responsive_480.scss */
+  /* line 154, ../sass/layouts/_responsive_480.scss */
   .path-services main .field--name-body .inner,
   .path-contact main .field--name-body .inner {
     margin-left: auto;
