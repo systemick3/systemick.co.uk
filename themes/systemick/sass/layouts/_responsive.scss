@@ -168,6 +168,10 @@ header {
   }
 }
 
+.node__content {
+  overflow: hidden;
+}
+
 .polygon {
   @include bg-gradient($light-green, $dark-green);
   @include div-rot($rot-amount);
@@ -178,6 +182,10 @@ header {
   overflow: hidden;
   width: 105%;
   z-index: 0;
+
+  .inner {
+    overflow: scroll;
+  }
 }
 
 .polygon-not-front {
@@ -383,7 +391,7 @@ footer {
     }
 
     .field--name-field-subheading {
-      margin-top: 5em;
+      margin-top: -3emem;
     }
 
     .field--name-body {
@@ -409,8 +417,9 @@ footer {
     }
 
     .polygon {
-      position: absolute;
-      top: 11.5em;
+      margin-top: 3em;
+      //position: absolute;
+      //top: 11.5em;
     }
 
     .polygon-not-front {
