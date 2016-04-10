@@ -1202,31 +1202,44 @@ footer .block-system {
     width: 30%;
   }
 
-  /* line 146, ../sass/layouts/_responsive_480.scss */
+  /* line 143, ../sass/layouts/_responsive_480.scss */
+  .path-node main .block-page-title-block,
+  .path-services main .block-page-title-block,
+  .path-contact main .block-page-title-block {
+    margin-top: 3em;
+    width: 50%;
+  }
+  /* line 148, ../sass/layouts/_responsive_480.scss */
   .path-node main .block-page-title-block h1,
   .path-services main .block-page-title-block h1,
   .path-contact main .block-page-title-block h1 {
     margin-right: 12%;
   }
-  /* line 161, ../sass/layouts/_responsive_480.scss */
+  /* line 156, ../sass/layouts/_responsive_480.scss */
+  .path-node main .field--name-field-subheading,
+  .path-services main .field--name-field-subheading,
+  .path-contact main .field--name-field-subheading {
+    margin-top: 7em;
+  }
+  /* line 164, ../sass/layouts/_responsive_480.scss */
   .path-node main .field--name-body .inner,
   .path-services main .field--name-body .inner,
   .path-contact main .field--name-body .inner {
     margin-left: auto;
   }
-  /* line 166, ../sass/layouts/_responsive_480.scss */
+  /* line 169, ../sass/layouts/_responsive_480.scss */
   .path-node main .polygon,
   .path-services main .polygon,
   .path-contact main .polygon {
     margin-top: 4em;
   }
 
-  /* line 196, ../sass/layouts/_responsive_480.scss */
+  /* line 199, ../sass/layouts/_responsive_480.scss */
   .path-services .block-system-main-block .view .views-row .more,
   .path-contact .block-system-main-block .view .views-row .more {
     margin-left: 1.7em;
   }
-  /* line 211, ../sass/layouts/_responsive_480.scss */
+  /* line 214, ../sass/layouts/_responsive_480.scss */
   .path-services main .field--name-body .inner,
   .path-contact main .field--name-body .inner {
     margin-left: auto;

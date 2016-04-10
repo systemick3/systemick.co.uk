@@ -141,7 +141,9 @@
     main {
 
       .block-page-title-block {
+        margin-top: 3em;
         //top: $top-field-site-name;
+        width: 50%;
 
         h1 {
           margin-right: 12%;
@@ -152,6 +154,7 @@
       }
 
       .field--name-field-subheading {
+        margin-top: 7em;
         //top: $top-field-subheading - 33;
       }
 
