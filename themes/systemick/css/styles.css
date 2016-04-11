@@ -1302,55 +1302,62 @@ footer .block-system {
 
   /* line 54, ../sass/layouts/_responsive_768.scss */
   .polygon {
+    margin-top: 1em;
     min-height: 4em;
   }
 
-  /* line 59, ../sass/layouts/_responsive_768.scss */
+  /* line 60, ../sass/layouts/_responsive_768.scss */
   .block-views-blockservices-block-1 {
     top: 12em;
   }
-  /* line 64, ../sass/layouts/_responsive_768.scss */
+  /* line 65, ../sass/layouts/_responsive_768.scss */
   .block-views-blockservices-block-1 .views-row .field--name-body {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
   }
 
-  /* line 76, ../sass/layouts/_responsive_768.scss */
+  /* line 77, ../sass/layouts/_responsive_768.scss */
   .block-contactblock {
     padding: 0.5em 2em;
   }
 
-  /* line 81, ../sass/layouts/_responsive_768.scss */
+  /* line 82, ../sass/layouts/_responsive_768.scss */
   .block-tweets {
     padding: 0.5em 2em;
   }
 
-  /* line 101, ../sass/layouts/_responsive_768.scss */
+  /* line 102, ../sass/layouts/_responsive_768.scss */
   .path-node main .block-page-title-block h1,
   .path-services main .block-page-title-block h1,
   .path-contact main .block-page-title-block h1 {
     font-size: 48px;
   }
-  /* line 106, ../sass/layouts/_responsive_768.scss */
+  /* line 107, ../sass/layouts/_responsive_768.scss */
   .path-node main .field--name-field-subheading,
   .path-services main .field--name-field-subheading,
   .path-contact main .field--name-field-subheading {
     margin-top: -4em;
   }
+  /* line 111, ../sass/layouts/_responsive_768.scss */
+  .path-node main .polygon,
+  .path-services main .polygon,
+  .path-contact main .polygon {
+    margin-top: 5em;
+  }
 
-  /* line 116, ../sass/layouts/_responsive_768.scss */
+  /* line 121, ../sass/layouts/_responsive_768.scss */
   .path-services .block-system-main-block,
   .path-contact .block-system-main-block {
     margin-top: 12em;
   }
-  /* line 120, ../sass/layouts/_responsive_768.scss */
+  /* line 125, ../sass/layouts/_responsive_768.scss */
   .path-services .block-system-main-block h3,
   .path-contact .block-system-main-block h3 {
     font-size: 53.33333px;
   }
 
-  /* line 140, ../sass/layouts/_responsive_768.scss */
+  /* line 145, ../sass/layouts/_responsive_768.scss */
   .path-contact .block-system-main-block {
     margin-bottom: 4em;
     margin-top: 8em;
@@ -1491,7 +1498,7 @@ footer .block-system {
     /* Safari */
     transform: rotate(3deg);
     left: -1em;
-    margin-top: 1em;
+    margin-top: 0;
     min-height: 10em;
     width: 105%;
   }
@@ -1773,7 +1780,7 @@ footer .block-system {
   .path-node main .polygon,
   .path-services main .polygon,
   .path-contact main .polygon {
-    margin-top: 9em;
+    margin-top: 8em;
   }
   /* line 430, ../sass/layouts/_responsive_960.scss */
   .path-node main .polygon-not-front,
