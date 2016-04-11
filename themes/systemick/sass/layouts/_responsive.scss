@@ -350,8 +350,8 @@ header {
 footer {
   @include bg-gradient($light-green, $dark-green);
 
-  color: white;margin-top: 1em;
-
+  color: white;
+  margin-top: 2em;
   padding: 0 0.5em 1em 0.5em;
   text-align: center;
   width: 100%;
@@ -424,8 +424,6 @@ footer {
 
     .polygon {
       margin-top: 3em;
-      //position: absolute;
-      //top: 11.5em;
     }
 
     .polygon-not-front {
