@@ -156,9 +156,10 @@ header {
   @include bg-gradient($light-green, $dark-green);
 
   color: white;
+  position: relative;
   margin-top: -1em;
   width: 100%;
-  z-index: 20;
+  z-index: 100;
 
   .inner {
     margin-left: auto;
@@ -350,6 +351,7 @@ header {
       a:hover,
       a:focus,
       a:active,
+      a:-moz-any-link,
       a:-webkit-any-link {
         color: $medium-green;
         text-decoration: none;
@@ -393,6 +395,7 @@ footer {
 //////////////////// END OF FRONT PAGE ////////////////////////////////////
 
 .path-node,
+.path-tweets,
 .path-services,
 .path-contact {
   main {
@@ -590,5 +593,24 @@ footer {
       }
     }
 
+  }
+}
+
+.path-tweets {
+
+  .block-system-main-block {
+    margin-top: 4em;
+    padding: 0 0.5em;
+
+    ul {
+      list-style: none outside;
+      padding: 0;
+
+      li {
+        border-bottom: 1px dotted $light-grey;
+        margin: 1em 0;
+        padding-bottom: 0.5em;
+      }
+    }
   }
 }

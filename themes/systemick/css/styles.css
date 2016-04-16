@@ -760,25 +760,26 @@ header {
   background: #40826F;
   background: linear-gradient(to right, #145460, #68ad7d);
   color: white;
+  position: relative;
   margin-top: -1em;
   width: 100%;
-  z-index: 20;
+  z-index: 100;
 }
-/* line 163, ../sass/layouts/_responsive.scss */
+/* line 164, ../sass/layouts/_responsive.scss */
 .node--view-mode-full .field--name-body .inner {
   margin-left: auto;
   margin-right: auto;
   padding: 1em;
   width: 90%;
 }
-/* line 169, ../sass/layouts/_responsive.scss */
+/* line 170, ../sass/layouts/_responsive.scss */
 .node--view-mode-full .field--name-body .inner a {
   color: white;
   font-weight: bold;
   text-decoration: underline;
 }
 
-/* line 181, ../sass/layouts/_responsive.scss */
+/* line 182, ../sass/layouts/_responsive.scss */
 .polygon {
   background: #40826F;
   background: linear-gradient(to right, #145460, #68ad7d);
@@ -794,29 +795,29 @@ header {
   width: 105%;
   z-index: 0;
 }
-/* line 192, ../sass/layouts/_responsive.scss */
+/* line 193, ../sass/layouts/_responsive.scss */
 .polygon .inner {
   overflow: scroll;
 }
 
-/* line 197, ../sass/layouts/_responsive.scss */
+/* line 198, ../sass/layouts/_responsive.scss */
 .polygon-not-front {
   display: none;
 }
 
-/* line 201, ../sass/layouts/_responsive.scss */
+/* line 202, ../sass/layouts/_responsive.scss */
 .block-views-blockservices-block-1 {
   text-align: center;
   width: 100%;
 }
-/* line 205, ../sass/layouts/_responsive.scss */
+/* line 206, ../sass/layouts/_responsive.scss */
 .block-views-blockservices-block-1 h2 {
   background: -webkit-linear-gradient(right, #68AD7D, #145460);
   background: linear-gradient(to left, #68ad7d, #145460);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* line 211, ../sass/layouts/_responsive.scss */
+/* line 212, ../sass/layouts/_responsive.scss */
 .block-views-blockservices-block-1 .view-services .more {
   background: #40826F;
   margin: 1em auto 2em auto;
@@ -824,35 +825,35 @@ header {
   text-transform: uppercase;
   width: 40%;
 }
-/* line 218, ../sass/layouts/_responsive.scss */
+/* line 219, ../sass/layouts/_responsive.scss */
 .block-views-blockservices-block-1 .view-services .more a {
   color: white;
 }
-/* line 224, ../sass/layouts/_responsive.scss */
+/* line 225, ../sass/layouts/_responsive.scss */
 .block-views-blockservices-block-1 h3 {
   font-size: 16px;
   text-transform: uppercase;
 }
 
-/* line 230, ../sass/layouts/_responsive.scss */
+/* line 231, ../sass/layouts/_responsive.scss */
 .block-views-blocktechnologies-block-1 {
   background: url("/themes/systemick/images/coding-whiteOverlay.jpeg") no-repeat 30% 30%;
   text-align: center;
   width: 100%;
 }
-/* line 235, ../sass/layouts/_responsive.scss */
+/* line 236, ../sass/layouts/_responsive.scss */
 .block-views-blocktechnologies-block-1 .views-row {
   float: left;
   padding-bottom: 1em;
   width: 50%;
 }
-/* line 241, ../sass/layouts/_responsive.scss */
+/* line 242, ../sass/layouts/_responsive.scss */
 .block-views-blocktechnologies-block-1 .views-row:last-child {
   float: none;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 247, ../sass/layouts/_responsive.scss */
+/* line 248, ../sass/layouts/_responsive.scss */
 .block-views-blocktechnologies-block-1 h2 {
   background: -webkit-linear-gradient(right, #68AD7D, #145460);
   background: linear-gradient(to left, #68ad7d, #145460);
@@ -861,11 +862,11 @@ header {
   padding-top: 0.5em;
 }
 
-/* line 253, ../sass/layouts/_responsive.scss */
+/* line 254, ../sass/layouts/_responsive.scss */
 .block-contactblock {
   padding: 0.5em;
 }
-/* line 256, ../sass/layouts/_responsive.scss */
+/* line 257, ../sass/layouts/_responsive.scss */
 .block-contactblock h2 {
   background: -webkit-linear-gradient(right, #68AD7D, #145460);
   background: linear-gradient(to left, #68ad7d, #145460);
@@ -873,45 +874,45 @@ header {
   -webkit-text-fill-color: transparent;
   margin-bottom: 0.5em;
 }
-/* line 263, ../sass/layouts/_responsive.scss */
+/* line 264, ../sass/layouts/_responsive.scss */
 .block-contactblock div.hello {
   margin-bottom: 1em;
 }
-/* line 267, ../sass/layouts/_responsive.scss */
+/* line 268, ../sass/layouts/_responsive.scss */
 .block-contactblock div.email {
   background: url("/themes/systemick/images/email.svg") no-repeat 0 0;
   font-weight: bold;
   margin-bottom: 0.5em;
   padding-left: 3em;
 }
-/* line 274, ../sass/layouts/_responsive.scss */
+/* line 275, ../sass/layouts/_responsive.scss */
 .block-contactblock div.phone {
   background: url("/themes/systemick/images/phone.svg") no-repeat 0 0;
   font-weight: bold;
   padding-bottom: 0.5em;
   padding-left: 3em;
 }
-/* line 284, ../sass/layouts/_responsive.scss */
+/* line 285, ../sass/layouts/_responsive.scss */
 .block-contactblock .contact-message-form label {
   color: #666;
   text-transform: uppercase;
 }
-/* line 289, ../sass/layouts/_responsive.scss */
+/* line 290, ../sass/layouts/_responsive.scss */
 .block-contactblock .contact-message-form input,
 .block-contactblock .contact-message-form textarea {
   border-bottom: 4px solid #40826F;
 }
-/* line 294, ../sass/layouts/_responsive.scss */
+/* line 295, ../sass/layouts/_responsive.scss */
 .block-contactblock .contact-message-form textarea {
   height: 3em;
 }
-/* line 298, ../sass/layouts/_responsive.scss */
+/* line 299, ../sass/layouts/_responsive.scss */
 .block-contactblock .contact-message-form .form-actions {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
-/* line 304, ../sass/layouts/_responsive.scss */
+/* line 305, ../sass/layouts/_responsive.scss */
 .block-contactblock .contact-message-form #edit-submit {
   border: 4px solid transparent;
   -moz-border-image: -moz-linear-gradient(right, #68AD7D 0%, #145460 100%);
@@ -924,67 +925,68 @@ header {
   text-transform: uppercase;
 }
 
-/* line 315, ../sass/layouts/_responsive.scss */
+/* line 316, ../sass/layouts/_responsive.scss */
 .block-tweets {
   padding: 0 0.5em;
 }
-/* line 318, ../sass/layouts/_responsive.scss */
+/* line 319, ../sass/layouts/_responsive.scss */
 .block-tweets h2 {
   background: url("/themes/systemick/images/twitter.svg") no-repeat 0 0;
   color: white;
   padding-left: 2em;
   margin-bottom: 0.5em;
 }
-/* line 326, ../sass/layouts/_responsive.scss */
+/* line 327, ../sass/layouts/_responsive.scss */
 .block-tweets ul {
   list-style: none outside;
   margin-bottom: 0;
   padding: 0;
 }
-/* line 331, ../sass/layouts/_responsive.scss */
+/* line 332, ../sass/layouts/_responsive.scss */
 .block-tweets ul li {
   border-bottom: 1px dotted #58585a;
   padding: 1em 0;
 }
-/* line 335, ../sass/layouts/_responsive.scss */
+/* line 336, ../sass/layouts/_responsive.scss */
 .block-tweets ul li .tweet-date {
   font-style: italic;
 }
-/* line 339, ../sass/layouts/_responsive.scss */
+/* line 340, ../sass/layouts/_responsive.scss */
 .block-tweets ul li:first-child {
   padding: 0 0 1em 0;
 }
-/* line 343, ../sass/layouts/_responsive.scss */
+/* line 344, ../sass/layouts/_responsive.scss */
 .block-tweets ul li:last-child {
   border-bottom: none;
 }
-/* line 347, ../sass/layouts/_responsive.scss */
+/* line 348, ../sass/layouts/_responsive.scss */
 .block-tweets ul li a,
 .block-tweets ul li a:link,
 .block-tweets ul li a:visited,
 .block-tweets ul li a:hover,
 .block-tweets ul li a:focus,
 .block-tweets ul li a:active,
+.block-tweets ul li a:-moz-any-link,
 .block-tweets ul li a:-webkit-any-link {
   color: #40826F;
   text-decoration: none;
 }
-/* line 357, ../sass/layouts/_responsive.scss */
+/* line 359, ../sass/layouts/_responsive.scss */
 .block-tweets ul li a:visited {
   color: #40826F;
 }
-/* line 360, ../sass/layouts/_responsive.scss */
+/* line 362, ../sass/layouts/_responsive.scss */
 .block-tweets ul li a:hover,
 .block-tweets ul li a:focus {
   color: #40826F;
   text-decoration: underline;
 }
-/* line 365, ../sass/layouts/_responsive.scss */
+/* line 367, ../sass/layouts/_responsive.scss */
 .block-tweets ul li a:active {
   color: #40826F;
 }
 
-/* line 372, ../sass/layouts/_responsive.scss */
+/* line 374, ../sass/layouts/_responsive.scss */
 footer {
   background: #40826F;
   background: linear-gradient(to right, #145460, #68ad7d);
@@ -994,24 +996,26 @@ footer {
   text-align: center;
   width: 100%;
 }
-/* line 382, ../sass/layouts/_responsive.scss */
+/* line 384, ../sass/layouts/_responsive.scss */
 footer .block a {
   color: white;
   font-weight: bold;
 }
-/* line 388, ../sass/layouts/_responsive.scss */
+/* line 390, ../sass/layouts/_responsive.scss */
 footer .block-system {
   padding-bottom: 0.5em;
 }
 
-/* line 399, ../sass/layouts/_responsive.scss */
+/* line 402, ../sass/layouts/_responsive.scss */
 .path-node main .block-page-title-block,
+.path-tweets main .block-page-title-block,
 .path-services main .block-page-title-block,
 .path-contact main .block-page-title-block {
   width: 100%;
 }
-/* line 402, ../sass/layouts/_responsive.scss */
+/* line 405, ../sass/layouts/_responsive.scss */
 .path-node main .block-page-title-block .inner,
+.path-tweets main .block-page-title-block .inner,
 .path-services main .block-page-title-block .inner,
 .path-contact main .block-page-title-block .inner {
   border: 4px solid transparent;
@@ -1024,28 +1028,32 @@ footer .block-system {
   margin-top: 5em;
   width: 50%;
 }
-/* line 410, ../sass/layouts/_responsive.scss */
+/* line 413, ../sass/layouts/_responsive.scss */
 .path-node main .block-page-title-block .inner h1,
+.path-tweets main .block-page-title-block .inner h1,
 .path-services main .block-page-title-block .inner h1,
 .path-contact main .block-page-title-block .inner h1 {
   font-size: 32px;
   margin: 0.25em;
   text-align: center;
 }
-/* line 420, ../sass/layouts/_responsive.scss */
+/* line 423, ../sass/layouts/_responsive.scss */
 .path-node main .view-services .field--name-field-image,
+.path-tweets main .view-services .field--name-field-image,
 .path-services main .view-services .field--name-field-image,
 .path-contact main .view-services .field--name-field-image {
   visibility: visible;
 }
-/* line 425, ../sass/layouts/_responsive.scss */
+/* line 428, ../sass/layouts/_responsive.scss */
 .path-node main .field--name-field-subheading,
+.path-tweets main .field--name-field-subheading,
 .path-services main .field--name-field-subheading,
 .path-contact main .field--name-field-subheading {
   margin-top: -3em;
 }
-/* line 429, ../sass/layouts/_responsive.scss */
+/* line 432, ../sass/layouts/_responsive.scss */
 .path-node main .field--name-body,
+.path-tweets main .field--name-body,
 .path-services main .field--name-body,
 .path-contact main .field--name-body {
   background: #40826F;
@@ -1055,8 +1063,9 @@ footer .block-system {
   width: 100%;
   z-index: 20;
 }
-/* line 437, ../sass/layouts/_responsive.scss */
+/* line 440, ../sass/layouts/_responsive.scss */
 .path-node main .field--name-body .inner,
+.path-tweets main .field--name-body .inner,
 .path-services main .field--name-body .inner,
 .path-contact main .field--name-body .inner {
   margin-bottom: 2em;
@@ -1064,92 +1073,96 @@ footer .block-system {
   padding: 1em;
   width: 90%;
 }
-/* line 443, ../sass/layouts/_responsive.scss */
+/* line 446, ../sass/layouts/_responsive.scss */
 .path-node main .field--name-body .inner a,
+.path-tweets main .field--name-body .inner a,
 .path-services main .field--name-body .inner a,
 .path-contact main .field--name-body .inner a {
   color: white;
   font-weight: bold;
   text-decoration: underline;
 }
-/* line 451, ../sass/layouts/_responsive.scss */
+/* line 454, ../sass/layouts/_responsive.scss */
 .path-node main .polygon,
+.path-tweets main .polygon,
 .path-services main .polygon,
 .path-contact main .polygon {
   margin-top: 3em;
 }
-/* line 455, ../sass/layouts/_responsive.scss */
+/* line 458, ../sass/layouts/_responsive.scss */
 .path-node main .polygon-not-front,
+.path-tweets main .polygon-not-front,
 .path-services main .polygon-not-front,
 .path-contact main .polygon-not-front {
   display: none;
 }
-/* line 462, ../sass/layouts/_responsive.scss */
+/* line 465, ../sass/layouts/_responsive.scss */
 .path-node footer .block-block-content,
+.path-tweets footer .block-block-content,
 .path-services footer .block-block-content,
 .path-contact footer .block-block-content {
   margin-top: 1em;
 }
 
-/* line 474, ../sass/layouts/_responsive.scss */
+/* line 477, ../sass/layouts/_responsive.scss */
 .node--type-service main .block-page-title-block .inner {
   width: 90%;
 }
-/* line 480, ../sass/layouts/_responsive.scss */
+/* line 483, ../sass/layouts/_responsive.scss */
 .node--type-service .block-system-main-block {
   margin-top: 3em;
 }
-/* line 484, ../sass/layouts/_responsive.scss */
+/* line 487, ../sass/layouts/_responsive.scss */
 .node--type-service .field--name-field-image {
   visibility: visible;
 }
 
-/* line 491, ../sass/layouts/_responsive.scss */
+/* line 494, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block,
 .path-contact .block-system-main-block {
   margin-top: 6em;
 }
-/* line 494, ../sass/layouts/_responsive.scss */
+/* line 497, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block h3,
 .path-contact .block-system-main-block h3 {
   font-size: 26.66667px;
   text-align: center;
 }
-/* line 499, ../sass/layouts/_responsive.scss */
+/* line 502, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block a:hover,
 .path-contact .block-system-main-block a:hover {
   text-decoration: none;
 }
-/* line 509, ../sass/layouts/_responsive.scss */
+/* line 512, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .field--name-field-image .inner,
 .path-contact .block-system-main-block .view .views-row .field--name-field-image .inner {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
 }
-/* line 514, ../sass/layouts/_responsive.scss */
+/* line 517, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .field--name-field-image .inner img,
 .path-contact .block-system-main-block .view .views-row .field--name-field-image .inner img {
   margin-left: 2em;
 }
-/* line 520, ../sass/layouts/_responsive.scss */
+/* line 523, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .field--name-body,
 .path-contact .block-system-main-block .view .views-row .field--name-body {
   background: none;
   color: #40826F;
 }
-/* line 525, ../sass/layouts/_responsive.scss */
+/* line 528, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .more,
 .path-contact .block-system-main-block .view .views-row .more {
   font-weight: bold;
   margin: 1em 0 0 1em;
 }
 
-/* line 535, ../sass/layouts/_responsive.scss */
+/* line 538, ../sass/layouts/_responsive.scss */
 .path-services footer {
   margin-top: 5em;
 }
-/* line 545, ../sass/layouts/_responsive.scss */
+/* line 548, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .more {
   background: #40826F;
   margin: 0 auto 0 auto;
@@ -1160,32 +1173,49 @@ footer .block-system {
   text-transform: uppercase;
   width: 60%;
 }
-/* line 555, ../sass/layouts/_responsive.scss */
+/* line 558, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .more a {
   color: white;
 }
 
-/* line 565, ../sass/layouts/_responsive.scss */
+/* line 568, ../sass/layouts/_responsive.scss */
 .path-contact .block-system-main-block {
   margin-bottom: 2em;
   margin-top: 4em;
   padding: 0 0.5em;
 }
-/* line 570, ../sass/layouts/_responsive.scss */
+/* line 573, ../sass/layouts/_responsive.scss */
 .path-contact .block-system-main-block .form-actions {
   margin-left: 0;
 }
 
-/* line 581, ../sass/layouts/_responsive.scss */
+/* line 584, ../sass/layouts/_responsive.scss */
 .path-node .block-system-main-block .field--name-field-image .inner {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
-/* line 586, ../sass/layouts/_responsive.scss */
+/* line 589, ../sass/layouts/_responsive.scss */
 .path-node .block-system-main-block .field--name-field-image .inner img {
   margin-left: auto;
   margin-right: auto;
+}
+
+/* line 601, ../sass/layouts/_responsive.scss */
+.path-tweets .block-system-main-block {
+  margin-top: 4em;
+  padding: 0 0.5em;
+}
+/* line 605, ../sass/layouts/_responsive.scss */
+.path-tweets .block-system-main-block ul {
+  list-style: none outside;
+  padding: 0;
+}
+/* line 609, ../sass/layouts/_responsive.scss */
+.path-tweets .block-system-main-block ul li {
+  border-bottom: 1px dotted #58585a;
+  margin: 1em 0;
+  padding-bottom: 0.5em;
 }
 
 /* Everything wider than mobile portrait */
@@ -1276,43 +1306,48 @@ footer .block-system {
     width: 30%;
   }
 
-  /* line 104, ../sass/layouts/_responsive_480.scss */
+  /* line 105, ../sass/layouts/_responsive_480.scss */
   .path-node main .block-page-title-block,
+  .path-tweets main .block-page-title-block,
   .path-services main .block-page-title-block,
   .path-contact main .block-page-title-block {
     margin-top: -2em;
   }
-  /* line 107, ../sass/layouts/_responsive_480.scss */
+  /* line 108, ../sass/layouts/_responsive_480.scss */
   .path-node main .block-page-title-block .inner,
+  .path-tweets main .block-page-title-block .inner,
   .path-services main .block-page-title-block .inner,
   .path-contact main .block-page-title-block .inner {
     width: 40%;
   }
-  /* line 112, ../sass/layouts/_responsive_480.scss */
+  /* line 113, ../sass/layouts/_responsive_480.scss */
   .path-node main .field--name-field-subheading,
+  .path-tweets main .field--name-field-subheading,
   .path-services main .field--name-field-subheading,
   .path-contact main .field--name-field-subheading {
     margin-top: -3em;
   }
-  /* line 118, ../sass/layouts/_responsive_480.scss */
+  /* line 119, ../sass/layouts/_responsive_480.scss */
   .path-node main .field--name-body .inner,
+  .path-tweets main .field--name-body .inner,
   .path-services main .field--name-body .inner,
   .path-contact main .field--name-body .inner {
     margin-left: auto;
   }
-  /* line 123, ../sass/layouts/_responsive_480.scss */
+  /* line 124, ../sass/layouts/_responsive_480.scss */
   .path-node main .polygon,
+  .path-tweets main .polygon,
   .path-services main .polygon,
   .path-contact main .polygon {
     margin-top: 6em;
   }
 
-  /* line 132, ../sass/layouts/_responsive_480.scss */
+  /* line 133, ../sass/layouts/_responsive_480.scss */
   .path-services .block-system-main-block,
   .path-contact .block-system-main-block {
     margin-top: 10em;
   }
-  /* line 150, ../sass/layouts/_responsive_480.scss */
+  /* line 151, ../sass/layouts/_responsive_480.scss */
   .path-services main .field--name-body .inner,
   .path-contact main .field--name-body .inner {
     margin-left: auto;
@@ -2003,17 +2038,6 @@ footer .block-system {
   /* line 152, ../sass/layouts/_responsive_1224.scss */
   .node--type-service main .block-system-main-block {
     margin-top: 12em;
-  }
-}
-@media all and (min-width: 1824px) {
-  /* line 2, ../sass/layouts/_responsive_1824.scss */
-  header {
-    margin: -1em 0 0 5em;
-  }
-
-  /* line 6, ../sass/layouts/_responsive_1824.scss */
-  .region-primary-menu {
-    margin-right: -18.5em;
   }
 }
 /* Component (SMACSS module) rules */
