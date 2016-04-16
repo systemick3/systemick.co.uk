@@ -2028,7 +2028,7 @@ footer .block-system {
   .block-views-blocktechnologies-block-1 h2,
   .block-contactblock h2,
   .block-views-blockservices-block-1 h2 {
-    background-color: transparent;
+    background: transparent;
     color: #40826F;
   }
 }
