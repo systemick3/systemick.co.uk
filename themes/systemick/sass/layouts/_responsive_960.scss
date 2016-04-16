@@ -8,27 +8,19 @@
     color: white;
     display: block;
     float: left;
-    //margin: -1em 0 0 2em;
     margin-top: -7em;
     padding-left: 3em;
-    //position: absolute;
-    //top:2em;
     z-index: 10;
   }
 
   .region-primary-menu {
     float:right;
-    //margin-left: 0;
-    //margin-right: 1em;
     margin-top: -7.5em;
-    //position: absolute;
-    //top: 5em;
     width: 70%;
     z-index: 10;
 
     ul {
       float: right;
-      //position:absolute;
 
       li {
         color: white;
@@ -37,7 +29,6 @@
 
         a {
           color: white;
-          //font-size: 20px;
           text-transform: uppercase;
 
           &.is-active {
@@ -64,16 +55,10 @@
     }
   }
 
-//  .node--type-front .field--name-field-banner-image {
-//    //top: -3em;
-//    z-index: 5;
-//  }
-
   .field--name-field-site-name {
     color: white;
     font-weight: bold;
     margin-top: 7em;
-    //top: $top-field-site-name + 3;
 
     .inner {
       @include border-gradient($light-green, $dark-green, 7px);
@@ -93,8 +78,6 @@
     font-size: $h4-font-size;
     font-weight: bold;
     margin-top: 0;
-    //padding-top: 1em;
-    //top: $top-field-strapline - 5.5;
 
     .inner {
       display: inline-block;
@@ -110,8 +93,6 @@
     @include bg-gradient($light-green, $dark-green);
 
     font-size: $h2-font-size;
-    //margin-top: -2em;
-    //top: $top-field-subheading - 0.5;
 
     .inner {
       display:inline-block;
@@ -125,9 +106,7 @@
 
   .node--view-mode-full .field--name-body {
     color: white;
-    //margin-top: -2em;
     padding: 1em 0 4em 0;
-    //top: $top-body + 10;
 
     .inner {
       margin-left: auto;
@@ -143,16 +122,13 @@
     left: -1em;
     margin-top: 0;
     min-height: 10em;
-    //top: $top-polygon + 13;
     width: 105%;
   }
 
   .block-views-blockservices-block-1 {
     margin-bottom: 3em;
     padding-top: 1em;
-    //position:relative;
     text-align: center;
-    //top: $top-blockservices + 10;
     width: 100%;
 
     h2 {
@@ -205,8 +181,6 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0.5em 0 2em 0;
-    //position:relative;
-    //top: $top-blocktechnologies + 14;
 
     .inner {
       margin-left: auto;
@@ -234,8 +208,6 @@
   .block-contactblock {
     float: left;
     padding: 0 0 3em 2em;
-    //position: relative;
-    //top: $top-blockcontact + 14;
     width: 45%;
 
     h2 {
@@ -307,8 +279,6 @@
   .block-tweets {
     float: right;
     padding: 0 2em 0 0;
-    //position: relative;
-    //top: $top-blocktweets + 16;
     width: 45%;
 
     h2 {
@@ -348,9 +318,7 @@
     color: white;
     min-height: 6em;
     padding: 0;
-    //position:relative;
     text-align: left;
-    //top: $top-footer + 21;
     width: 100%;
 
     .block {
@@ -391,7 +359,6 @@
     main {
       .block-page-title-block {
         margin-top: 7em;
-        //top: $top-field-site-name + 2;
         width: 60%;
 
         h1 {
@@ -401,8 +368,6 @@
 
       .field--name-field-subheading {
         margin-top: -4em;
-        //padding-top: 1em;
-        //top: $top-field-subheading - 12.5;
 
         h3 {
           font-size: $h2-font-size / 0.7;
@@ -413,7 +378,6 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 1em;
-        //top: $top-body - 21;
 
         .inner {
           margin-left: auto;
@@ -423,13 +387,11 @@
       }
 
       .polygon {
-        //display: none;
         margin-top: 8em;
       }
 
       .polygon-not-front {
         min-height: 10em;
-        //top: $top-polygon - 32.5;
       }
     }
 
@@ -444,8 +406,6 @@
   .path-services,
   .path-contact {
     .block-system-main-block {
-      //position: relative;
-      //top: $top-block-system-main + 8;
 
       h3 {
         font-size: $h3-font-size / 2;
@@ -475,26 +435,14 @@
             background: none;
             color: $medium-green;
             float: right;
-            //position: relative;
-            top: -3em;
             width: 70%;
 
             .inner {
               width: 100%;
             }
           }
-
-          .more {
-            //left: 2.8em;
-            //margin-top: -5em;
-            //position: relative;
-          }
         }
       }
-    }
-
-    footer {
-      //margin-top: 2em;
     }
   }
 
@@ -508,7 +456,6 @@
   .path-contact {
     .block-system-main-block {
       padding: 0 5em;
-      //top: $top-block-system-main + 5;
     }
   }
 
@@ -517,7 +464,6 @@
     main {
 
       .block-page-title-block {
-        //top: $top-field-site-name;
 
         h1 {
           font-size: $h1-font-size * 0.5;
@@ -526,24 +472,11 @@
 
       .field--name-body {
         margin-top: 4em;
-        //top: $top-body - 27;
 
         .inner {
           margin-top: 0;
         }
       }
-
-      .block-contactblock {
-        //top: $top-blockcontact + 8;
-      }
-
-      .block-tweets {
-        //top: $top-blocktweets + 10;
-      }
-    }
-
-    footer {
-      //top: $top-footer + 15;
     }
   }
 }

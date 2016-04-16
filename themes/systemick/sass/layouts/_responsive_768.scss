@@ -1,17 +1,5 @@
 @media all and (min-width: 768px) {
 
-//  html {
-//    overflow: hidden;
-//  }
-//
-//  body {
-//    overflow: hidden;
-//  }
-//
-//  header {
-//    padding-left: 2em;
-//  }
-
   .region-primary-menu {
     font-size: $base-font-size * 1.1;
     margin-top: -4.5em;
@@ -19,7 +7,6 @@
   }
 
   .field--name-field-site-name {
-    //top: $top-field-site-name + 2;
 
     .inner {
 
@@ -31,20 +18,16 @@
 
   .field--name-field-subheading {
     margin-top: -4em;
-    //top: $top-field-subheading + 3.5;
 
     .inner {
 
       h3 {
         font-size: $h4-font-size / 1.5;
-        //margin-bottom: 0;
-        //padding: 0;
       }
     }
   }
 
   .node--view-mode-full .field--name-body {
-    //top: $top-body + 4;
 
     .inner {
       width: 80%;
@@ -52,9 +35,8 @@
   }
 
   .polygon {
-    margin-top: 0;
+    margin-top: -1em;
     min-height: 4em;
-    //top: $top-polygon + 4;
   }
 
   .block-views-blockservices-block-1 {
@@ -70,22 +52,12 @@
     }
   }
 
-  .block-views-blocktechnologies-block-1 {
-    //top: $top-blocktechnologies + 4;
-  }
-
   .block-contactblock {
     padding: 0.5em 2em;
-    //top: $top-blockcontact + 4;
   }
 
   .block-tweets {
     padding: 0.5em 2em;
-    //top: $top-blocktweets + 4;
-  }
-
-  footer {
-    //top: $top-footer + 4;
   }
 
   ///////////////////////// END OF FRONT ///////////////////////////
@@ -97,7 +69,6 @@
     main {
 
       .block-page-title-block {
-        //top: $top-field-site-name + 2;
 
         h1 {
           font-size: $h2-font-size * 1.5;
@@ -120,23 +91,10 @@
 
     .block-system-main-block {
       margin-top: 12em;
-      //top: $top-block-system-main + 7;
 
       h3 {
         font-size: $h3-font-size / 1.5;
       }
-    }
-
-    .block-contactblock {
-      //top: $top-blockcontact + 12;
-    }
-
-    .block-tweets {
-      //top: $top-blocktweets + 12;
-    }
-
-    footer {
-      //top: $top-footer + 12;
     }
   }
 
@@ -145,20 +103,6 @@
     .block-system-main-block {
       margin-bottom: 4em;
       margin-top: 8em;
-    }
-
-    footer {
-      //top: $top-footer + 17;
-    }
-  }
-
-  .node--type-service {
-
-    main {
-
-      .block-page-title-block {
-        //top: $top-field-site-name;
-      }
     }
   }
 }
