@@ -102,14 +102,10 @@
     main {
 
       .block-page-title-block {
-        margin-top: 3em;
-        width: 50%;
+        margin-top: -2em;
 
-        h1 {
-          margin-right: 12%;
-          span {
-
-          }
+        .inner {
+          width: 40%;
         }
       }
 

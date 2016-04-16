@@ -1,13 +1,16 @@
 @media all and (min-width: 1224px) {
   header {
-    margin: -1em 0 0 3em;
+    //margin: -1em 0 0 3em;
+    margin: -12em 0 0 3em;
   }
 
   .region-primary-menu {
     margin-right: -10.5em;
+    margin-top: -13em;
   }
 
   .node--type-front .field--name-field-site-name {
+    margin-top: 12em;
     //top: $top-field-site-name + 5;
   }
 
@@ -25,6 +28,7 @@
   }
 
   .polygon {
+    margin-top: 9em;
     //top: $top-polygon + 16;
   }
 
@@ -52,9 +56,24 @@
   .path-services,
   .path-contact {
 
+    header {
+      //margin: -1em 0 0 3em;
+      margin: -12em 0 0 3em;
+    }
+
+    .region-primary-menu {
+      margin-right: -10.5em;
+      margin-top: -13em;
+    }
+
     main {
 
+      .block-system-main-block {
+        margin-top: 30em;
+      }
+
       .block-page-title-block {
+        margin-top: 12em;
         //top: $top-field-site-name + 5;
       }
 
@@ -81,9 +100,13 @@
     }
   }
 
-  .node--type-service {
+  .node--type-page {
 
     main {
+
+      .block-system-main-block {
+        margin-top: 16em;
+      }
 
       .field--name-body {
         //top: $top-body - 17;

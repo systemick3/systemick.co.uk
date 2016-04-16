@@ -375,17 +375,21 @@ footer {
 .path-contact {
   main {
     .block-page-title-block {
-      @include border-gradient($light-green, $dark-green, 4px);
+      width: 100%;
 
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 5em;
-      width: 60%;
+      .inner {
+        @include border-gradient($light-green, $dark-green, 4px);
 
-      h1 {
-        font-size: $h2-font-size;
-        margin: 0.25em;
-        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5em;
+        width: 50%;
+
+        h1 {
+          font-size: $h2-font-size;
+          margin: 0.25em;
+          text-align: center;
+        }
       }
     }
 
@@ -440,6 +444,16 @@ footer {
 }
 
 .node--type-service {
+
+  main {
+
+    .block-page-title-block {
+
+      .inner {
+        width: 90%;
+      }
+    }
+  }
 
   .block-system-main-block {
     margin-top: 3em;

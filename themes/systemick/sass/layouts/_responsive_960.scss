@@ -359,10 +359,14 @@
     main {
       .block-page-title-block {
         margin-top: 7em;
-        width: 60%;
+        //width: 60%;
 
-        h1 {
-          font-size: $h1-font-size * 0.8;
+        .inner {
+          @include border-gradient($light-green, $dark-green, 7px);
+
+          h1 {
+            font-size: $h1-font-size * 0.8;
+          }
         }
       }
 
