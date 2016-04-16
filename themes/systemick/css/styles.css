@@ -1281,83 +1281,87 @@ footer .block-system {
     width: 75%;
   }
 
-  /* line 13, ../sass/layouts/_responsive_768.scss */
+  /* line 9, ../sass/layouts/_responsive_768.scss */
+  .field--name-field-site-name {
+    margin-top: 2em;
+  }
+  /* line 14, ../sass/layouts/_responsive_768.scss */
   .field--name-field-site-name .inner h1 {
     font-size: 54.4px;
   }
 
-  /* line 19, ../sass/layouts/_responsive_768.scss */
+  /* line 20, ../sass/layouts/_responsive_768.scss */
   .field--name-field-subheading {
     margin-top: -4em;
   }
-  /* line 24, ../sass/layouts/_responsive_768.scss */
+  /* line 25, ../sass/layouts/_responsive_768.scss */
   .field--name-field-subheading .inner h3 {
     font-size: 42.66667px;
   }
 
-  /* line 32, ../sass/layouts/_responsive_768.scss */
+  /* line 33, ../sass/layouts/_responsive_768.scss */
   .node--view-mode-full .field--name-body .inner {
     width: 80%;
   }
 
-  /* line 37, ../sass/layouts/_responsive_768.scss */
+  /* line 38, ../sass/layouts/_responsive_768.scss */
   .polygon {
-    margin-top: -1em;
+    margin-top: 1em;
     min-height: 4em;
   }
 
-  /* line 42, ../sass/layouts/_responsive_768.scss */
+  /* line 43, ../sass/layouts/_responsive_768.scss */
   .block-views-blockservices-block-1 {
     top: 12em;
   }
-  /* line 47, ../sass/layouts/_responsive_768.scss */
+  /* line 48, ../sass/layouts/_responsive_768.scss */
   .block-views-blockservices-block-1 .views-row .field--name-body {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
   }
 
-  /* line 55, ../sass/layouts/_responsive_768.scss */
+  /* line 56, ../sass/layouts/_responsive_768.scss */
   .block-contactblock {
     padding: 0.5em 2em;
   }
 
-  /* line 59, ../sass/layouts/_responsive_768.scss */
+  /* line 60, ../sass/layouts/_responsive_768.scss */
   .block-tweets {
     padding: 0.5em 2em;
   }
 
-  /* line 73, ../sass/layouts/_responsive_768.scss */
+  /* line 74, ../sass/layouts/_responsive_768.scss */
   .path-node main .block-page-title-block h1,
   .path-services main .block-page-title-block h1,
   .path-contact main .block-page-title-block h1 {
     font-size: 48px;
   }
-  /* line 78, ../sass/layouts/_responsive_768.scss */
+  /* line 79, ../sass/layouts/_responsive_768.scss */
   .path-node main .field--name-field-subheading,
   .path-services main .field--name-field-subheading,
   .path-contact main .field--name-field-subheading {
     margin-top: -4em;
   }
-  /* line 82, ../sass/layouts/_responsive_768.scss */
+  /* line 83, ../sass/layouts/_responsive_768.scss */
   .path-node main .polygon,
   .path-services main .polygon,
   .path-contact main .polygon {
     margin-top: 4em;
   }
 
-  /* line 92, ../sass/layouts/_responsive_768.scss */
+  /* line 93, ../sass/layouts/_responsive_768.scss */
   .path-services .block-system-main-block,
   .path-contact .block-system-main-block {
     margin-top: 12em;
   }
-  /* line 95, ../sass/layouts/_responsive_768.scss */
+  /* line 96, ../sass/layouts/_responsive_768.scss */
   .path-services .block-system-main-block h3,
   .path-contact .block-system-main-block h3 {
     font-size: 53.33333px;
   }
 
-  /* line 103, ../sass/layouts/_responsive_768.scss */
+  /* line 104, ../sass/layouts/_responsive_768.scss */
   .path-contact .block-system-main-block {
     margin-bottom: 4em;
     margin-top: 8em;
