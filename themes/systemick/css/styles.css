@@ -746,7 +746,7 @@ header {
   position: relative;
   text-align: center;
   width: 100%;
-  z-index: 30;
+  z-index: 150;
 }
 /* line 147, ../sass/layouts/_responsive.scss */
 .field--name-field-subheading .inner h3 {
