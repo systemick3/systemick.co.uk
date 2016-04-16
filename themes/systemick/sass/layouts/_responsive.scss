@@ -619,6 +619,13 @@ footer {
       color: $medium-green;
     }
   }
+
+  .path-tweets,
+  .block-tweets {
+    a {
+      color: $medium-green;
+    }
+  }
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -627,6 +634,13 @@ footer {
 
     h2 {
       background-color: transparent;
+      color: $medium-green;
+    }
+  }
+
+  .path-tweets,
+  .block-tweets {
+    a {
       color: $medium-green;
     }
   }

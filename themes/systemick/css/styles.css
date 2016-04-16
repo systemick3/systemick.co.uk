@@ -1228,12 +1228,24 @@ footer .block-system {
     background-color: transparent;
     color: #40826F;
   }
+
+  /* line 625, ../sass/layouts/_responsive.scss */
+  .path-tweets a,
+  .block-tweets a {
+    color: #40826F;
+  }
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE10+ CSS styles go here */
-  /* line 628, ../sass/layouts/_responsive.scss */
+  /* line 635, ../sass/layouts/_responsive.scss */
   .block-views-blockservices-block-1 h2 {
     background-color: transparent;
+    color: #40826F;
+  }
+
+  /* line 643, ../sass/layouts/_responsive.scss */
+  .path-tweets a,
+  .block-tweets a {
     color: #40826F;
   }
 }
@@ -2021,7 +2033,8 @@ footer .block-system {
       color: #40826F;
     }
 
-    /* line 516, ../sass/layouts/_responsive_960.scss */
+    /* line 517, ../sass/layouts/_responsive_960.scss */
+    .path-tweets a,
     .block-tweets a {
       color: #40826F;
     }
@@ -2029,7 +2042,7 @@ footer .block-system {
 }
 @media all and (min-width: 960px) and (-ms-high-contrast: none), all and (min-width: 960px) and (-ms-high-contrast: active) {
   /* IE10+ CSS styles go here */
-  /* line 528, ../sass/layouts/_responsive_960.scss */
+  /* line 529, ../sass/layouts/_responsive_960.scss */
   .block-views-blocktechnologies-block-1 h2,
   .block-contactblock h2,
   .block-views-blockservices-block-1 h2 {
@@ -2037,7 +2050,8 @@ footer .block-system {
     color: #40826F;
   }
 
-  /* line 535, ../sass/layouts/_responsive_960.scss */
+  /* line 537, ../sass/layouts/_responsive_960.scss */
+  .path-tweets a,
   .block-tweets a {
     color: #40826F;
   }
