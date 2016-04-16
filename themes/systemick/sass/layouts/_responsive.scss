@@ -175,10 +175,6 @@ header {
   }
 }
 
-//.node__content {
-//  overflow: hidden;
-//}
-
 .polygon {
   @include bg-gradient($light-green, $dark-green);
   @include div-rot($rot-amount);
@@ -611,6 +607,15 @@ footer {
         margin: 1em 0;
         padding-bottom: 0.5em;
       }
+    }
+  }
+}
+
+@-moz-document url-prefix() {
+  .block-views-blockservices-block-1 {
+
+    h2 {
+      background-color: red;
     }
   }
 }

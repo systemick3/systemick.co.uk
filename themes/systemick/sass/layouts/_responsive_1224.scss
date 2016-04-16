@@ -58,6 +58,7 @@
   }
 
   .path-node,
+  .path-tweets,
   .path-services,
   .path-contact {
 
@@ -152,6 +153,14 @@
       .block-system-main-block {
         margin-top: 12em;
       }
+    }
+  }
+
+  .path-tweets {
+
+    .block-system-main-block {
+      margin-top: 45em;
+      padding: 0 2em;
     }
   }
 }

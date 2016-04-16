@@ -133,6 +133,8 @@
 
     h2 {
       @include text-gradient($light-green, $dark-green);
+      //background: none;
+      //color: $medium-green;
     }
 
     .view-services {
@@ -345,6 +347,7 @@
   ///////////////////// END OF FRONT PAGE //////////////////////////
 
   .path-node,
+  .path-tweets,
   .path-services,
   .path-contact {
 
@@ -486,6 +489,26 @@
         .inner {
           margin-top: 0;
         }
+      }
+    }
+  }
+
+  .path-tweets {
+
+    .block-system-main-block {
+      margin-top: 8em;
+      padding: 0 2em;
+    }
+  }
+
+  @-moz-document url-prefix() {
+    .block-views-blocktechnologies-block-1,
+    .block-contactblock,
+    .block-views-blockservices-block-1 {
+
+      h2 {
+        background: transparent;
+        color: $medium-green;
       }
     }
   }

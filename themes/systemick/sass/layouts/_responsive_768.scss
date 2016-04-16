@@ -64,6 +64,7 @@
   ///////////////////////// END OF FRONT ///////////////////////////
 
   .path-node,
+  .path-tweets,
   .path-services,
   .path-contact {
 
@@ -104,6 +105,13 @@
     .block-system-main-block {
       margin-bottom: 4em;
       margin-top: 8em;
+    }
+  }
+
+  .path-tweets {
+
+    .block-system-main-block {
+      margin-top: 13em;
     }
   }
 }
