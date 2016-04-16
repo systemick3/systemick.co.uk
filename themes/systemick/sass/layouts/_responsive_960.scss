@@ -511,6 +511,12 @@
         color: $medium-green;
       }
     }
+
+    .block-tweets {
+      a {
+        color: $medium-green;
+      }
+    }
   }
 
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -521,6 +527,12 @@
 
       h2 {
         background: transparent;
+        color: $medium-green;
+      }
+    }
+
+    .block-tweets {
+      a {
         color: $medium-green;
       }
     }

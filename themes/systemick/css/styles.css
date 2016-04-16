@@ -2020,15 +2020,25 @@ footer .block-system {
       background: transparent;
       color: #40826F;
     }
+
+    /* line 516, ../sass/layouts/_responsive_960.scss */
+    .block-tweets a {
+      color: #40826F;
+    }
   }
 }
 @media all and (min-width: 960px) and (-ms-high-contrast: none), all and (min-width: 960px) and (-ms-high-contrast: active) {
   /* IE10+ CSS styles go here */
-  /* line 522, ../sass/layouts/_responsive_960.scss */
+  /* line 528, ../sass/layouts/_responsive_960.scss */
   .block-views-blocktechnologies-block-1 h2,
   .block-contactblock h2,
   .block-views-blockservices-block-1 h2 {
     background: transparent;
+    color: #40826F;
+  }
+
+  /* line 535, ../sass/layouts/_responsive_960.scss */
+  .block-tweets a {
     color: #40826F;
   }
 }
