@@ -162,4 +162,44 @@
       margin-top: 10em;
     }
   }
+
+  @-moz-document url-prefix() {
+
+    .region-primary-menu {
+
+      ul {
+
+        li {
+
+          a{
+            text-decoration: none;
+
+            &.is-active {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+    .region-primary-menu {
+
+      ul {
+
+        li {
+
+          a{
+            text-decoration: none;
+
+            &.is-active {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
 }

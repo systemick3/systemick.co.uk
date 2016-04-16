@@ -415,6 +415,7 @@
   .path-services,
   .path-contact {
     .block-system-main-block {
+      margin-top: 7em;
 
       h3 {
         font-size: $h3-font-size / 2;
@@ -502,6 +503,7 @@
   }
 
   @-moz-document url-prefix() {
+    /* FF CSS styles go here */
     .block-views-blocktechnologies-block-1,
     .block-contactblock,
     .block-views-blockservices-block-1 {
@@ -512,6 +514,7 @@
       }
     }
 
+    h3,
     .path-tweets,
     .block-tweets {
       a {
@@ -532,6 +535,7 @@
       }
     }
 
+    h3,
     .path-tweets,
     .block-tweets {
       a {

@@ -612,6 +612,7 @@ footer {
 }
 
 @-moz-document url-prefix() {
+  /* FF CSS styles go here */
   .block-views-blockservices-block-1 {
 
     h2 {
@@ -620,6 +621,7 @@ footer {
     }
   }
 
+  h3,
   .path-tweets,
   .block-tweets {
     a {
@@ -638,6 +640,7 @@ footer {
     }
   }
 
+  h3,
   .path-tweets,
   .block-tweets {
     a {
