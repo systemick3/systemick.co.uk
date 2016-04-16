@@ -7,10 +7,15 @@
   .region-primary-menu {
     margin-right: -10.5em;
     margin-top: -13em;
+    width: 60%;
   }
 
   .node--type-front .field--name-field-site-name {
     margin-top: 12em;
+
+    .inner {
+      width: 40%;
+    }
     //top: $top-field-site-name + 5;
   }
 
@@ -28,7 +33,7 @@
   }
 
   .polygon {
-    margin-top: 9em;
+    margin-top: 8em;
     //top: $top-polygon + 16;
   }
 
@@ -86,8 +91,22 @@
   .path-services,
   .path-contact {
 
-    .block-system-main-block {
-      //top: $top-block-system-main + 18;
+    main {
+
+      .block-system-main-block {
+        margin-top: 26em;
+        //top: $top-block-system-main + 18;
+
+        .view {
+
+          .views-row {
+
+            .more {
+              width: 20%;
+            }
+          }
+        }
+      }
     }
 
     .block-contactblock,
@@ -123,6 +142,16 @@
 
     footer {
       //top: $top-footer + 25;
+    }
+  }
+
+  .node--type-service {
+
+    main {
+
+      .block-system-main-block {
+        margin-top: 12em;
+      }
     }
   }
 }

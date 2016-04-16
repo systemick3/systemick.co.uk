@@ -1763,26 +1763,27 @@ footer .block-system {
     -webkit-border-image: -webkit-linear-gradient(right, #68AD7D 0%, #145460 100%);
     border-image: linear-gradient(to left, #68ad7d 0%, #145460 100%);
     border-image-slice: 1;
+    width: 50%;
   }
-  /* line 367, ../sass/layouts/_responsive_960.scss */
+  /* line 369, ../sass/layouts/_responsive_960.scss */
   .path-node main .block-page-title-block .inner h1,
   .path-services main .block-page-title-block .inner h1,
   .path-contact main .block-page-title-block .inner h1 {
     font-size: 89.6px;
   }
-  /* line 373, ../sass/layouts/_responsive_960.scss */
+  /* line 375, ../sass/layouts/_responsive_960.scss */
   .path-node main .field--name-field-subheading,
   .path-services main .field--name-field-subheading,
   .path-contact main .field--name-field-subheading {
     margin-top: -4em;
   }
-  /* line 376, ../sass/layouts/_responsive_960.scss */
+  /* line 378, ../sass/layouts/_responsive_960.scss */
   .path-node main .field--name-field-subheading h3,
   .path-services main .field--name-field-subheading h3,
   .path-contact main .field--name-field-subheading h3 {
-    font-size: 45.71429px;
+    font-size: 80px;
   }
-  /* line 381, ../sass/layouts/_responsive_960.scss */
+  /* line 383, ../sass/layouts/_responsive_960.scss */
   .path-node main .field--name-body,
   .path-services main .field--name-body,
   .path-contact main .field--name-body {
@@ -1790,7 +1791,7 @@ footer .block-system {
     margin-right: auto;
     margin-top: 1em;
   }
-  /* line 386, ../sass/layouts/_responsive_960.scss */
+  /* line 388, ../sass/layouts/_responsive_960.scss */
   .path-node main .field--name-body .inner,
   .path-services main .field--name-body .inner,
   .path-contact main .field--name-body .inner {
@@ -1798,55 +1799,55 @@ footer .block-system {
     margin-right: auto;
     width: 70%;
   }
-  /* line 393, ../sass/layouts/_responsive_960.scss */
+  /* line 395, ../sass/layouts/_responsive_960.scss */
   .path-node main .polygon,
   .path-services main .polygon,
   .path-contact main .polygon {
     margin-top: 8em;
   }
-  /* line 397, ../sass/layouts/_responsive_960.scss */
+  /* line 399, ../sass/layouts/_responsive_960.scss */
   .path-node main .polygon-not-front,
   .path-services main .polygon-not-front,
   .path-contact main .polygon-not-front {
     min-height: 10em;
   }
-  /* line 404, ../sass/layouts/_responsive_960.scss */
+  /* line 406, ../sass/layouts/_responsive_960.scss */
   .path-node footer .block-system,
   .path-services footer .block-system,
   .path-contact footer .block-system {
     padding-top: 1.5em;
   }
 
-  /* line 414, ../sass/layouts/_responsive_960.scss */
+  /* line 416, ../sass/layouts/_responsive_960.scss */
   .path-services .block-system-main-block h3,
   .path-contact .block-system-main-block h3 {
     font-size: 40px;
     text-align: center;
   }
-  /* line 419, ../sass/layouts/_responsive_960.scss */
+  /* line 421, ../sass/layouts/_responsive_960.scss */
   .path-services .block-system-main-block a:hover,
   .path-contact .block-system-main-block a:hover {
     text-decoration: none;
   }
-  /* line 423, ../sass/layouts/_responsive_960.scss */
+  /* line 425, ../sass/layouts/_responsive_960.scss */
   .path-services .block-system-main-block .view,
   .path-contact .block-system-main-block .view {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
   }
-  /* line 429, ../sass/layouts/_responsive_960.scss */
+  /* line 431, ../sass/layouts/_responsive_960.scss */
   .path-services .block-system-main-block .view .views-row .polygon-not-front,
   .path-contact .block-system-main-block .view .views-row .polygon-not-front {
     display: none;
   }
-  /* line 433, ../sass/layouts/_responsive_960.scss */
+  /* line 435, ../sass/layouts/_responsive_960.scss */
   .path-services .block-system-main-block .view .views-row .field--name-field-image,
   .path-contact .block-system-main-block .view .views-row .field--name-field-image {
     float: left;
     width: 25%;
   }
-  /* line 438, ../sass/layouts/_responsive_960.scss */
+  /* line 440, ../sass/layouts/_responsive_960.scss */
   .path-services .block-system-main-block .view .views-row .field--name-body,
   .path-contact .block-system-main-block .view .views-row .field--name-body {
     background: none;
@@ -1854,31 +1855,36 @@ footer .block-system {
     float: right;
     width: 70%;
   }
-  /* line 444, ../sass/layouts/_responsive_960.scss */
+  /* line 446, ../sass/layouts/_responsive_960.scss */
   .path-services .block-system-main-block .view .views-row .field--name-body .inner,
   .path-contact .block-system-main-block .view .views-row .field--name-body .inner {
     width: 100%;
   }
+  /* line 451, ../sass/layouts/_responsive_960.scss */
+  .path-services .block-system-main-block .view .views-row .more,
+  .path-contact .block-system-main-block .view .views-row .more {
+    width: 40%;
+  }
 
-  /* line 455, ../sass/layouts/_responsive_960.scss */
+  /* line 461, ../sass/layouts/_responsive_960.scss */
   .path-services .block-system-main-block {
     margin-top: 15em;
   }
 
-  /* line 461, ../sass/layouts/_responsive_960.scss */
+  /* line 467, ../sass/layouts/_responsive_960.scss */
   .path-contact .block-system-main-block {
     padding: 0 5em;
   }
 
-  /* line 472, ../sass/layouts/_responsive_960.scss */
+  /* line 478, ../sass/layouts/_responsive_960.scss */
   .node--type-service main .block-page-title-block h1 {
     font-size: 56px;
   }
-  /* line 477, ../sass/layouts/_responsive_960.scss */
+  /* line 483, ../sass/layouts/_responsive_960.scss */
   .node--type-service main .field--name-body {
     margin-top: 4em;
   }
-  /* line 480, ../sass/layouts/_responsive_960.scss */
+  /* line 486, ../sass/layouts/_responsive_960.scss */
   .node--type-service main .field--name-body .inner {
     margin-top: 0;
   }
@@ -1893,52 +1899,73 @@ footer .block-system {
   .region-primary-menu {
     margin-right: -10.5em;
     margin-top: -13em;
+    width: 60%;
   }
 
-  /* line 12, ../sass/layouts/_responsive_1224.scss */
+  /* line 13, ../sass/layouts/_responsive_1224.scss */
   .node--type-front .field--name-field-site-name {
     margin-top: 12em;
   }
+  /* line 16, ../sass/layouts/_responsive_1224.scss */
+  .node--type-front .field--name-field-site-name .inner {
+    width: 40%;
+  }
 
-  /* line 21, ../sass/layouts/_responsive_1224.scss */
+  /* line 26, ../sass/layouts/_responsive_1224.scss */
   .field--name-field-subheading {
     margin-bottom: -1em;
   }
 
-  /* line 30, ../sass/layouts/_responsive_1224.scss */
+  /* line 35, ../sass/layouts/_responsive_1224.scss */
   .polygon {
-    margin-top: 9em;
+    margin-top: 8em;
   }
 
-  /* line 59, ../sass/layouts/_responsive_1224.scss */
+  /* line 64, ../sass/layouts/_responsive_1224.scss */
   .path-node header,
   .path-services header,
   .path-contact header {
     margin: -12em 0 0 3em;
   }
-  /* line 64, ../sass/layouts/_responsive_1224.scss */
+  /* line 69, ../sass/layouts/_responsive_1224.scss */
   .path-node .region-primary-menu,
   .path-services .region-primary-menu,
   .path-contact .region-primary-menu {
     margin-right: -10.5em;
     margin-top: -13em;
   }
-  /* line 71, ../sass/layouts/_responsive_1224.scss */
+  /* line 76, ../sass/layouts/_responsive_1224.scss */
   .path-node main .block-system-main-block,
   .path-services main .block-system-main-block,
   .path-contact main .block-system-main-block {
     margin-top: 30em;
   }
-  /* line 75, ../sass/layouts/_responsive_1224.scss */
+  /* line 80, ../sass/layouts/_responsive_1224.scss */
   .path-node main .block-page-title-block,
   .path-services main .block-page-title-block,
   .path-contact main .block-page-title-block {
     margin-top: 12em;
   }
 
-  /* line 107, ../sass/layouts/_responsive_1224.scss */
+  /* line 96, ../sass/layouts/_responsive_1224.scss */
+  .path-services main .block-system-main-block,
+  .path-contact main .block-system-main-block {
+    margin-top: 26em;
+  }
+  /* line 104, ../sass/layouts/_responsive_1224.scss */
+  .path-services main .block-system-main-block .view .views-row .more,
+  .path-contact main .block-system-main-block .view .views-row .more {
+    width: 20%;
+  }
+
+  /* line 126, ../sass/layouts/_responsive_1224.scss */
   .node--type-page main .block-system-main-block {
     margin-top: 16em;
+  }
+
+  /* line 152, ../sass/layouts/_responsive_1224.scss */
+  .node--type-service main .block-system-main-block {
+    margin-top: 12em;
   }
 }
 @media all and (min-width: 1824px) {
