@@ -1,6 +1,5 @@
 @media all and (min-width: 1224px) {
   header {
-    //margin: -1em 0 0 3em;
     margin: -12em 0 0 3em;
   }
 
@@ -16,45 +15,14 @@
     .inner {
       width: 40%;
     }
-    //top: $top-field-site-name + 5;
-  }
-
-  .node--type-front .field--name-field-strapline {
-    //top: $top-field-strapline - 3.5;
   }
 
   .field--name-field-subheading {
     margin-bottom: -1em;
-    //top: $top-field-subheading + 6;
-  }
-
-  .node--type-front .node--view-mode-full .field--name-body {
-    //top: $top-body + 18;
   }
 
   .polygon {
     margin-top: 8em;
-    //top: $top-polygon + 16;
-  }
-
-  .block-views-blockservices-block-1 {
-    //top: $top-blockservices + 18;
-  }
-
-  .block-views-blocktechnologies-block-1 {
-    //top: $top-blocktechnologies + 23;
-  }
-
-  .block-contactblock {
-    //top: $top-blockcontact + 25;
-  }
-
-  .block-tweets {
-    //top: $top-blocktweets + 27;
-  }
-
-  footer {
-    //top: $top-footer + 32;
   }
 
   .path-node,
@@ -63,7 +31,6 @@
   .path-contact {
 
     header {
-      //margin: -1em 0 0 3em;
       margin: -12em 0 0 3em;
     }
 
@@ -80,11 +47,6 @@
 
       .block-page-title-block {
         margin-top: 12em;
-        //top: $top-field-site-name + 5;
-      }
-
-      .polygon-not-front {
-        //top: $top-polygon - 25;
       }
     }
   }
@@ -96,7 +58,6 @@
 
       .block-system-main-block {
         margin-top: 30em;
-        //top: $top-block-system-main + 18;
 
         .view {
 
@@ -109,15 +70,6 @@
         }
       }
     }
-
-    .block-contactblock,
-    .block-tweets {
-      //top: $top-blockcontact + 21;
-    }
-
-    footer {
-      //top: $top-footer + 28;
-    }
   }
 
   .node--type-page {
@@ -127,22 +79,6 @@
       .block-system-main-block {
         margin-top: 16em;
       }
-
-      .field--name-body {
-        //top: $top-body - 17;
-      }
-
-      .block-contactblock {
-        //top: $top-blockcontact + 18;
-      }
-
-      .block-tweets {
-        //top: $top-blocktweets + 20;
-      }
-    }
-
-    footer {
-      //top: $top-footer + 25;
     }
   }
 
