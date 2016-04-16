@@ -512,4 +512,17 @@
       }
     }
   }
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    .block-views-blocktechnologies-block-1,
+    .block-contactblock,
+    .block-views-blockservices-block-1 {
+
+      h2 {
+        background-color: transparent;
+        color: $medium-green;
+      }
+    }
+  }
 }
