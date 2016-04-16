@@ -343,6 +343,28 @@ header {
       &:last-child {
         border-bottom: none;
       }
+
+      a,
+      a:link,
+      a:visited,
+      a:hover,
+      a:focus,
+      a:active,
+      a:-webkit-any-link {
+        color: $medium-green;
+        text-decoration: none;
+      }
+      a:visited {
+        color: $medium-green;
+      }
+      a:hover,
+      a:focus {
+        color: $medium-green;
+        text-decoration: underline;
+      }
+      a:active {
+        color: $medium-green;
+      }
     }
   }
 }
