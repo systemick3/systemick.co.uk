@@ -2,12 +2,11 @@
 
 /**
  * @file
- * Contains \Drupal\system\Tests\Extension\ModuleHandlerTest.
+ * Contains \Drupal\Tests\system\Kernel\Extension\ModuleHandlerTest.
  */
 
 namespace Drupal\Tests\system\Kernel\Extension;
 
-use Drupal\Component\FileCache\FileCacheFactory;
 use Drupal\Core\DependencyInjection\ContainerBuilder;
 use \Drupal\Core\Extension\ModuleUninstallValidatorException;
 use Drupal\KernelTests\KernelTestBase;

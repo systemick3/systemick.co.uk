@@ -14,7 +14,6 @@ use Symfony\Component\DependencyInjection\ContainerAwareTrait;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\HttpException;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\HttpKernel\Exception\UnsupportedMediaTypeHttpException;
 use Symfony\Component\Serializer\Exception\UnexpectedValueException;
 
@@ -103,8 +102,8 @@ class RequestHandler implements ContainerAwareInterface {
       return new Response($content, $e->getStatusCode(), $headers);
     }
 
-    // Serialize the outgoing data for the response, if available.
-    if ($response instanceof ResourceResponse && $data = $response->getResponseData()) {
+    if ($response instanceof ResourceResponse) {
+      $data = $response->getResponseData();
       // Serialization can invoke rendering (e.g., generating URLs), but the
       // serialization API does not provide a mechanism to collect the
       // bubbleable metadata associated with that (e.g., language and other

@@ -5,7 +5,7 @@
 
 (function ($, Drupal) {
 
-  "use strict";
+  'use strict';
 
   var autocomplete;
 
@@ -158,7 +158,7 @@
     // Remove the current input.
     terms.pop();
     // Add the selected item.
-    if (ui.item.value.search(",") > 0) {
+    if (ui.item.value.search(',') > 0) {
       terms.push('"' + ui.item.value + '"');
     }
     else {
@@ -178,8 +178,8 @@
    * @return {object}
    */
   function renderItem(ul, item) {
-    return $("<li>")
-      .append($("<a>").html(item.label))
+    return $('<li>')
+      .append($('<a>').html(item.label))
       .appendTo(ul);
   }
 
@@ -200,8 +200,9 @@
         });
         // Use jQuery UI Autocomplete on the textfield.
         $autocomplete.autocomplete(autocomplete.options)
-          .data("ui-autocomplete")
-          ._renderItem = autocomplete.options.renderItem;
+          .each(function() {
+            $(this).data('ui-autocomplete')._renderItem = autocomplete.options.renderItem;
+          });
       }
     },
     detach: function (context, settings, trigger) {

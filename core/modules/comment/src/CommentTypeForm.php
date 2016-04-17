@@ -7,7 +7,6 @@
 
 namespace Drupal\comment;
 
-use Drupal\Core\Entity\ContentEntityTypeInterface;
 use Drupal\Core\Entity\EntityForm;
 use Drupal\Core\Entity\EntityManagerInterface;
 use Drupal\Core\Entity\EntityTypeInterface;
@@ -17,7 +16,7 @@ use Psr\Log\LoggerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Base form controller for category edit forms.
+ * Base form handler for comment type edit forms.
  */
 class CommentTypeForm extends EntityForm {
 

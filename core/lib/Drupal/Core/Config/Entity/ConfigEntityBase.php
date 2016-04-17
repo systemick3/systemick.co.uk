@@ -9,14 +9,12 @@ namespace Drupal\Core\Config\Entity;
 
 use Drupal\Component\Utility\NestedArray;
 use Drupal\Core\Cache\Cache;
-use Drupal\Core\Config\ConfigException;
 use Drupal\Core\Config\Schema\SchemaIncompleteException;
 use Drupal\Core\Entity\Entity;
 use Drupal\Core\Config\ConfigDuplicateUUIDException;
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\Core\Entity\EntityWithPluginCollectionInterface;
-use Drupal\Core\Language\LanguageInterface;
 use Drupal\Core\Plugin\PluginDependencyTrait;
 
 /**
@@ -40,16 +38,6 @@ abstract class ConfigEntityBase extends Entity implements ConfigEntityInterface 
    * @var string
    */
   protected $originalId;
-
-  /**
-   * The name of the property that is used to store plugin configuration.
-   *
-   * This is needed when the entity uses a LazyPluginCollection, to dictate
-   * where the plugin configuration should be stored.
-   *
-   * @var string
-   */
-  protected $pluginConfigKey;
 
   /**
    * The enabled/disabled status of the configuration entity.
@@ -106,6 +94,17 @@ abstract class ConfigEntityBase extends Entity implements ConfigEntityInterface 
   protected $third_party_settings = array();
 
   /**
+   * Information maintained by Drupal core about configuration.
+   *
+   * Keys:
+   * - default_config_hash: A hash calculated by the config.installer service
+   *   and added during installation.
+   *
+   * @var array
+   */
+  protected $_core = [];
+
+  /**
    * Trust supplied data and not use configuration schema on save.
    *
    * @var bool
@@ -113,7 +112,7 @@ abstract class ConfigEntityBase extends Entity implements ConfigEntityInterface 
   protected $trustedData = FALSE;
 
   /**
-   * Overrides Entity::__construct().
+   * {@inheritdoc}
    */
   public function __construct(array $values, $entity_type) {
     parent::__construct($values, $entity_type);
@@ -298,6 +297,9 @@ abstract class ConfigEntityBase extends Entity implements ConfigEntityInterface 
     if (empty($this->third_party_settings)) {
       unset($properties['third_party_settings']);
     }
+    if (empty($this->_core)) {
+      unset($properties['_core']);
+    }
     return $properties;
   }
 
@@ -353,6 +355,32 @@ abstract class ConfigEntityBase extends Entity implements ConfigEntityInterface 
   /**
    * {@inheritdoc}
    */
+  public function __sleep() {
+    $keys_to_unset = [];
+    if ($this instanceof EntityWithPluginCollectionInterface) {
+      $vars = get_object_vars($this);
+      foreach ($this->getPluginCollections() as $plugin_config_key => $plugin_collection) {
+        // Save any changes to the plugin configuration to the entity.
+        $this->set($plugin_config_key, $plugin_collection->getConfiguration());
+        // If the plugin collections are stored as properties on the entity,
+        // mark them to be unset.
+        $keys_to_unset += array_filter($vars, function ($value) use ($plugin_collection) {
+          return $plugin_collection === $value;
+        });
+      }
+    }
+
+    $vars = parent::__sleep();
+
+    if (!empty($keys_to_unset)) {
+      $vars = array_diff($vars, array_keys($keys_to_unset));
+    }
+    return $vars;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function calculateDependencies() {
     // All dependencies should be recalculated on every save apart from enforced
     // dependencies. This ensures stale dependencies are never saved.
@@ -389,6 +417,7 @@ abstract class ConfigEntityBase extends Entity implements ConfigEntityInterface 
    * {@inheritdoc}
    */
   public function url($rel = 'edit-form', $options = array()) {
+    // Do not remove this override: the default value of $rel is different.
     return parent::url($rel, $options);
   }
 
@@ -396,7 +425,17 @@ abstract class ConfigEntityBase extends Entity implements ConfigEntityInterface 
    * {@inheritdoc}
    */
   public function link($text = NULL, $rel = 'edit-form', array $options = []) {
+    // Do not remove this override: the default value of $rel is different.
     return parent::link($text, $rel, $options);
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function toUrl($rel = 'edit-form', array $options = []) {
+    // Unless language was already provided, avoid setting an explicit language.
+    $options += ['language' => NULL];
+    return parent::toUrl($rel, $options);
   }
 
   /**

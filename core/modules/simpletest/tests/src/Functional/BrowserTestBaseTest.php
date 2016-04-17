@@ -13,9 +13,6 @@ use Drupal\simpletest\BrowserTestBase;
  * Tests BrowserTestBase functionality.
  *
  * @group simpletest
- *
- * @runTestsInSeparateProcesses
- * @preserveGlobalState disabled
  */
 class BrowserTestBaseTest extends BrowserTestBase {
 
@@ -59,6 +56,11 @@ class BrowserTestBaseTest extends BrowserTestBase {
     $config_factory = $this->container->get('config.factory');
     $value = $config_factory->get('form_test.object')->get('bananas');
     $this->assertSame('green', $value);
+  }
+
+  public function testError() {
+    $this->setExpectedException('\Exception', 'User notice: foo');
+    $this->drupalGet('test-error');
   }
 
 }

@@ -6,8 +6,7 @@
  */
 
 namespace Drupal\test_page_test\Controller;
-
-use Drupal\Component\Utility\Html;
+use Symfony\Component\HttpKernel\Exception\HttpException;
 
 /**
  * Defines a test controller for page titles.
@@ -75,6 +74,23 @@ class Test {
     return array(
       '#markup' => 'Content',
     );
+  }
+
+  /**
+   * Throws a HTTP exception.
+   *
+   * @param int $code
+   *   The status code.
+   */
+  public function httpResponseException($code) {
+    throw new HttpException($code);
+  }
+
+  public function error() {
+    trigger_error('foo', E_USER_NOTICE);
+    return [
+      '#markup' => 'Content',
+    ];
   }
 
 }

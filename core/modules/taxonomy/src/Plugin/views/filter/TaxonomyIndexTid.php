@@ -8,7 +8,6 @@
 namespace Drupal\taxonomy\Plugin\views\filter;
 
 use Drupal\Core\Entity\Element\EntityAutocomplete;
-use Drupal\Core\Entity\EntityManagerInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\taxonomy\Entity\Term;
 use Drupal\taxonomy\TermStorageInterface;
@@ -16,7 +15,6 @@ use Drupal\taxonomy\VocabularyStorageInterface;
 use Drupal\views\ViewExecutable;
 use Drupal\views\Plugin\views\display\DisplayPluginBase;
 use Drupal\views\Plugin\views\filter\ManyToOne;
-use Drupal\Component\Utility\Tags;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
@@ -79,7 +77,7 @@ class TaxonomyIndexTid extends ManyToOne {
   }
 
   /**
-   * Overrides \Drupal\views\Plugin\views\filter\ManyToOne::init().
+   * {@inheritdoc}
    */
   public function init(ViewExecutable $view, DisplayPluginBase $display, array &$options = NULL) {
     parent::init($view, $display, $options);
@@ -91,7 +89,12 @@ class TaxonomyIndexTid extends ManyToOne {
 
   public function hasExtraOptions() { return TRUE; }
 
-  public function getValueOptions() { /* don't overwrite the value options */ }
+  /**
+   * {@inheritdoc}
+   */
+  public function getValueOptions() {
+    return $this->valueOptions;
+  }
 
   protected function defineOptions() {
     $options = parent::defineOptions();
@@ -255,6 +258,9 @@ class TaxonomyIndexTid extends ManyToOne {
     if (!$form_state->get('exposed')) {
       // Retain the helper option
       $this->helper->buildOptionsForm($form, $form_state);
+
+      // Show help text if not exposed to end users.
+      $form['value']['#description'] = t('Leave blank for all. Otherwise, the first selected term will be the default instead of "Any".');
     }
   }
 
@@ -265,8 +271,10 @@ class TaxonomyIndexTid extends ManyToOne {
     }
 
     $tids = array();
-    foreach ($form_state->getValue(array('options', 'value')) as $value) {
-      $tids[] = $value['target_id'];
+    if ($values = $form_state->getValue(array('options', 'value'))) {
+      foreach ($values as $value) {
+        $tids[] = $value['target_id'];
+      }
     }
     $form_state->setValue(array('options', 'value'), $tids);
   }
@@ -329,8 +337,10 @@ class TaxonomyIndexTid extends ManyToOne {
       return;
     }
 
-    foreach ($form_state->getValue($identifier) as $value) {
-      $this->validated_exposed_input[] = $value['target_id'];
+    if ($values = $form_state->getValue($identifier)) {
+      foreach ($values as $value) {
+        $this->validated_exposed_input[] = $value['target_id'];
+      }
     }
   }
 

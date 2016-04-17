@@ -10,12 +10,11 @@ namespace Drupal\node;
 use Drupal\Core\Entity\ContentEntityForm;
 use Drupal\Core\Entity\EntityManagerInterface;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\user\Entity\User;
 use Drupal\user\PrivateTempStoreFactory;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Form controller for the node edit forms.
+ * Form handler for the node edit forms.
  */
 class NodeForm extends ContentEntityForm {
 

@@ -7,7 +7,6 @@
 
 namespace Drupal\comment;
 
-use Drupal\Core\Cache\Cache;
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityManagerInterface;
@@ -19,7 +18,7 @@ use Drupal\Core\Session\AccountInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Render controller for comments.
+ * View builder handler for comments.
  */
 class CommentViewBuilder extends EntityViewBuilder {
 

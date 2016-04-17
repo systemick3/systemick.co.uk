@@ -10,15 +10,15 @@ namespace Drupal\Core\Database\Driver\pgsql;
 use Drupal\Core\Database\Database;
 use Drupal\Core\Database\Connection as DatabaseConnection;
 use Drupal\Core\Database\DatabaseNotFoundException;
-use Drupal\Core\Database\StatementInterface;
-use Drupal\Core\Database\IntegrityConstraintViolationException;
-use Drupal\Core\Database\DatabaseExceptionWrapper;
 
 /**
  * @addtogroup database
  * @{
  */
 
+/**
+ * PostgreSQL implementation of \Drupal\Core\Database\Connection.
+ */
 class Connection extends DatabaseConnection {
 
   /**
@@ -138,7 +138,38 @@ class Connection extends DatabaseConnection {
       }
     }
 
-    return parent::query($query, $args, $options);
+    // We need to wrap queries with a savepoint if:
+    // - Currently in a transaction.
+    // - A 'mimic_implicit_commit' does not exist already.
+    // - The query is not a savepoint query.
+    $wrap_with_savepoint = $this->inTransaction() &&
+      !isset($this->transactionLayers['mimic_implicit_commit']) &&
+      !(is_string($query) && (
+        stripos($query, 'ROLLBACK TO SAVEPOINT ') === 0 ||
+        stripos($query, 'RELEASE SAVEPOINT ') === 0 ||
+        stripos($query, 'SAVEPOINT ') === 0
+      )
+    );
+    if ($wrap_with_savepoint) {
+      // Create a savepoint so we can rollback a failed query. This is so we can
+      // mimic MySQL and SQLite transactions which don't fail if a single query
+      // fails. This is important for tables that are created on demand. For
+      // example, \Drupal\Core\Cache\DatabaseBackend.
+      $this->addSavepoint();
+      try {
+        $return = parent::query($query, $args, $options);
+        $this->releaseSavepoint();
+      }
+      catch (\Exception $e) {
+        $this->rollbackSavepoint();
+        throw $e;
+      }
+    }
+    else {
+      $return = parent::query($query, $args, $options);
+    }
+
+    return $return;
   }
 
   public function prepareQuery($query) {
