@@ -94,11 +94,11 @@
         return ((elementBottom <= docViewBottom) && (elementTop >= docViewTop));
       };
 
-      $(window).on('scroll', function () {
-        animations();
-      });
-
-      $(window).trigger('scroll');
+//      $(window).on('scroll', function () {
+//        animations();
+//      });
+//
+//      $(window).trigger('scroll');
     }
   };
 
