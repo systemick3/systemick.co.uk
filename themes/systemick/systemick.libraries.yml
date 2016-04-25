@@ -3,3 +3,10 @@ global-styling:
   css:
     all:
       css/styles.css: {}
+
+global-js:
+  version: VERSION
+  js:
+    js/systemick.js: {}
+  dependencies:
+    - core/jquery

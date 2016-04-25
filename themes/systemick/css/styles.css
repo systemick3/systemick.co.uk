@@ -991,6 +991,128 @@ header {
 }
 
 /* line 370, ../sass/layouts/_responsive.scss */
+.block-views-blockservice-modal-block-1,
+.block-views-blockservice-modal-block-2,
+.block-views-blockservice-modal-block-3 {
+  background-color: white;
+  display: none;
+  height: 100%;
+  left: 0;
+  opacity: 0.95;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+/* line 383, ../sass/layouts/_responsive.scss */
+.block-views-blockservice-modal-block-1 .inner,
+.block-views-blockservice-modal-block-2 .inner,
+.block-views-blockservice-modal-block-3 .inner {
+  background: #eee;
+  box-shadow: 4px 4px 80px #000;
+  left: 50%;
+  min-height: 80%;
+  opacity: 1.0;
+  overflow: hidden;
+  position: absolute;
+  top: 1%;
+  width: 50%;
+  -ms-transform: translate(-50%, 0);
+  /* IE 9 */
+  -webkit-transform: translate(-50%, 0);
+  /* Safari */
+  transform: translate(-50%, 0);
+}
+/* line 398, ../sass/layouts/_responsive.scss */
+.block-views-blockservice-modal-block-1 .inner h2,
+.block-views-blockservice-modal-block-2 .inner h2,
+.block-views-blockservice-modal-block-3 .inner h2 {
+  display: none;
+}
+/* line 402, ../sass/layouts/_responsive.scss */
+.block-views-blockservice-modal-block-1 .inner .close,
+.block-views-blockservice-modal-block-2 .inner .close,
+.block-views-blockservice-modal-block-3 .inner .close {
+  float: right;
+  font-weight: bold;
+  margin: 1em 1em 0 0;
+  width: 2%;
+}
+/* line 409, ../sass/layouts/_responsive.scss */
+.block-views-blockservice-modal-block-1 .inner .views-field-title,
+.block-views-blockservice-modal-block-2 .inner .views-field-title,
+.block-views-blockservice-modal-block-3 .inner .views-field-title {
+  font-size: 32px;
+  margin-top: 1em;
+  padding-left: 0.5em;
+  padding-top: 2em;
+  text-transform: uppercase;
+}
+/* line 417, ../sass/layouts/_responsive.scss */
+.block-views-blockservice-modal-block-1 .inner .views-field-body,
+.block-views-blockservice-modal-block-2 .inner .views-field-body,
+.block-views-blockservice-modal-block-3 .inner .views-field-body {
+  float: left;
+  margin-bottom: 12em;
+  padding-left: 1em;
+  width: 60%;
+}
+/* line 424, ../sass/layouts/_responsive.scss */
+.block-views-blockservice-modal-block-1 .inner .views-field-field-image,
+.block-views-blockservice-modal-block-2 .inner .views-field-field-image,
+.block-views-blockservice-modal-block-3 .inner .views-field-field-image {
+  float: right;
+  padding: 2em 1em 0 1em;
+  width: 30%;
+}
+/* line 430, ../sass/layouts/_responsive.scss */
+.block-views-blockservice-modal-block-1 .inner .polygon,
+.block-views-blockservice-modal-block-2 .inner .polygon,
+.block-views-blockservice-modal-block-3 .inner .polygon {
+  margin-top: 5em;
+  min-height: 3em;
+}
+/* line 435, ../sass/layouts/_responsive.scss */
+.block-views-blockservice-modal-block-1 .inner .footer,
+.block-views-blockservice-modal-block-2 .inner .footer,
+.block-views-blockservice-modal-block-3 .inner .footer {
+  background: #40826F;
+  background: linear-gradient(to right, #145460, #68ad7d);
+  bottom: 0;
+  color: white;
+  font-size: 25.6px;
+  margin-top: -1em;
+  min-height: 3em;
+  padding: 2em 1em 0 1em;
+  position: relative;
+  width: 100%;
+}
+/* line 447, ../sass/layouts/_responsive.scss */
+.block-views-blockservice-modal-block-1 .inner .footer .problem,
+.block-views-blockservice-modal-block-2 .inner .footer .problem,
+.block-views-blockservice-modal-block-3 .inner .footer .problem {
+  float: left;
+  margin-bottom: 1em;
+  margin-top: -1em;
+  padding-top: 0.5em;
+  width: 70%;
+}
+/* line 455, ../sass/layouts/_responsive.scss */
+.block-views-blockservice-modal-block-1 .inner .footer .button,
+.block-views-blockservice-modal-block-2 .inner .footer .button,
+.block-views-blockservice-modal-block-3 .inner .footer .button {
+  background-color: white;
+  color: #40826F;
+  float: right;
+  margin-right: 2em;
+  margin-top: -1em;
+  padding: 0.5em 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 20%;
+}
+
+/* line 470, ../sass/layouts/_responsive.scss */
 footer {
   background: #40826F;
   background: linear-gradient(to right, #145460, #68ad7d);
@@ -1000,24 +1122,24 @@ footer {
   text-align: center;
   width: 100%;
 }
-/* line 380, ../sass/layouts/_responsive.scss */
+/* line 480, ../sass/layouts/_responsive.scss */
 footer .block a {
   color: white;
   font-weight: bold;
 }
-/* line 386, ../sass/layouts/_responsive.scss */
+/* line 486, ../sass/layouts/_responsive.scss */
 footer .block-system {
   padding-bottom: 0.5em;
 }
 
-/* line 398, ../sass/layouts/_responsive.scss */
+/* line 498, ../sass/layouts/_responsive.scss */
 .path-node main .block-page-title-block,
 .path-tweets main .block-page-title-block,
 .path-services main .block-page-title-block,
 .path-contact main .block-page-title-block {
   width: 100%;
 }
-/* line 401, ../sass/layouts/_responsive.scss */
+/* line 501, ../sass/layouts/_responsive.scss */
 .path-node main .block-page-title-block .inner,
 .path-tweets main .block-page-title-block .inner,
 .path-services main .block-page-title-block .inner,
@@ -1032,7 +1154,7 @@ footer .block-system {
   margin-top: 5em;
   width: 50%;
 }
-/* line 409, ../sass/layouts/_responsive.scss */
+/* line 509, ../sass/layouts/_responsive.scss */
 .path-node main .block-page-title-block .inner h1,
 .path-tweets main .block-page-title-block .inner h1,
 .path-services main .block-page-title-block .inner h1,
@@ -1041,21 +1163,21 @@ footer .block-system {
   margin: 0.25em;
   text-align: center;
 }
-/* line 419, ../sass/layouts/_responsive.scss */
+/* line 519, ../sass/layouts/_responsive.scss */
 .path-node main .view-services .field--name-field-image,
 .path-tweets main .view-services .field--name-field-image,
 .path-services main .view-services .field--name-field-image,
 .path-contact main .view-services .field--name-field-image {
   visibility: visible;
 }
-/* line 424, ../sass/layouts/_responsive.scss */
+/* line 524, ../sass/layouts/_responsive.scss */
 .path-node main .field--name-field-subheading,
 .path-tweets main .field--name-field-subheading,
 .path-services main .field--name-field-subheading,
 .path-contact main .field--name-field-subheading {
   margin-top: -3em;
 }
-/* line 428, ../sass/layouts/_responsive.scss */
+/* line 528, ../sass/layouts/_responsive.scss */
 .path-node main .field--name-body,
 .path-tweets main .field--name-body,
 .path-services main .field--name-body,
@@ -1067,7 +1189,7 @@ footer .block-system {
   width: 100%;
   z-index: 20;
 }
-/* line 436, ../sass/layouts/_responsive.scss */
+/* line 536, ../sass/layouts/_responsive.scss */
 .path-node main .field--name-body .inner,
 .path-tweets main .field--name-body .inner,
 .path-services main .field--name-body .inner,
@@ -1077,7 +1199,7 @@ footer .block-system {
   padding: 1em;
   width: 90%;
 }
-/* line 442, ../sass/layouts/_responsive.scss */
+/* line 542, ../sass/layouts/_responsive.scss */
 .path-node main .field--name-body .inner a,
 .path-tweets main .field--name-body .inner a,
 .path-services main .field--name-body .inner a,
@@ -1086,21 +1208,21 @@ footer .block-system {
   font-weight: bold;
   text-decoration: underline;
 }
-/* line 450, ../sass/layouts/_responsive.scss */
+/* line 550, ../sass/layouts/_responsive.scss */
 .path-node main .polygon,
 .path-tweets main .polygon,
 .path-services main .polygon,
 .path-contact main .polygon {
   margin-top: 3em;
 }
-/* line 454, ../sass/layouts/_responsive.scss */
+/* line 554, ../sass/layouts/_responsive.scss */
 .path-node main .polygon-not-front,
 .path-tweets main .polygon-not-front,
 .path-services main .polygon-not-front,
 .path-contact main .polygon-not-front {
   display: none;
 }
-/* line 461, ../sass/layouts/_responsive.scss */
+/* line 561, ../sass/layouts/_responsive.scss */
 .path-node footer .block-block-content,
 .path-tweets footer .block-block-content,
 .path-services footer .block-block-content,
@@ -1108,65 +1230,65 @@ footer .block-system {
   margin-top: 1em;
 }
 
-/* line 473, ../sass/layouts/_responsive.scss */
+/* line 573, ../sass/layouts/_responsive.scss */
 .node--type-service main .block-page-title-block .inner {
   width: 90%;
 }
-/* line 479, ../sass/layouts/_responsive.scss */
+/* line 579, ../sass/layouts/_responsive.scss */
 .node--type-service .block-system-main-block {
   margin-top: 3em;
 }
-/* line 483, ../sass/layouts/_responsive.scss */
+/* line 583, ../sass/layouts/_responsive.scss */
 .node--type-service .field--name-field-image {
   visibility: visible;
 }
 
-/* line 490, ../sass/layouts/_responsive.scss */
+/* line 590, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block,
 .path-contact .block-system-main-block {
   margin-top: 6em;
 }
-/* line 493, ../sass/layouts/_responsive.scss */
+/* line 593, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block h3,
 .path-contact .block-system-main-block h3 {
   font-size: 26.66667px;
   text-align: center;
 }
-/* line 498, ../sass/layouts/_responsive.scss */
+/* line 598, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block a:hover,
 .path-contact .block-system-main-block a:hover {
   text-decoration: none;
 }
-/* line 508, ../sass/layouts/_responsive.scss */
+/* line 608, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .field--name-field-image .inner,
 .path-contact .block-system-main-block .view .views-row .field--name-field-image .inner {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
 }
-/* line 513, ../sass/layouts/_responsive.scss */
+/* line 613, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .field--name-field-image .inner img,
 .path-contact .block-system-main-block .view .views-row .field--name-field-image .inner img {
   margin-left: 2em;
 }
-/* line 519, ../sass/layouts/_responsive.scss */
+/* line 619, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .field--name-body,
 .path-contact .block-system-main-block .view .views-row .field--name-body {
   background: none;
   color: #40826F;
 }
-/* line 524, ../sass/layouts/_responsive.scss */
+/* line 624, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .more,
 .path-contact .block-system-main-block .view .views-row .more {
   font-weight: bold;
   margin: 1em 0 0 1em;
 }
 
-/* line 534, ../sass/layouts/_responsive.scss */
+/* line 634, ../sass/layouts/_responsive.scss */
 .path-services footer {
   margin-top: 5em;
 }
-/* line 544, ../sass/layouts/_responsive.scss */
+/* line 644, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .more {
   background: #40826F;
   margin: 0 auto 0 auto;
@@ -1177,45 +1299,45 @@ footer .block-system {
   text-transform: uppercase;
   width: 60%;
 }
-/* line 554, ../sass/layouts/_responsive.scss */
+/* line 654, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .more a {
   color: white;
 }
 
-/* line 564, ../sass/layouts/_responsive.scss */
+/* line 664, ../sass/layouts/_responsive.scss */
 .path-contact .block-system-main-block {
   margin-bottom: 2em;
   margin-top: 4em;
   padding: 0 0.5em;
 }
-/* line 569, ../sass/layouts/_responsive.scss */
+/* line 669, ../sass/layouts/_responsive.scss */
 .path-contact .block-system-main-block .form-actions {
   margin-left: 0;
 }
 
-/* line 580, ../sass/layouts/_responsive.scss */
+/* line 680, ../sass/layouts/_responsive.scss */
 .path-node .block-system-main-block .field--name-field-image .inner {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
-/* line 585, ../sass/layouts/_responsive.scss */
+/* line 685, ../sass/layouts/_responsive.scss */
 .path-node .block-system-main-block .field--name-field-image .inner img {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 597, ../sass/layouts/_responsive.scss */
+/* line 697, ../sass/layouts/_responsive.scss */
 .path-tweets .block-system-main-block {
   margin-top: 4em;
   padding: 0 0.5em;
 }
-/* line 601, ../sass/layouts/_responsive.scss */
+/* line 701, ../sass/layouts/_responsive.scss */
 .path-tweets .block-system-main-block ul {
   list-style: none outside;
   padding: 0;
 }
-/* line 605, ../sass/layouts/_responsive.scss */
+/* line 705, ../sass/layouts/_responsive.scss */
 .path-tweets .block-system-main-block ul li {
   border-bottom: 1px dotted #58585a;
   margin: 1em 0;
@@ -1224,13 +1346,13 @@ footer .block-system {
 
 @-moz-document url-prefix() {
   /* FF CSS styles go here */
-  /* line 618, ../sass/layouts/_responsive.scss */
+  /* line 718, ../sass/layouts/_responsive.scss */
   .block-views-blockservices-block-1 h2 {
     background-color: transparent;
     color: #40826F;
   }
 
-  /* line 627, ../sass/layouts/_responsive.scss */
+  /* line 727, ../sass/layouts/_responsive.scss */
   h3 a,
   .path-tweets a,
   .block-tweets a {
@@ -1239,13 +1361,13 @@ footer .block-system {
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE10+ CSS styles go here */
-  /* line 637, ../sass/layouts/_responsive.scss */
+  /* line 737, ../sass/layouts/_responsive.scss */
   .block-views-blockservices-block-1 h2 {
     background-color: transparent;
     color: #40826F;
   }
 
-  /* line 646, ../sass/layouts/_responsive.scss */
+  /* line 746, ../sass/layouts/_responsive.scss */
   h3 a,
   .path-tweets a,
   .block-tweets a {
@@ -1877,28 +1999,35 @@ footer .block-system {
     padding-top: 1.5em;
   }
 
-  /* line 352, ../sass/layouts/_responsive_960.scss */
+  /* line 345, ../sass/layouts/_responsive_960.scss */
+  .block-views-blockservice-modal-block-1,
+  .block-views-blockservice-modal-block-2,
+  .block-views-blockservice-modal-block-3 {
+    position: absolute;
+  }
+
+  /* line 358, ../sass/layouts/_responsive_960.scss */
   .path-node header,
   .path-tweets header,
   .path-services header,
   .path-contact header {
     margin-top: -7em;
   }
-  /* line 356, ../sass/layouts/_responsive_960.scss */
+  /* line 362, ../sass/layouts/_responsive_960.scss */
   .path-node .region-primary-menu,
   .path-tweets .region-primary-menu,
   .path-services .region-primary-menu,
   .path-contact .region-primary-menu {
     margin-top: -7.5em;
   }
-  /* line 361, ../sass/layouts/_responsive_960.scss */
+  /* line 367, ../sass/layouts/_responsive_960.scss */
   .path-node main .block-page-title-block,
   .path-tweets main .block-page-title-block,
   .path-services main .block-page-title-block,
   .path-contact main .block-page-title-block {
     margin-top: 7em;
   }
-  /* line 364, ../sass/layouts/_responsive_960.scss */
+  /* line 370, ../sass/layouts/_responsive_960.scss */
   .path-node main .block-page-title-block .inner,
   .path-tweets main .block-page-title-block .inner,
   .path-services main .block-page-title-block .inner,
@@ -1910,7 +2039,7 @@ footer .block-system {
     border-image-slice: 1;
     width: 50%;
   }
-  /* line 369, ../sass/layouts/_responsive_960.scss */
+  /* line 375, ../sass/layouts/_responsive_960.scss */
   .path-node main .block-page-title-block .inner h1,
   .path-tweets main .block-page-title-block .inner h1,
   .path-services main .block-page-title-block .inner h1,
@@ -1918,21 +2047,21 @@ footer .block-system {
     font-size: 89.6px;
     margin: 0;
   }
-  /* line 376, ../sass/layouts/_responsive_960.scss */
+  /* line 382, ../sass/layouts/_responsive_960.scss */
   .path-node main .field--name-field-subheading,
   .path-tweets main .field--name-field-subheading,
   .path-services main .field--name-field-subheading,
   .path-contact main .field--name-field-subheading {
     margin-top: -4em;
   }
-  /* line 379, ../sass/layouts/_responsive_960.scss */
+  /* line 385, ../sass/layouts/_responsive_960.scss */
   .path-node main .field--name-field-subheading h3,
   .path-tweets main .field--name-field-subheading h3,
   .path-services main .field--name-field-subheading h3,
   .path-contact main .field--name-field-subheading h3 {
     font-size: 80px;
   }
-  /* line 384, ../sass/layouts/_responsive_960.scss */
+  /* line 390, ../sass/layouts/_responsive_960.scss */
   .path-node main .field--name-body,
   .path-tweets main .field--name-body,
   .path-services main .field--name-body,
@@ -1941,7 +2070,7 @@ footer .block-system {
     margin-right: auto;
     margin-top: 1em;
   }
-  /* line 389, ../sass/layouts/_responsive_960.scss */
+  /* line 395, ../sass/layouts/_responsive_960.scss */
   .path-node main .field--name-body .inner,
   .path-tweets main .field--name-body .inner,
   .path-services main .field--name-body .inner,
@@ -1950,21 +2079,21 @@ footer .block-system {
     margin-right: auto;
     width: 70%;
   }
-  /* line 396, ../sass/layouts/_responsive_960.scss */
+  /* line 402, ../sass/layouts/_responsive_960.scss */
   .path-node main .polygon,
   .path-tweets main .polygon,
   .path-services main .polygon,
   .path-contact main .polygon {
     margin-top: 8em;
   }
-  /* line 400, ../sass/layouts/_responsive_960.scss */
+  /* line 406, ../sass/layouts/_responsive_960.scss */
   .path-node main .polygon-not-front,
   .path-tweets main .polygon-not-front,
   .path-services main .polygon-not-front,
   .path-contact main .polygon-not-front {
     min-height: 10em;
   }
-  /* line 407, ../sass/layouts/_responsive_960.scss */
+  /* line 413, ../sass/layouts/_responsive_960.scss */
   .path-node footer .block-system,
   .path-tweets footer .block-system,
   .path-services footer .block-system,
@@ -1972,41 +2101,41 @@ footer .block-system {
     padding-top: 1.5em;
   }
 
-  /* line 415, ../sass/layouts/_responsive_960.scss */
+  /* line 421, ../sass/layouts/_responsive_960.scss */
   .path-services .block-system-main-block,
   .path-contact .block-system-main-block {
     margin-top: 7em;
   }
-  /* line 418, ../sass/layouts/_responsive_960.scss */
+  /* line 424, ../sass/layouts/_responsive_960.scss */
   .path-services .block-system-main-block h3,
   .path-contact .block-system-main-block h3 {
     font-size: 40px;
     text-align: center;
   }
-  /* line 423, ../sass/layouts/_responsive_960.scss */
+  /* line 429, ../sass/layouts/_responsive_960.scss */
   .path-services .block-system-main-block a:hover,
   .path-contact .block-system-main-block a:hover {
     text-decoration: none;
   }
-  /* line 427, ../sass/layouts/_responsive_960.scss */
+  /* line 433, ../sass/layouts/_responsive_960.scss */
   .path-services .block-system-main-block .view,
   .path-contact .block-system-main-block .view {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
   }
-  /* line 433, ../sass/layouts/_responsive_960.scss */
+  /* line 439, ../sass/layouts/_responsive_960.scss */
   .path-services .block-system-main-block .view .views-row .polygon-not-front,
   .path-contact .block-system-main-block .view .views-row .polygon-not-front {
     display: none;
   }
-  /* line 437, ../sass/layouts/_responsive_960.scss */
+  /* line 443, ../sass/layouts/_responsive_960.scss */
   .path-services .block-system-main-block .view .views-row .field--name-field-image,
   .path-contact .block-system-main-block .view .views-row .field--name-field-image {
     float: left;
     width: 25%;
   }
-  /* line 442, ../sass/layouts/_responsive_960.scss */
+  /* line 448, ../sass/layouts/_responsive_960.scss */
   .path-services .block-system-main-block .view .views-row .field--name-body,
   .path-contact .block-system-main-block .view .views-row .field--name-body {
     background: none;
@@ -2014,41 +2143,41 @@ footer .block-system {
     float: right;
     width: 70%;
   }
-  /* line 448, ../sass/layouts/_responsive_960.scss */
+  /* line 454, ../sass/layouts/_responsive_960.scss */
   .path-services .block-system-main-block .view .views-row .field--name-body .inner,
   .path-contact .block-system-main-block .view .views-row .field--name-body .inner {
     width: 100%;
   }
-  /* line 453, ../sass/layouts/_responsive_960.scss */
+  /* line 459, ../sass/layouts/_responsive_960.scss */
   .path-services .block-system-main-block .view .views-row .more,
   .path-contact .block-system-main-block .view .views-row .more {
     width: 40%;
   }
 
-  /* line 463, ../sass/layouts/_responsive_960.scss */
+  /* line 469, ../sass/layouts/_responsive_960.scss */
   .path-services .block-system-main-block {
     margin-top: 15em;
   }
 
-  /* line 469, ../sass/layouts/_responsive_960.scss */
+  /* line 475, ../sass/layouts/_responsive_960.scss */
   .path-contact .block-system-main-block {
     padding: 0 5em;
   }
 
-  /* line 480, ../sass/layouts/_responsive_960.scss */
+  /* line 486, ../sass/layouts/_responsive_960.scss */
   .node--type-service main .block-page-title-block h1 {
     font-size: 56px;
   }
-  /* line 485, ../sass/layouts/_responsive_960.scss */
+  /* line 491, ../sass/layouts/_responsive_960.scss */
   .node--type-service main .field--name-body {
     margin-top: 4em;
   }
-  /* line 488, ../sass/layouts/_responsive_960.scss */
+  /* line 494, ../sass/layouts/_responsive_960.scss */
   .node--type-service main .field--name-body .inner {
     margin-top: 0;
   }
 
-  /* line 497, ../sass/layouts/_responsive_960.scss */
+  /* line 503, ../sass/layouts/_responsive_960.scss */
   .path-tweets .block-system-main-block {
     margin-top: 8em;
     padding: 0 2em;
@@ -2056,7 +2185,7 @@ footer .block-system {
 
   @-moz-document url-prefix() {
     /* FF CSS styles go here */
-    /* line 509, ../sass/layouts/_responsive_960.scss */
+    /* line 515, ../sass/layouts/_responsive_960.scss */
     .block-views-blocktechnologies-block-1 h2,
     .block-contactblock h2,
     .block-views-blockservices-block-1 h2 {
@@ -2064,7 +2193,7 @@ footer .block-system {
       color: #40826F;
     }
 
-    /* line 518, ../sass/layouts/_responsive_960.scss */
+    /* line 524, ../sass/layouts/_responsive_960.scss */
     h3 a,
     .path-tweets a,
     .block-tweets a {
@@ -2074,7 +2203,7 @@ footer .block-system {
 }
 @media all and (min-width: 960px) and (-ms-high-contrast: none), all and (min-width: 960px) and (-ms-high-contrast: active) {
   /* IE10+ CSS styles go here */
-  /* line 530, ../sass/layouts/_responsive_960.scss */
+  /* line 536, ../sass/layouts/_responsive_960.scss */
   .block-views-blocktechnologies-block-1 h2,
   .block-contactblock h2,
   .block-views-blockservices-block-1 h2 {
@@ -2082,7 +2211,7 @@ footer .block-system {
     color: #40826F;
   }
 
-  /* line 539, ../sass/layouts/_responsive_960.scss */
+  /* line 545, ../sass/layouts/_responsive_960.scss */
   h3 a,
   .path-tweets a,
   .block-tweets a {
@@ -2176,6 +2305,12 @@ footer .block-system {
   .path-tweets .block-system-main-block {
     margin-top: 45em;
     padding: 0 2em;
+  }
+}
+@media all and (min-width: 1824px) {
+  /* line 2, ../sass/layouts/_responsive_1824.scss */
+  .region-primary-menu {
+    width: 50%;
   }
 }
 /* Component (SMACSS module) rules */

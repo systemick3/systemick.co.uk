@@ -367,6 +367,106 @@ header {
   }
 }
 
+.block-views-blockservice-modal-block-1,
+.block-views-blockservice-modal-block-2,
+.block-views-blockservice-modal-block-3 {
+  background-color: white;
+  display: none;
+  height: 100%;
+  left: 0;
+  opacity: 0.95;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+
+  .inner {
+    background: #eee;
+    box-shadow: 4px 4px 80px #000;
+    left: 50%;
+    min-height: 80%;
+    opacity: 1.0;
+    overflow: hidden;
+    position: absolute;
+    top: 1%;
+    width: 50%;
+
+    -ms-transform: translate(-50%,0); /* IE 9 */
+    -webkit-transform: translate(-50%,0); /* Safari */
+    transform: translate(-50%,0);
+
+    h2 {
+      display: none;
+    }
+
+    .close {
+      float: right;
+      font-weight: bold;
+      margin: 1em 1em 0 0;
+      width: 2%;
+    }
+
+    .views-field-title {
+      font-size: $h3-font-size / 2.5;
+      margin-top: 1em;
+      padding-left: 0.5em;
+      padding-top: 2em;
+      text-transform: uppercase;
+    }
+
+    .views-field-body {
+      float: left;
+      margin-bottom: 12em;
+      padding-left: 1em;
+      width: 60%;
+    }
+
+    .views-field-field-image {
+      float: right;
+      padding: 2em 1em 0 1em;
+      width: 30%;
+    }
+
+    .polygon {
+      margin-top: 5em;
+      min-height: 3em;
+    }
+
+    .footer {
+      @include bg-gradient($light-green, $dark-green);
+
+      bottom:0;
+      color: white;
+      font-size: $base-font-size * 1.6;
+      margin-top: -1em;
+      min-height: 3em;
+      padding: 2em 1em 0 1em;
+      position: relative;
+      width:100%;
+
+      .problem {
+        float: left;
+        margin-bottom: 1em;
+        margin-top: -1em;
+        padding-top: 0.5em;
+        width: 70%;
+      }
+
+      .button {
+        background-color: white;
+        color: $medium-green;
+        float: right;
+        margin-right: 2em;
+        margin-top: -1em;
+        padding: 0.5em 0;
+        text-align: center;
+        text-transform: uppercase;
+        width: 20%;
+      }
+    }
+  }
+}
+
 footer {
   @include bg-gradient($light-green, $dark-green);
 

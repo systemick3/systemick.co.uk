@@ -7,3 +7,4 @@ base theme: classy
 
 libraries:
   - systemick/global-styling
+  - systemick/global-js
