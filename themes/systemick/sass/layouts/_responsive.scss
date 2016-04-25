@@ -416,14 +416,12 @@ header {
     }
 
     .views-field-body {
-      //float: left;
       margin-bottom: 12em;
       padding-left: 1em;
       width: 90%;
     }
 
     .views-field-field-image {
-      //float: right;
       margin-left: auto;
       margin-right: auto;
       padding: 2em 1em 0 1em;
@@ -448,10 +446,7 @@ header {
       width:100%;
 
       .problem {
-        //float: left;
         margin: -3em 0 1em -1em;
-        //margin-bottom: 1em;
-        //margin-top: -3em;
         padding-top: 0.5em;
         text-align: center;
         width: 100%;
@@ -460,8 +455,6 @@ header {
       .button {
         background-color: white;
         color: $medium-green;
-        //float: right;
-        //margin-right: 2em;
         margin-left: 0;
         margin-top: 0;
         padding: 0.5em 0;
@@ -749,6 +742,22 @@ footer {
       color: $medium-green;
     }
   }
+
+  .block-views-blockservice-modal-block-1,
+  .block-views-blockservice-modal-block-2,
+  .block-views-blockservice-modal-block-3 {
+
+    .inner {
+
+      .views-field-title,
+      .footer{
+
+        a {
+          color: $medium-green;
+        }
+      }
+    }
+  }
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -766,6 +775,22 @@ footer {
   .block-tweets {
     a {
       color: $medium-green;
+    }
+  }
+
+  .block-views-blockservice-modal-block-1,
+  .block-views-blockservice-modal-block-2,
+  .block-views-blockservice-modal-block-3 {
+
+    .inner {
+
+      .views-field-title,
+      .footer{
+
+        a {
+          color: $medium-green;
+        }
+      }
     }
   }
 }
