@@ -1,7 +1,7 @@
 @media all and (min-width: 960px) {
 
   .contextual-region {
-    //position: static;
+    position: static;
   }
 
   header {
@@ -353,22 +353,15 @@
   .block-views-blockservice-modal-block-3 {
 
     .inner {
-      width: 90%;
 
       .views-field-body {
         float: left;
-        padding-left: 3em;
-        width: 56%;
+        width: 60%;
       }
 
       .views-field-field-image {
         float: right;
-        padding-right: 3em;
         width: 30%;
-
-        img {
-          float: right;
-        }
       }
 
       .footer {
@@ -376,15 +369,13 @@
 
         .problem {
           float: left;
-          margin-left: 2em;
-          margin-top: -1.5em;
-          text-align: left;
-          width: 66%;
+          margin-top: -3em;
+          width: 70%;
         }
 
         .button {
           float: right;
-          margin-right: 3em;
+          margin-right: 2em;
           margin-top: -1em;
           width: 20%;
         }
