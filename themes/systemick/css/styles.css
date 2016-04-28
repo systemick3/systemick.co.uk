@@ -2329,7 +2329,7 @@ footer .block-system {
   .region-primary-menu {
     margin-right: -10.5em;
     margin-top: -13em;
-    width: 60%;
+    width: 75%;
   }
 
   /* line 12, ../sass/layouts/_responsive_1224.scss */
@@ -2348,7 +2348,7 @@ footer .block-system {
 
   /* line 24, ../sass/layouts/_responsive_1224.scss */
   .polygon {
-    margin-top: 8em;
+    margin-top: 2em;
   }
 
   /* line 32, ../sass/layouts/_responsive_1224.scss */
@@ -2437,6 +2437,17 @@ footer .block-system {
   .path-tweets .block-system-main-block {
     margin-top: 45em;
     padding: 0 2em;
+  }
+}
+@media all and (min-width: 1480px) {
+  /* line 2, ../sass/layouts/_responsive_1480.scss */
+  .region-primary-menu {
+    width: 60%;
+  }
+
+  /* line 6, ../sass/layouts/_responsive_1480.scss */
+  .polygon {
+    margin-top: 8em;
   }
 }
 @media all and (min-width: 1824px) {
