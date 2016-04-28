@@ -2402,7 +2402,7 @@ footer .block-system {
   .path-tweets main .block-system-main-block,
   .path-services main .block-system-main-block,
   .path-contact main .block-system-main-block {
-    margin-top: 30em;
+    margin-top: 22em;
   }
   /* line 73, ../sass/layouts/_responsive_1224.scss */
   .path-node main .block-page-title-block,
@@ -2411,29 +2411,43 @@ footer .block-system {
   .path-contact main .block-page-title-block {
     margin-top: 12em;
   }
+  /* line 77, ../sass/layouts/_responsive_1224.scss */
+  .path-node main .field--name-body,
+  .path-tweets main .field--name-body,
+  .path-services main .field--name-body,
+  .path-contact main .field--name-body {
+    padding-top: 3em;
+  }
+  /* line 81, ../sass/layouts/_responsive_1224.scss */
+  .path-node main .polygon,
+  .path-tweets main .polygon,
+  .path-services main .polygon,
+  .path-contact main .polygon {
+    margin-top: -4em;
+  }
 
-  /* line 84, ../sass/layouts/_responsive_1224.scss */
+  /* line 92, ../sass/layouts/_responsive_1224.scss */
   .path-services main .block-system-main-block,
   .path-contact main .block-system-main-block {
-    margin-top: 30em;
+    margin-top: 22em;
   }
-  /* line 91, ../sass/layouts/_responsive_1224.scss */
+  /* line 99, ../sass/layouts/_responsive_1224.scss */
   .path-services main .block-system-main-block .view .views-row .more,
   .path-contact main .block-system-main-block .view .views-row .more {
     width: 20%;
   }
 
-  /* line 104, ../sass/layouts/_responsive_1224.scss */
+  /* line 112, ../sass/layouts/_responsive_1224.scss */
   .node--type-page main .block-system-main-block {
     margin-top: 16em;
   }
 
-  /* line 114, ../sass/layouts/_responsive_1224.scss */
+  /* line 122, ../sass/layouts/_responsive_1224.scss */
   .node--type-service main .block-system-main-block {
     margin-top: 12em;
   }
 
-  /* line 122, ../sass/layouts/_responsive_1224.scss */
+  /* line 130, ../sass/layouts/_responsive_1224.scss */
   .path-tweets .block-system-main-block {
     margin-top: 45em;
     padding: 0 2em;
@@ -2448,6 +2462,28 @@ footer .block-system {
   /* line 6, ../sass/layouts/_responsive_1480.scss */
   .polygon {
     margin-top: 8em;
+  }
+
+  /* line 17, ../sass/layouts/_responsive_1480.scss */
+  .path-node main .block-system-main-block,
+  .path-tweets main .block-system-main-block,
+  .path-services main .block-system-main-block,
+  .path-contact main .block-system-main-block {
+    margin-top: 30em;
+  }
+  /* line 21, ../sass/layouts/_responsive_1480.scss */
+  .path-node main .block-page-title-block,
+  .path-tweets main .block-page-title-block,
+  .path-services main .block-page-title-block,
+  .path-contact main .block-page-title-block {
+    margin-top: 12em;
+  }
+  /* line 25, ../sass/layouts/_responsive_1480.scss */
+  .path-node main .polygon,
+  .path-tweets main .polygon,
+  .path-services main .polygon,
+  .path-contact main .polygon {
+    margin-top: -12em;
   }
 }
 @media all and (min-width: 1824px) {

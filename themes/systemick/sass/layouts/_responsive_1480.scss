@@ -6,4 +6,25 @@
   .polygon {
     margin-top: 8em;
   }
+
+  .path-node,
+  .path-tweets,
+  .path-services,
+  .path-contact {
+
+    main {
+
+      .block-system-main-block {
+        margin-top: 30em;
+      }
+
+      .block-page-title-block {
+        margin-top: 12em;
+      }
+
+      .polygon {
+        margin-top: -12em;
+      }
+    }
+  }
 }
