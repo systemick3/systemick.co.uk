@@ -8,24 +8,20 @@
 use Drupal\Component\Utility\Xss;
 use Drupal\Core\Template\Attribute;
 
-function systemick_js_alter(&$javascript, \Drupal\Core\Asset\AttachedAssetsInterface $assets) {
-//  print '<pre>';
-//  print_r($javascript);
-//  die(__FUNCTION__);
-
-  $mobileDetector = \Drupal::service('krs.mobile_detect');
-
-  if (!$mobileDetector->isMobile() && !$mobileDetector->isTablet()) {
-    $javascript['themes/systemick/js/vendor/skrollr.js'] = array(
-      'group' => '-100',
-      'type' => 'file',
-      'data' => 'themes/systemick/js/vendor/skrollr.js',
-      'weight' => $javascript['themes/systemick/js/systemick.js']['weight'] - 0.001,
-      'preprocess' => '1',
-      'scope' => 'footer'
-    );
-  }
-}
+//function systemick_js_alter(&$javascript, \Drupal\Core\Asset\AttachedAssetsInterface $assets) {
+//  $mobileDetector = \Drupal::service('krs.mobile_detect');
+//
+//  if (!$mobileDetector->isMobile() && !$mobileDetector->isTablet()) {
+//    $javascript['themes/systemick/js/vendor/skrollr.js'] = array(
+//      'group' => '-100',
+//      'type' => 'file',
+//      'data' => 'themes/systemick/js/vendor/skrollr.js',
+//      'weight' => $javascript['themes/systemick/js/systemick.js']['weight'] - 0.001,
+//      'preprocess' => '1',
+//      'scope' => 'footer'
+//    );
+//  }
+//}
 
 /**
  * Implements hook_preprocess_HOOK() for HTML document templates.
