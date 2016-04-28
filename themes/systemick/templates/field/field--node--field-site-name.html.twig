@@ -36,7 +36,7 @@
     label_display == 'inline' ? 'inline',
   ]
 %}
-<div{{ attributes.addClass(classes) }}>
+<div{{ attributes.addClass(classes) }} data--100-center="opacity: 1" data-top="opacity: 0" data-anchor-target=".field--name-field-site-name h1">
   {% if not label_hidden %}
     <h3{{ title_attributes.addClass(title_classes) }}>{{ label }}</h3>
   {% endif %}

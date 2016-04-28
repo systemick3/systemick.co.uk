@@ -7,6 +7,7 @@ global-styling:
 global-js:
   version: VERSION
   js:
+    js/vendor/skrollr.js: {}
     js/systemick.js: {}
   dependencies:
     - core/jquery
