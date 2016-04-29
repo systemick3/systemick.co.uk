@@ -1317,8 +1317,8 @@ footer .block-system {
 /* line 671, ../sass/layouts/_responsive.scss */
 .path-contact .block-system-main-block {
   margin-bottom: 2em;
-  margin-top: 4em;
-  padding: 0 0.5em;
+  margin-top: 1em;
+  padding: 1em 0.5em 0 0.5em;
 }
 /* line 676, ../sass/layouts/_responsive.scss */
 .path-contact .block-system-main-block .form-actions {
