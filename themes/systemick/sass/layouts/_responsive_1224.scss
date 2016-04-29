@@ -136,9 +136,12 @@
 
   .path-tweets {
 
-    .block-system-main-block {
-      margin-top: 45em;
-      padding: 0 2em;
+    main {
+
+      .block-system-main-block {
+        margin-top: 16em;
+        padding: 2em 2em 0 2em;
+      }
     }
   }
 }
