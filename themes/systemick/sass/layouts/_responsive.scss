@@ -556,6 +556,10 @@ footer {
     .polygon-not-front {
       display: none;
     }
+
+    .block-system-main-block {
+      background-color: white;
+    }
   }
 
   footer {
@@ -590,7 +594,8 @@ footer {
 .path-services,
 .path-contact {
   .block-system-main-block {
-    margin-top: 6em;
+    margin-top: 3em;
+    padding-top: 1em;
 
     h3 {
       font-size: $h3-font-size / 3;

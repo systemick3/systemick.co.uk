@@ -38,6 +38,13 @@
         return false;
       });
 
+//      $('.menu li:nth-child(3) a').click(function () {
+//        //$(".block-contactblock, .block-tweets").css('opacity', 1);
+//        //window.location = '/';
+//        $('html, body').animate({ scrollTop: $("#block-views-block-services-block-1").offset().top }, "slow");
+//        return false;
+//      });
+
       // Init Skrollr
 //      var s = skrollr.init({
 //        render: function(data) {
