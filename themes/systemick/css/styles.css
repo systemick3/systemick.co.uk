@@ -2360,6 +2360,12 @@ footer .block-system {
     color: #40826F;
   }
 }
+@media all and (min-width: 1024px) {
+  /* line 9, ../sass/layouts/_responsive_1024.scss */
+  .node--type-page main .block-system-main-block .polygon {
+    margin-top: -4em;
+  }
+}
 @media all and (min-width: 1224px) {
   /* line 2, ../sass/layouts/_responsive_1224.scss */
   header {
