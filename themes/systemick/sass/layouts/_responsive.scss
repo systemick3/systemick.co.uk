@@ -570,6 +570,17 @@ footer {
   }
 }
 
+.node--type-page {
+
+  main {
+
+    .block-system-main-block {
+      background-color: transparent;
+      margin-top: 4em;
+    }
+  }
+}
+
 .node--type-service {
 
   main {
