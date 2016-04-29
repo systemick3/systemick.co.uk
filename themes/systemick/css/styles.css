@@ -1522,35 +1522,35 @@ footer .block-system {
     width: 30%;
   }
 
-  /* line 140, ../sass/layouts/_responsive_480.scss */
+  /* line 123, ../sass/layouts/_responsive_480.scss */
   .path-node main .block-page-title-block,
   .path-tweets main .block-page-title-block,
   .path-services main .block-page-title-block,
   .path-contact main .block-page-title-block {
     margin-top: -2em;
   }
-  /* line 143, ../sass/layouts/_responsive_480.scss */
+  /* line 126, ../sass/layouts/_responsive_480.scss */
   .path-node main .block-page-title-block .inner,
   .path-tweets main .block-page-title-block .inner,
   .path-services main .block-page-title-block .inner,
   .path-contact main .block-page-title-block .inner {
     width: 40%;
   }
-  /* line 148, ../sass/layouts/_responsive_480.scss */
+  /* line 131, ../sass/layouts/_responsive_480.scss */
   .path-node main .field--name-field-subheading,
   .path-tweets main .field--name-field-subheading,
   .path-services main .field--name-field-subheading,
   .path-contact main .field--name-field-subheading {
     margin-top: -3em;
   }
-  /* line 154, ../sass/layouts/_responsive_480.scss */
+  /* line 137, ../sass/layouts/_responsive_480.scss */
   .path-node main .field--name-body .inner,
   .path-tweets main .field--name-body .inner,
   .path-services main .field--name-body .inner,
   .path-contact main .field--name-body .inner {
     margin-left: auto;
   }
-  /* line 159, ../sass/layouts/_responsive_480.scss */
+  /* line 142, ../sass/layouts/_responsive_480.scss */
   .path-node main .polygon,
   .path-tweets main .polygon,
   .path-services main .polygon,
@@ -1558,40 +1558,40 @@ footer .block-system {
     margin-top: 6em;
   }
 
-  /* line 168, ../sass/layouts/_responsive_480.scss */
+  /* line 151, ../sass/layouts/_responsive_480.scss */
   .path-services .block-system-main-block,
   .path-contact .block-system-main-block {
-    margin-top: 10em;
+    margin-top: 6em;
   }
-  /* line 176, ../sass/layouts/_responsive_480.scss */
+  /* line 159, ../sass/layouts/_responsive_480.scss */
   .path-services main .field--name-body .inner,
   .path-contact main .field--name-body .inner {
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 186, ../sass/layouts/_responsive_480.scss */
+  /* line 169, ../sass/layouts/_responsive_480.scss */
   .path-tweets .block-system-main-block {
     margin-top: 10em;
   }
 
   @-moz-document url-prefix() {
-    /* line 199, ../sass/layouts/_responsive_480.scss */
+    /* line 182, ../sass/layouts/_responsive_480.scss */
     .region-primary-menu ul li a {
       text-decoration: none;
     }
-    /* line 202, ../sass/layouts/_responsive_480.scss */
+    /* line 185, ../sass/layouts/_responsive_480.scss */
     .region-primary-menu ul li a.is-active {
       text-decoration: underline;
     }
   }
 }
 @media all and (min-width: 480px) and (-ms-high-contrast: none), all and (min-width: 480px) and (-ms-high-contrast: active) {
-  /* line 219, ../sass/layouts/_responsive_480.scss */
+  /* line 202, ../sass/layouts/_responsive_480.scss */
   .region-primary-menu ul li a {
     text-decoration: none;
   }
-  /* line 222, ../sass/layouts/_responsive_480.scss */
+  /* line 205, ../sass/layouts/_responsive_480.scss */
   .region-primary-menu ul li a.is-active {
     text-decoration: underline;
   }
