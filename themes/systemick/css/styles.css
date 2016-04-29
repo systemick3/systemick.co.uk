@@ -1244,67 +1244,71 @@ footer .block-system {
   background-color: transparent;
   margin-top: 4em;
 }
+/* line 581, ../sass/layouts/_responsive.scss */
+.node--type-page main .block-system-main-block .polygon {
+  margin-top: -1.5em;
+}
 
-/* line 590, ../sass/layouts/_responsive.scss */
+/* line 594, ../sass/layouts/_responsive.scss */
 .node--type-service main .block-page-title-block .inner {
   width: 90%;
 }
-/* line 596, ../sass/layouts/_responsive.scss */
+/* line 600, ../sass/layouts/_responsive.scss */
 .node--type-service .block-system-main-block {
   margin-top: 3em;
 }
-/* line 600, ../sass/layouts/_responsive.scss */
+/* line 604, ../sass/layouts/_responsive.scss */
 .node--type-service .field--name-field-image {
   visibility: visible;
 }
 
-/* line 607, ../sass/layouts/_responsive.scss */
+/* line 611, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block,
 .path-contact .block-system-main-block {
   margin-top: 3em;
   padding-top: 1em;
 }
-/* line 611, ../sass/layouts/_responsive.scss */
+/* line 615, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block h3,
 .path-contact .block-system-main-block h3 {
   font-size: 26.66667px;
   text-align: center;
 }
-/* line 616, ../sass/layouts/_responsive.scss */
+/* line 620, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block a:hover,
 .path-contact .block-system-main-block a:hover {
   text-decoration: none;
 }
-/* line 626, ../sass/layouts/_responsive.scss */
+/* line 630, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .field--name-field-image .inner,
 .path-contact .block-system-main-block .view .views-row .field--name-field-image .inner {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
 }
-/* line 631, ../sass/layouts/_responsive.scss */
+/* line 635, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .field--name-field-image .inner img,
 .path-contact .block-system-main-block .view .views-row .field--name-field-image .inner img {
   margin-left: 2em;
 }
-/* line 637, ../sass/layouts/_responsive.scss */
+/* line 641, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .field--name-body,
 .path-contact .block-system-main-block .view .views-row .field--name-body {
   background: none;
   color: #40826F;
 }
-/* line 642, ../sass/layouts/_responsive.scss */
+/* line 646, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .more,
 .path-contact .block-system-main-block .view .views-row .more {
   font-weight: bold;
   margin: 1em 0 0 1em;
 }
 
-/* line 652, ../sass/layouts/_responsive.scss */
+/* line 656, ../sass/layouts/_responsive.scss */
 .path-services footer {
   margin-top: 5em;
 }
-/* line 662, ../sass/layouts/_responsive.scss */
+/* line 666, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .more {
   background: #40826F;
   margin: 0 auto 0 auto;
@@ -1315,57 +1319,57 @@ footer .block-system {
   text-transform: uppercase;
   width: 60%;
 }
-/* line 672, ../sass/layouts/_responsive.scss */
+/* line 676, ../sass/layouts/_responsive.scss */
 .path-services .block-system-main-block .view .views-row .more a {
   color: white;
 }
 
-/* line 682, ../sass/layouts/_responsive.scss */
+/* line 686, ../sass/layouts/_responsive.scss */
 .path-contact .block-system-main-block {
   margin-bottom: 2em;
   margin-top: 1em;
   padding: 1em 0.5em 0 0.5em;
 }
-/* line 687, ../sass/layouts/_responsive.scss */
+/* line 691, ../sass/layouts/_responsive.scss */
 .path-contact .block-system-main-block .form-actions {
   margin-left: 0;
 }
 
-/* line 698, ../sass/layouts/_responsive.scss */
+/* line 702, ../sass/layouts/_responsive.scss */
 .path-node .block-system-main-block .field--name-field-image .inner {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
-/* line 703, ../sass/layouts/_responsive.scss */
+/* line 707, ../sass/layouts/_responsive.scss */
 .path-node .block-system-main-block .field--name-field-image .inner img {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 715, ../sass/layouts/_responsive.scss */
+/* line 719, ../sass/layouts/_responsive.scss */
 .path-tweets .block-system-main-block {
   margin-top: 1em;
   padding: 2em 0.5em 0 0.5em;
 }
-/* line 719, ../sass/layouts/_responsive.scss */
+/* line 723, ../sass/layouts/_responsive.scss */
 .path-tweets .block-system-main-block ul {
   list-style: none outside;
   padding: 0;
 }
-/* line 723, ../sass/layouts/_responsive.scss */
+/* line 727, ../sass/layouts/_responsive.scss */
 .path-tweets .block-system-main-block ul li {
   border-bottom: 1px dotted #58585a;
   margin: 1em 0;
   padding-bottom: 0.5em;
 }
 
-/* line 734, ../sass/layouts/_responsive.scss */
+/* line 738, ../sass/layouts/_responsive.scss */
 .path-system .block-system-main-block {
   margin-top: 34em;
 }
 
-/* line 741, ../sass/layouts/_responsive.scss */
+/* line 745, ../sass/layouts/_responsive.scss */
 .path-user .block-system-main-block {
   margin-top: 30em;
   padding-left: 2em;
@@ -1373,13 +1377,13 @@ footer .block-system {
 
 @-moz-document url-prefix() {
   /* FF CSS styles go here */
-  /* line 751, ../sass/layouts/_responsive.scss */
+  /* line 755, ../sass/layouts/_responsive.scss */
   .block-views-blockservices-block-1 h2 {
     background-color: transparent;
     color: #40826F;
   }
 
-  /* line 760, ../sass/layouts/_responsive.scss */
+  /* line 764, ../sass/layouts/_responsive.scss */
   h3 a,
   .path-tweets a,
   .block-tweets a {
@@ -1387,7 +1391,7 @@ footer .block-system {
     text-decoration: none;
   }
 
-  /* line 775, ../sass/layouts/_responsive.scss */
+  /* line 779, ../sass/layouts/_responsive.scss */
   .block-views-blockservice-modal-block-1 .inner .views-field-title a,
   .block-views-blockservice-modal-block-1 .inner .footer a,
   .block-views-blockservice-modal-block-2 .inner .views-field-title a,
@@ -1400,13 +1404,13 @@ footer .block-system {
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE10+ CSS styles go here */
-  /* line 788, ../sass/layouts/_responsive.scss */
+  /* line 792, ../sass/layouts/_responsive.scss */
   .block-views-blockservices-block-1 h2 {
     background-color: transparent;
     color: #40826F;
   }
 
-  /* line 797, ../sass/layouts/_responsive.scss */
+  /* line 801, ../sass/layouts/_responsive.scss */
   h3 a,
   .path-tweets a,
   .block-tweets a {
@@ -1414,7 +1418,7 @@ footer .block-system {
     text-decoration: none;
   }
 
-  /* line 812, ../sass/layouts/_responsive.scss */
+  /* line 816, ../sass/layouts/_responsive.scss */
   .block-views-blockservice-modal-block-1 .inner .views-field-title a,
   .block-views-blockservice-modal-block-1 .inner .footer a,
   .block-views-blockservice-modal-block-2 .inner .views-field-title a,
