@@ -8,19 +8,19 @@
   Drupal.behaviors.nodeDetailsSummaries = {
     attach: function (context) {
 
-      $('.view-services .view-content .views-row:nth-child(1) a').click(function () {
+      $('.node--type-front .view-services .view-content .views-row:nth-child(1) a').click(function () {
         $("html, body").animate({ scrollTop: 0 }, "slow");
         $('.block-views-blockservice-modal-block-1').show();
         return false;
       });
 
-      $('.view-services .view-content .views-row:nth-child(2) a').click(function () {
+      $('.node--type-front .view-services .view-content .views-row:nth-child(2) a').click(function () {
         $("html, body").animate({ scrollTop: 0 }, "slow");
         $('.block-views-blockservice-modal-block-3').show();
         return false;
       });
 
-      $('.view-services .view-content .views-row:nth-child(3) a').click(function () {
+      $('.node--type-front .view-services .view-content .views-row:nth-child(3) a').click(function () {
         $("html, body").animate({ scrollTop: 0 }, "slow");
         $('.block-views-blockservice-modal-block-2').show();
         return false;
