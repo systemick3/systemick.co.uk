@@ -32,7 +32,7 @@
         $(this).parents('.block-views').hide();
       });
 
-      $('.menu li:last-child a').click(function () {
+      $('.menu li:last-child a, .node--type-front .field--name-body p a').click(function () {
         $(".block-contactblock, .block-tweets").css('opacity', 1);
         $('html, body').animate({ scrollTop: $("#block-contactblock").offset().top }, "slow");
         return false;
