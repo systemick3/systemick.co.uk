@@ -1,0 +1,22 @@
+global-styling:
+  version: VERSION
+  css:
+    all:
+      css/main.css: {}
+
+bootstrap:
+  version: VERSION
+  css:
+    all:
+      https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css: {}
+  js:
+    https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js: {}
+
+global-js:
+  version: VERSION
+  js:
+    js/systemick.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal

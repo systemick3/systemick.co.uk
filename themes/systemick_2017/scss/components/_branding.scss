@@ -1,0 +1,22 @@
+// @file
+// components/_branding.scss - custom styling for logo and site name
+//
+
+.block-system-branding-block {
+  .logo__image {
+    float: left;
+    height: 70px;
+    margin-right: 10px;
+    width: 45px;
+  }
+
+
+  .site-name {
+    a {
+      color: $c--branding-secondary;
+      font-family: $montserrat;
+      font-size: $h--x-large;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+name: Systemick 2017 Theme
+type: theme
+description: 'A mobile first, fully responsive subtheme of Classy based on Bootstrap'
+version: 1.0
+core: 8.x
+base theme: classy
+
+libraries:
+  - systemick_2017/bootstrap
+  - systemick_2017/global-styling
+  - systemick_2017/global-js
+
+regions:
+  headline: Headline
+  header: Header
+  contenttop: Content Top
+  contentuppermiddle: Content Upper Middle
+  contentlowermiddle: Content Lower Middle
+  contentbottom: Content Bottom
+  sidebar: Sidebar
+  footer: Footer

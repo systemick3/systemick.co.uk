@@ -1,0 +1,72 @@
+// @file
+// _base.scss
+// Base styles
+//
+
+$html-font-size: 100%;
+
+/*--------------------------------
+  Box sizing
+*/
+
+* {
+  &,
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+
+
+/*--------------------------------
+  Basic document styling
+*/
+
+html {
+  font-size: $html-font-size;
+  min-height: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: none;
+}
+
+body {
+  background-color: $c--body-bg;
+  color: $c--body-colour;
+  font-family: $sans;
+  font-size: $p;
+  line-height: $lh;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: $c--branding-secondary;
+  
+  &:hover,
+  &:visited {
+    text-decoration: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+  font-family: $titillium;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.container {
+  padding: 0;
+
+  @include widescreen {
+    width: $widescreen-width;
+  }
+}

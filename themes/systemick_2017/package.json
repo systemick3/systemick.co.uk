@@ -1,0 +1,23 @@
+{
+  "name": "ecorys",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/ecorysuk/D8Theme.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/ecorysuk/D8Theme/issues"
+  },
+  "homepage": "https://gitlab.com/ecorysuk/D8Theme#README",
+  "description": ""
+}

@@ -1,0 +1,90 @@
+// @file
+// module/_menu.scss - custom styling for menus
+//
+
+.block-menu {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      font-size: 150%;
+      text-align: center;
+  
+      @include tablet {
+        display: inline;
+        font-size: 120%;
+        margin-right: 1em;
+        text-align: left;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.container-fluid .navbar-collapse {
+  margin: 0 auto;  
+}
+
+.menu__main {
+  background-color: $c--branding-secondary;
+  margin: 0 auto;
+  padding-bottom: 5px;
+
+  @include tablet {
+    background-color: white;
+    padding-bottom: 0;
+  }
+
+  ul {
+    font-family: $titillium;
+      
+    @include tablet {
+      float: right;
+      padding-top: 10px;
+    }
+
+    li {
+
+      a {
+        color: white;
+        font-weight: bold;
+
+        &.is-active {
+          color: white;
+        }
+
+        @include tablet {
+          color: black;
+          font-weight: bold;
+
+          &.is-active {
+            color: $c--branding-secondary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.navbar-toggle {
+  background: $c--branding-secondary;
+  height: 50px;
+  margin: 0;
+  width: 60px;
+
+  .icon-bar {
+    background: white;
+    height: 5px;
+    width: 40px;
+  }
+}
+
+.container-fluid .navbar-header {
+  margin-top: 2px;
+  padding-right: 0;
+}

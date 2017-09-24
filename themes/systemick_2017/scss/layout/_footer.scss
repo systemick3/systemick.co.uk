@@ -1,0 +1,10 @@
+// @file
+// /layout/_footer.scss
+// Custom styles for footer region
+//
+
+.footer {
+  padding: 0;
+  position: relative;
+  z-index: z('footer');
+}

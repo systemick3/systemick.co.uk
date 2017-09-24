@@ -1,0 +1,15 @@
+// @file
+// page/_front.scss - custom styling homepage
+//
+
+.node--type-front {
+  
+  .field--name-field-banner-image {
+    float: left;
+    margin: 0 20px 20px 0;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+}

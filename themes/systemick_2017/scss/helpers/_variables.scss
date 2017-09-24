@@ -1,0 +1,178 @@
+// @file
+// _fonts.scss
+// Variables used in other files
+//
+
+/*---------------------------------
+  Widths
+*/
+$tablet-width: 768px;
+$desktop-width: 992px;
+$widescreen-width: 1200px;
+
+/*--------------------------------
+  Colours
+*/
+
+// brand colours
+
+$c--branding-primary: #ffdd00;
+$c--branding-secondary: #0088ff;
+$c--branding-tertiary: #ff0044;
+
+
+// greyscale
+
+$c--black: #1a1a1a;
+$c--grey-dark: #444;
+$c--grey: #888;
+$c--grey-light: #ddd;
+$c--grey-x-light: #F6F6F6;
+$c--white: #fff;
+
+
+// other colours
+
+$c--red: #f50023;
+$c--green: #24b35d;
+$c--blue: #4D90FE;
+
+
+// social colours
+
+$c--twitter: #55acee;
+$c--facebook: #3b5998;
+$c--youtube: #bb0000;
+$c--pinterest: #cb2027;
+$c--linkedin: #007bb5;
+$c--instagram: #8a3ab9; // new purple colour
+// $c--instagram: #125688; // old blue colour
+
+
+// form & message positive/negative colours
+
+$c--positive: $c--green;
+$c--negative: $c--red;
+
+
+// top level element colours
+
+$c--body-bg: $c--white;
+$c--body-colour: $c--grey;
+
+
+// colour map (only use colours from the styleguide)
+// used for when looping through panel/theme styles
+
+$colours: (
+  // primary colours
+  'yellow': (
+    'base': $c--branding-primary
+  ),
+  'green': (
+    'base': $c--green
+  ),
+  'red': (
+    'base': $c--red
+  ),
+  'blue': (
+    'base': $c--blue
+  ),
+  // greyscale
+  'black': (
+    'base': $c--black
+  ),
+  'grey': (
+    'base': $c--grey
+  ),
+  'grey-dark': (
+    'base': $c--grey-dark
+  ),
+  'grey-light': (
+    'base': $c--grey-light
+  ),
+  'grey-off-white': (
+    'base': $c--grey-x-light
+  ),
+  'white': (
+    'base': $c--white
+  )
+);
+
+/*--------------------------------
+  Typography
+*/
+
+// font stacks
+// for embedded custom fonts, list name below as normal. To generate code see example in utlity/core.scss
+
+$stack: Helvetica, Arial, sans-serif;
+$stack--heading: $stack;
+
+$montserrat: 'Montserrat', Arial, Helvetica, "Nimbus Sans L", sans-serif;
+$titillium: 'Titillium Web', sans-serif;
+$bitter: 'Bitter', serif;
+$dosis: 'Dosis', sans-serif;
+$arvo: 'Arvo', sans-serif;
+$sans: 'Source Sans Pro', sans-serif;
+
+// font sizes
+
+$h--xxx-small: 16px;
+$h--xx-small: 18px;
+$h--x-small: 20px;
+$h--small: 22px;
+$h--medium: 24px;
+$h--large: 28px;
+$h--x-large: 36px;
+$h--xx-large: 48px;
+$h--xxx-large: 64px;
+
+$p: $h--x-small;
+$p--small: 12px;
+$p--medium: 18px;
+$p--large: 24px;
+
+// line-height ratios
+
+$lh: 1.5;
+$lh--x-small: 1.1;
+$lh--small: 1.25;
+$lh--large: 1.75;
+
+// letter spacing
+
+$ls: (
+  base: -30
+);
+
+
+// weights
+
+// $w--light: 300;
+$w--normal: 400;
+// $w--semibold: 600;
+$w--bold: 700;
+// $w--heavy: 800;
+
+/*--------------------------------
+  Layout
+*/
+
+// basic spacing units
+
+$spacing-unit: 30px;
+$spacing-unit--x-small: 10px;
+$spacing-unit--small: 20px;
+$spacing-unit--large: 40px;
+$spacing-unit--x-large: 60px;
+
+$rel-spacing-unit: 1em;
+$rel-spacing-unit--small: .5em;
+
+
+// page gutter
+
+$page-gutter: $spacing-unit--small;
+$page-gutter--tablet: $spacing-unit;
+$page-gutter--desktop: $spacing-unit--large;

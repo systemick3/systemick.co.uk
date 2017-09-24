@@ -1,0 +1,10 @@
+// @file
+// /layout/_headline.scss
+// Custom styles for headline region
+//
+
+.headline {
+  padding: 0;
+  position: relative;
+  z-index: z('header');
+}

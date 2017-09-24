@@ -1,0 +1,27 @@
+// @file
+// /layout/_main.scss
+// Custom styles for main content region
+//
+
+.contentuppermiddle {
+  border-bottom: 1px dotted grey;
+}
+
+.contentbottom {
+  //background: $c--grey-light;
+  font-size: 90%;
+  padding: 0 20px;
+
+  .block {
+  }
+
+  .views-row {
+    border-bottom: 1px dotted grey;
+    padding-bottom: 10px;
+  }
+
+  .field--name-title {
+    font-size: 90%;
+    font-weight: bold;
+  }
+}
