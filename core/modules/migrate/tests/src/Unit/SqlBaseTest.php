@@ -7,6 +7,7 @@
 
 namespace Drupal\Tests\migrate\Unit;
 
+use Drupal\migrate\Plugin\MigrationInterface;
 use Drupal\migrate\Plugin\migrate\source\SqlBase;
 use Drupal\Tests\UnitTestCase;
 
@@ -61,7 +62,7 @@ class SqlBaseTest extends UnitTestCase {
       ->willReturn($idmap_connection);
 
     // Setup a migration entity.
-    $migration = $this->getMock('Drupal\migrate\Entity\MigrationInterface');
+    $migration = $this->getMock(MigrationInterface::class);
     $migration->expects($with_id_map ? $this->once() : $this->never())
       ->method('getIdMap')
       ->willReturn($id_map_is_sql ? $sql : NULL);
@@ -110,13 +111,14 @@ class SqlBaseTest extends UnitTestCase {
         ['driver' => 'mysql', 'username' => 'different_from_map', 'password' => 'different_from_map'],
         ['driver' => 'mysql', 'username' => 'different_from_source', 'password' => 'different_from_source'],
       ],
-      // Returns true because source and id map connection options are the same.
+      // Returns false because driver is pgsql and the databases are not the
+      // same.
       [
+        FALSE,
         TRUE,
         TRUE,
-        TRUE,
-        ['driver' => 'pgsql', 'username' => 'same_value', 'password' => 'same_value'],
-        ['driver' => 'pgsql', 'username' => 'same_value', 'password' => 'same_value'],
+        ['driver' => 'pgsql', 'database' => '1.pgsql', 'username' => 'same_value', 'password' => 'same_value'],
+        ['driver' => 'pgsql', 'database' => '2.pgsql', 'username' => 'same_value', 'password' => 'same_value'],
       ],
       // Returns false because driver is sqlite and the databases are not the
       // same.
