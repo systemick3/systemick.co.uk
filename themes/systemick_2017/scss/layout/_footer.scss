@@ -4,7 +4,34 @@
 //
 
 .footer {
-  padding: 0;
+  background: $c--branding-primary;
+  border-top: solid 15px $c--mustard;
+  margin-top: 25px;
+  min-height: 120px;
+}
+
+.region-footer {
+  padding: 0 25px;
   position: relative;
   z-index: z('footer');
+
+  .block {
+    margin-left: -20px;
+    margin-top: 15px;
+
+    @include tablet {
+      margin-left: 0;
+      margin-top: 45px;
+      padding-left: 0;
+    }
+
+    &.block-system-powered-by-block {
+      margin-left: -5px;
+      padding-left: 10px;
+
+      @include tablet {
+        margin-left: 0;
+      }
+    }
+  }
 }

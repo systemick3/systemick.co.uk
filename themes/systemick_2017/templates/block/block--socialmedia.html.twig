@@ -30,19 +30,20 @@
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
+    'block-socialmedia',
     'col-xs-12',
     'col-md-4',
   ]
 %}
+<div class="col-xs-12 col-md-4"></div>
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}
     <h2{{ title_attributes }}>{{ label }}</h2>
   {% endif %}
   {{ title_suffix }}
-  <div class="block-content">
-    {% block content %}
-      {{ content }}
-    {% endblock %}
-  </div>
+  {% block content %}
+    {{ content }}
+  {% endblock %}
 </div>
+<div class="col-xs-12 col-md-4"></div>

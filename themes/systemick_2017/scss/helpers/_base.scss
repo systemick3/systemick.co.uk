@@ -63,10 +63,43 @@ h6 {
   font-weight: bold;
 }
 
+form {
+  label {
+     display: block;
+  }
+}
+
+input,
+textarea,
+button {
+  border-radius: 2px;
+}
+
 .container {
   padding: 0;
 
   @include widescreen {
     width: $widescreen-width;
   }
+}
+
+.line-mustard {
+  border-bottom: 15px solid $c--mustard;
+  border-radius: 10px;
+  margin: 0 10%;
+
+  @include tablet {
+    margin: 0 2%;
+  }
+
+  &.line-tweets {
+    border-bottom: 5px solid $c--mustard;
+    margin: 0;
+  }
+}
+
+.field--name-field-subheading {
+  font-size: 110%;
+  font-weight: bold;
+  margin-bottom: 20px;
 }

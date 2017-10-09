@@ -3,10 +3,34 @@
 //
 
 .node--view-mode-full {
-  padding: 20px;
+  padding: 10px 20px;
+
+  @include tablet {
+    padding: 40px 20px 10px 20px;
+  }
+}
+
+.node--type-page,
+.node--type-article {
+  .node__content {
+    padding: 0 20px;
+
+    @include tablet {
+      padding: 0 0;
+    }
+  }
 }
 
 .node__submitted {
   font-size: 80%;
   font-style: italic;
+}
+
+.field--name-field-image {
+  margin-right: 15px;
+  float: left;
+  
+  img {
+    border-radius: 50%;
+  }
 }

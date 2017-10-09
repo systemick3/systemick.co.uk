@@ -1,0 +1,16 @@
+// @file
+// components/_tags.scss - custom styling for tags
+//
+
+.block-tagadelic {
+  margin-top: 20px;
+
+  .block-content {
+    border-radius: 5px;
+
+    @include tablet {
+      background: #eee;
+      padding: 0 22% 15px 10px;
+    }
+  }
+}

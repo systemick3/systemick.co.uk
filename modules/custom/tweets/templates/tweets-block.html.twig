@@ -12,12 +12,12 @@
 #}
 <div class="username">Tweets for {{ username|raw }}</div>
 <ul>
-    {% for tweet in tweets %}
-        <li>
-            {{ tweet.text|raw }}
-            <br/>
-            <span class="tweet-date">{{ tweet.created_at|date("M dS Y") }}</span>
-        </li>
-    {% endfor %}
+  {% for tweet in tweets %}
+    <li>
+      {{ tweet.text|raw }}
+      <br/>
+      <span class="tweet-date">{{ tweet.created_at|date("M dS Y") }}</span>
+    </li>
+  {% endfor %}
 </ul>
-<div>{{ more }}</div>
+<div class="more">{{ more }}</div>

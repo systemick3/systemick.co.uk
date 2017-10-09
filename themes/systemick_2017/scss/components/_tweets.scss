@@ -1,0 +1,59 @@
+// @file
+// components/_tweets.scss - custom styling for tweets block
+//
+
+
+.block-tweets {
+  font-size: 90%;
+  margin-top: 20px;
+
+  @include tablet {
+    margin-top: 3px;
+  }
+
+  .block-content {
+    border-radius: 5px;
+    margin-top: 10px;
+
+    @include tablet {
+      background: #eee;
+      padding: 10px;
+    }
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  .username {
+    background: $c--grey-light;
+    border-radius: 5px;
+    color: black;
+    font-family: $titillium;
+    font-size: 85%;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    padding: 5px;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      border-bottom: dotted 1px $c--grey;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      padding-right: 10px;
+    }
+  } 
+
+  .tweet-date {
+    font-size: 80%;
+    font-style: italic;
+  }
+
+  .more {
+    margin-bottom: 15px;
+  }
+}
