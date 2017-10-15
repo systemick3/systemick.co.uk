@@ -1,0 +1,9 @@
+tweets.settings:
+  title: 'Edit Tweets settings'
+  route_name: tweets.settings
+  base_route: tweets.settings
+
+tweets.feeds:
+  title: 'Configure Tweets feeds'
+  route_name: tweets.feeds
+  base_route: tweets.settings

@@ -9,4 +9,10 @@ tweets.settings:
   title: 'Tweets'
   parent: system.admin_config_media
   route_name: tweets.settings
-  description: 'Configure the Tweets module.'
+  description: 'Configure the Tweets module settings.'
+
+tweets.feeds:
+  title: 'Tweets Feeds'
+  parent: system.admin_config_media.tweets
+  route_name: tweets.settings
+  description: 'Configure the Tweets module feeds.'

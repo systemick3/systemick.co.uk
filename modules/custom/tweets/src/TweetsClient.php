@@ -99,13 +99,20 @@ class TweetsClient {
       CURLOPT_FOLLOWLOCATION => true,
     );
 
-    $feed = curl_init('https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=' . $config->get('twitter_username') . '&count=' . $config->get('max_tweets'));
+
+    //$feed = curl_init('https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=' . $config->get('twitter_username') . '&count=' . $config->get('max_tweets'));
+    $feed = curl_init('https://api.twitter.com/1.1/search/tweets.json?q=drupal=' . $config->get('max_tweets'));
     curl_setopt_array($feed, $options);
     $json = curl_exec($feed);
     curl_close($feed);
     $parsed_response = json_decode($json, true);
 
-    return $parsed_response;
+    if (isset($parsed_response['statuses'])) {
+      return $parsed_response['statuses'];
+    }
+    else {
+      return $parsed_response;
+    }
   }
 
   /**

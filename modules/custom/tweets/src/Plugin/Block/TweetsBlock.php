@@ -78,6 +78,9 @@ class TweetsBlock extends BlockBase implements ContainerFactoryPluginInterface {
       '#username' => $username,
       '#tweets' => $tweets,
       '#more' => $more,
+      '#cache' => [
+        'max-age' => 0,
+      ],
       '#attached' => array(
         'library' =>  array(
           'tweets/base'

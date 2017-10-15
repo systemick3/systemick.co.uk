@@ -14,9 +14,9 @@
 <ul>
   {% for tweet in tweets %}
     <li>
-      {{ tweet.text|raw }}
-      <br/>
-      <span class="tweet-date">{{ tweet.created_at|date("M dS Y") }}</span>
+      <p class="tweet-text">{{ tweet.text|raw }}</p>
+      <p class="tweeet-date">{{ tweet.created_at|date("M dS Y") }}</p>
+      <p class="tweet-username">{{ tweet.user.name }}</p>
     </li>
   {% endfor %}
 </ul>
