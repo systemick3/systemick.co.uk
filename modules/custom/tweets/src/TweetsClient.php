@@ -32,9 +32,9 @@ class TweetsClient {
     $this->config_factory = $config_factory;
   }
 
-  public function getTweets() {
+  public function getTweets($search_term) {
     // Get tweets
-    $tweets = $this->getBearerToken()->performRequest();
+    $tweets = $this->getBearerToken()->performRequest($search_term);
 
     // Grab text and created at
     $formatted_tweets = array();
@@ -81,7 +81,7 @@ class TweetsClient {
     return $this;
   }
 
-  private function performRequest() {
+  private function performRequest($search_term) {
     $config = \Drupal::config('tweets.settings');
 
     $header = array(
@@ -101,7 +101,7 @@ class TweetsClient {
 
 
     //$feed = curl_init('https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=' . $config->get('twitter_username') . '&count=' . $config->get('max_tweets'));
-    $feed = curl_init('https://api.twitter.com/1.1/search/tweets.json?q=drupal=' . $config->get('max_tweets'));
+    $feed = curl_init('https://api.twitter.com/1.1/search/tweets.json?q=' . $search_term . '&count=' . $config->get('max_tweets'));
     curl_setopt_array($feed, $options);
     $json = curl_exec($feed);
     curl_close($feed);

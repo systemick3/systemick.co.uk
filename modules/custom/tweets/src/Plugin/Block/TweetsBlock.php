@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains \Drupal\system\Plugin\Block\SystemMenuBlock.
+ * Contains \Drupal\tweets\Plugin\Block\TweetsBlock.
  */
 
 namespace Drupal\tweets\Plugin\Block;
@@ -21,7 +21,8 @@ use Drupal\Core\Url;
  * @Block(
  *   id = "tweets_block",
  *   admin_label = @Translation("Tweets"),
- *   category = @Translation("Media")
+ *   category = @Translation("Media"),
+ *   deriver = "Drupal\tweets\Plugin\Derivative\TweetsBlock"
  * )
  */
 class TweetsBlock extends BlockBase implements ContainerFactoryPluginInterface {
@@ -43,9 +44,9 @@ class TweetsBlock extends BlockBase implements ContainerFactoryPluginInterface {
    * @param \Drupal\Core\Config\ConfigFactoryInterface $tweets
    *   The formatted tweets from the client service for this block..
    */
-  public function __construct(array $configuration, $plugin_id, $plugin_definition, $tweets) {
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, $twitter_client) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
-    $this->tweets = $tweets;
+    $this->twitter_client = $twitter_client;
   }
 
   /**
@@ -56,7 +57,7 @@ class TweetsBlock extends BlockBase implements ContainerFactoryPluginInterface {
       $configuration,
       $plugin_id,
       $plugin_definition,
-      $container->get('tweets.get_tweets')->getTweets()
+      $container->get('tweets.get_tweets')
     );
   }
 
@@ -64,13 +65,11 @@ class TweetsBlock extends BlockBase implements ContainerFactoryPluginInterface {
   * {@inheritdoc}
   */
   public function build() {
-    $build = [];
-    $build['tweets_block']['#markup'] = $this->tweets;
-
     $config = \Drupal::config('tweets.settings');
-
+    $block_id = $this->getDerivativeId();
     $username = '<a href="http://www.twitter.com/' . $config->get('twitter_username')  . '">@' . $config->get('twitter_username')  . '</a>';
-    $tweets = array_slice($this->tweets, 0, 3);
+    $tweets = $this->twitter_client->getTweets($block_id);
+    $tweets = array_slice($tweets, 0, 3);
     $more = \Drupal::l(t('More tweets'), Url::fromRoute('tweets.content'));
 
     return array(
@@ -104,7 +103,7 @@ class TweetsBlock extends BlockBase implements ContainerFactoryPluginInterface {
   /**
    * {@inheritdoc}
    */
-  public function blockForm($form, FormStateInterface $form_state) {
+  /*public function blockForm($form, FormStateInterface $form_state) {
     $config = $this->configuration;
 
     $defaults = $this->defaultConfiguration();
@@ -129,15 +128,15 @@ class TweetsBlock extends BlockBase implements ContainerFactoryPluginInterface {
     );
 
     return $form;
-  }
+  }*/
 
   /**
    * {@inheritdoc}
    */
-  public function blockSubmit($form, FormStateInterface $form_state) {
+  /*public function blockSubmit($form, FormStateInterface $form_state) {
     $this->configuration['username'] = $form_state->getValue('username');
     $this->configuration['num_tweets'] = $form_state->getValue('num_tweets');
-  }
+  }*/
 
 }
 ?>
