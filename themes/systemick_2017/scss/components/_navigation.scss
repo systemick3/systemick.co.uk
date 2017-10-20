@@ -36,9 +36,8 @@
   padding-bottom: 5px;
 
   @include tablet {
-    //background-color: #eee;
     background-color: white;
-    border: solid 5px #eee;
+    border: solid 5px $c--black;
     border-radius: 5px;
     margin-right: 20px;
     margin-top: -20px;
