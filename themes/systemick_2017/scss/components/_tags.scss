@@ -5,12 +5,22 @@
 .block-tagadelic {
   margin-top: 20px;
 
+  @include tablet {
+    margin-top: 0;
+  }
+
   .block-content {
     border-radius: 5px;
 
     @include tablet {
       background: #eee;
-      padding: 0 22% 15px 10px;
+      padding: 10px;
+    }
+
+    .inner {
+      background: white;
+      border-radius: 5px;
+      padding: 10px;
     }
   }
 }

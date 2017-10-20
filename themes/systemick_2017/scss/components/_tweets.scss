@@ -3,7 +3,7 @@
 //
 
 
-.block-tweets {
+.block-quicktabs-blocktweets {
   font-size: 90%;
   margin-top: 20px;
 
@@ -23,6 +23,25 @@
 
   h2 {
     margin-bottom: 0;
+  }
+
+  .ui-widget-content {
+    border: 1px solid $c--body-colour;
+    color: $c--body-colour;
+    font-size: 80%;
+
+    a {
+      color: $c--branding-secondary;
+    }
+
+    &.ui-accordion-content-active {
+      border: none;
+    }
+  }
+
+  h3.ui-accordion-header {
+    font-size: 90%;
+    font-weight: bold;
   }
 
   .username {

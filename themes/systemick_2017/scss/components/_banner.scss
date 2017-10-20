@@ -5,7 +5,7 @@
 .header__background {
   height: 360px;
   background: $c--branding-primary;
-  border-bottom: solid 15px $c--mustard;
+  //border-bottom: solid 15px $c--mustard;
 
   @include tablet {
     background: url(/themes/systemick_2017/images/banner3-tablet.jpg) no-repeat center center, $c--branding-primary;

@@ -33,11 +33,15 @@
 
     @include tablet {
       background: #eee;
-      padding-left: 10px;
+      padding: 10px;
 
       .views-row.col-sm-6 {
         width: 49%;
       }
+    }
+
+    .view-content {
+      background: white;
     }
 
     .views-row {
@@ -53,11 +57,17 @@
       margin-top: -15px;
 
       h2 {
-        background: $c--grey-light;
-        border-radius: 5px;
+        background: white;
+        color: $c--almost-black;
+        font-size: 100%;
+        font-weight: bold;
         margin-bottom: 15px;
         margin-top: 25px;
         padding: 5px;
+
+        @include tablet {
+          //margin-left: 5px;
+        }
       }
 
       .node__content {
