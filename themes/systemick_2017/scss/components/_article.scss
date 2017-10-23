@@ -32,7 +32,6 @@
     border-radius: 5px;
 
     @include tablet {
-      background: #eee;
       padding: 10px;
 
       .views-row.col-sm-6 {
@@ -64,10 +63,6 @@
         margin-bottom: 15px;
         margin-top: 25px;
         padding: 5px;
-
-        @include tablet {
-          //margin-left: 5px;
-        }
       }
 
       .node__content {
@@ -113,4 +108,9 @@
   .node--type-article .node__content {
     padding: 0 0;
   }
+}
+
+// Articles displayed on taxonomy pages
+.view-taxonomy-term {
+  padding: 20px;
 }

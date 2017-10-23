@@ -5,12 +5,22 @@
 
 (function ($, Drupal, drupalSettings) {
 
-  Drupal.behaviors.systemick = {
+  Drupal.behaviors.bannerAnimate = {
     attach: function (context) {
-
-      // Code goes here
-      //alert('Hello');
-
+      window.addEventListener('scroll', function(e){
+        var banner = $('.header__background');
+        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+            displayOn = 20,
+            header = document.querySelector("header");
+        if (distanceY > displayOn) {
+            banner.addClass('border-black');
+        } 
+        else {
+          if (banner.hasClass('border-black')) {
+            banner.removeClass('border-black');
+          }
+        }
+      });
     }
   };
 
