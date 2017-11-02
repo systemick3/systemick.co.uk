@@ -52,8 +52,18 @@
     }
 
     article {
+      border-bottom: 1px solid $c--body-colour;
       font-size: 95%;
       margin-top: -15px;
+
+      @include tablet {
+        margin: 0 15px;
+        padding-bottom: 20px;
+      }
+  
+      &:last-of-type {
+        border-bottom: none;
+      }
 
       h2 {
         background: white;
@@ -63,6 +73,10 @@
         margin-bottom: 15px;
         margin-top: 25px;
         padding: 5px;
+
+        a {
+          color: $c--almost-black;
+        }
       }
 
       .node__content {
