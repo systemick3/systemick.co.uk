@@ -41,6 +41,12 @@
 
     .view-content {
       background: white;
+
+      @include tablet {
+        border-radius: 5px;
+        margin-top: 2px;
+        padding-top: 1px;
+      }
     }
 
     .views-row {
